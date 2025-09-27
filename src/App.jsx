@@ -1,23 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-
-import Home from "./pages/home";
-
-import Testimonial from "./pages/home/testimonial";
-import OurServices from "./pages/history/ourServices";
-import History from "./pages/history/history";
-
+import Footer from "./components/Footer/Footer";      
+import "./App.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        
-        <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/ourServices" element={<OurServices />} />
-        <Route path="/history" element={<History />} />
+        <Route path="/jobs" element={<JobsSection />} />
+        <Route path="/footer" element={<Footer />} />
       </Routes>
     </Router>
   );
