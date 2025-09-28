@@ -6,6 +6,7 @@ import Home from "./pages/home";
 
 import Testimonial from "./pages/home/testimonial";
 import OurServices from "./pages/history/ourServices";
+import History from "./pages/history/history";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/ourServices" element={<OurServices />} />
+        <Route path="/history" element={<History />} />
       </Routes>
     </Router>
   );
