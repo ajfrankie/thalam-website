@@ -9,13 +9,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import AppRouters from "./routes/AppRoutes"; 
 import CountdownTimer from "./pages/home/countdownTimer";
+import NextEvent from "./pages/event/NextEvent";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/countdownTimer" element={<CountdownTimer />} />
+        <Route path="/ountdownTimer" element={<CountdownTimer />} />
+        <Route path="/NextEvent" element={<NextEvent />} />
         
       </Routes>
     </Router>
