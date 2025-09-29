@@ -1,15 +1,24 @@
-// App.jsx
+
+
+
+
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import AppRouters from "./routes/AppRoutes"; // adjust the path if needed
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Pages import
+import Home from "./pages/home";
+import AppRouters from "./routes/AppRoutes"; 
+import CountdownTimer from "./pages/home/countdownTimer";
 
 function App() {
   return (
-    <BrowserRouter>
-      {/* You can add a header, nav, or layout wrapper here */}
-      <AppRouters />
-      {/* You can add a footer here */}
-    </BrowserRouter>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/countdownTimer" element={<CountdownTimer />} />
+        
+      </Routes>
+    </Router>
   );
 }
 
