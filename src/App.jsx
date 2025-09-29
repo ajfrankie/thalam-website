@@ -1,15 +1,19 @@
-// App.jsx
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import AppRouters from "./routes/AppRoutes"; // adjust the path if needed
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+
+import ImpactCards from "./components/impact/ImpactCards";
+
+import EducationCoures from "./pages/education/EducationCoures";
 
 function App() {
   return (
-    <BrowserRouter>
-      {/* You can add a header, nav, or layout wrapper here */}
-      <AppRouters />
-      {/* You can add a footer here */}
-    </BrowserRouter>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/ImpactCards" />} />  {/* ✅ Default redirect */}
+        <Route path="/ImpactCards" element={<ImpactCards />} />
+        <Route path="/EducationCoures" element={<EducationCoures />} />
+      </Routes>
+    </Router>
   );
 }
 
