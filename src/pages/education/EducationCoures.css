@@ -7,7 +7,7 @@
 }
 
 .body {
-  font-family: 'Syne';
+  font-family: Syne;
 }
 
 /* 🔹 Header updated for logo + heading */
@@ -77,6 +77,7 @@
   font-size: 22px;
   font-weight: 400;
   text-align: justify;
+  font-family: syne;
 }
 
 /* 🔹 Header Title (EducationCourses) */
@@ -86,6 +87,7 @@
   color: #fff;       
   line-height: 110%;  
   margin-bottom: 20px;
+  font-family: syne;
 }
 
 /* 🔹 Course Card Title */
@@ -96,6 +98,7 @@
   margin-bottom: 20px;
   line-height: 120%;
   text-align: left;
+  font-family: syne;
 }
 
 /* 🔹 Footer dots */
@@ -104,6 +107,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
+  
 }
 
 .dot {
