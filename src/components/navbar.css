@@ -1,0 +1,140 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center; /* center-align all navbar items */
+  align-items: center;
+  background: black;
+  padding: 12px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 300px; /* adjust THALAM & Home gap */
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 74px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  font-family: "Salsa", cursive;
+}
+
+/* Nav links container */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Common link styles */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Syne", sans-serif;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ff3333;
+}
+
+/* Circle button style */
+.nav-btn {
+  padding: 8px 22px;
+  border: 1px solid white;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Syne", sans-serif;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* Red border button (Register) */
+.nav-btn.red {
+  border: 1px solid red;
+}
+
+.nav-btn.red:hover {
+  background: red;
+  color: white;
+}
+
+/* Body Styles */
+.body-container {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: "Syne", sans-serif;
+}
+
+.body-container h1 {
+  font-size: 60px;
+  color: #ff3333;
+  font-family: "Salsa", cursive;
+  margin-bottom: 20px;
+}
+
+.body-container p {
+  font-size: 22px;
+  margin-bottom: 50px;
+  color: #f2f2f2;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* adjust cards spacing */
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #1a0b0b;
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background-color: #330202;
+}
+
+.service-card h2 {
+  color: #ff3333;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #fff;
+  font-size: 18px;
+}
