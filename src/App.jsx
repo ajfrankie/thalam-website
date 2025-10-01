@@ -16,6 +16,7 @@ import JobsSection from "./pages/job/JobSection";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 import Home from "./pages/home/home";
+import Register from "./pages/auth/register";
 function App() {
   return (
     <Router>
@@ -32,7 +33,6 @@ function App() {
          <Route path="/contact-us" element={<contact-us />} />
 
 
-        {/* Redirect + Other Components */}
         
       <Route path="/ImpactCards" element={<ImpactCards />} />
       <Route path="/EducationCoures" element={<EducationCoures />} />
