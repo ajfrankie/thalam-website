@@ -9,11 +9,18 @@ import CountdownTimer from "./pages/home/countdownTimer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       {/* You can add a header, nav, or layout wrapper here */}
       <AppRouters />
+
+      {/* Extra routes if needed */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/countdownTimer" element={<CountdownTimer />} />
+      </Routes>
+
       {/* You can add a footer here */}
-    </BrowserRouter>
+    </Router>
   );
 }
 
