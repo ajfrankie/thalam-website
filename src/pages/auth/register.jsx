@@ -41,7 +41,7 @@ function Register() {
               <input type="text" placeholder="City" />
               <input type="text" placeholder="Country" />
               <textarea placeholder="Message" rows="4" required></textarea>
-
+              /* Card inside */
               <div className="btn-container">
                 <button type="submit" className="register-btn">
                   REGISTER
