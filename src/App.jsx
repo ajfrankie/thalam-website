@@ -5,6 +5,7 @@ import JobsSection from "./pages/job/JobSection";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Home from "./pages/home/home";
+import Register from "./pages/auth/register";
 function App() {
   return (
     <Router>
@@ -16,7 +17,8 @@ function App() {
         
           <Route path="navbar" element={<Navbar />} />
           <Route path="home" element={<Home />} />
-        
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
        
         <Route path="/Footer" element={<Footer />} />
 >>>>>>> 8ed53d9 (update:update homne)
