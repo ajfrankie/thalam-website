@@ -1,15 +1,20 @@
-// App.jsx
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import AppRouters from "./routes/AppRoutes"; // adjust the path if needed
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Hometab from "./pages/home/Hometab"; // ✅ fixed path
+import Contact from './pages/contact-us/contact-us.jsx'; // ✅ from folder structure
 
 function App() {
   return (
-    <BrowserRouter>
-      {/* You can add a header, nav, or layout wrapper here */}
-      <AppRouters />
-      {/* You can add a footer here */}
-    </BrowserRouter>
+    <Router>
+      <Routes>
+        {/* Default route: "/" → redirect to /hometab */}
+        <Route path="/" element={<Navigate to="/hometab" />} />
+
+        {/* Routes */}
+        <Route path="/hometab" element={<Hometab />} />
+        <Route path="/contact-us" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
