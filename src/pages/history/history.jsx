@@ -9,6 +9,8 @@ export default function History() {
       <div className="history-title-box">
         <h2 className="history-title">History</h2>
 
+        //this is paragraph 
+
         
         <div className="jobs-header-logo">
           <img src={A11} alt="Thalam Logo" className="logo-image" />
@@ -45,7 +47,9 @@ export default function History() {
         <div className="history-image-box">
           <img src={A1} alt="History of Thalam Organization" className="history-image" />
         </div>
+        
         <div className="history-text-section">
+          
           <p>
             Founded in 2020, we expanded our programs to include environmental initiatives,
             focusing on sustainability and community gardens. Our goal is to educate
