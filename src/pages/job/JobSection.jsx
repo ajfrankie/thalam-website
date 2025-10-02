@@ -3,7 +3,7 @@ import "./Jobs.css";
 
 import image1 from "../../assets/images/1.jpg";
 import image2 from "../../assets/images/2.jpg";
-import image3 from "../../assets/images/3.png"; // logo
+import Jobimage from "../../assets/images/Job.png"; // logo
 import image4 from "../../assets/images/4.jpg";
 
 const jobsData = [
@@ -55,7 +55,7 @@ export default function JobsSection() {
         <div className="jobs-header-text">Jobs</div>
         <div className="jobs-header-logo">
           <img
-            src={image3}
+            src={Jobimage}
             alt="Logo"
             className="logo-image"
             onError={(e) => {
@@ -89,10 +89,7 @@ export default function JobsSection() {
 
               <div className="job-desc-wrapper">
                 {job.description.map((para, idx) => (
-                  <p
-                    key={idx}
-                    className={`job-desc job-desc-${job.id}`}
-                  >
+                  <p key={idx} className={`job-desc job-desc-${job.id}`}>
                     {para}
                   </p>
                 ))}

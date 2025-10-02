@@ -200,7 +200,6 @@
 
 .third-layer {
   background-color: #f0f0f0; /* Lighter background color for the 3rd job card */
-  border: 2px solid #0073e6; /* Border color for the 3rd job card */
   padding: 30px; /* Extra padding for the 3rd card */
   border-radius: 15px; /* Rounded corners for the 3rd card */
 }
