@@ -51,7 +51,7 @@
 }
 
 .education-card.reverse {
-  flex-direction: row-reverse; /* image right, text left */
+  flex-direction: row-reverse; /* image right, text left 1*/
 }
 
 .education-image-wrapper {
