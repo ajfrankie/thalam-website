@@ -1,9 +1,15 @@
 import React from "react";
+HEAD
+HEAD
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer/Footer";      
-import JobsSection from "./pages/job/JobSection";
-import "./App.css";
-import "@fortawesome/fontawesome-free/css/all.min.css"; 
+
+
+import Home from "./pages/home";
+
+import Testimonial from "./pages/home/testimonial";
+import OurServices from "./pages/history/ourServices";
+import History from "./pages/history/history";
+
 
 function App() {
   return (
