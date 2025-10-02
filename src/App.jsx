@@ -8,6 +8,8 @@ import History from "./pages/history/history";
 
 import ImpactCards from "./components/impact/ImpactCards";
 import EducationCoures from "./pages/education/EducationCoures";
+import Footer from "./components/Footer";
+import CountdownTimer from "./pages/home/countdownTimer";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         
         <Route path="/ImpactCards" element={<ImpactCards />} />
         <Route path="/EducationCoures" element={<EducationCoures />} />
+         <Route path="/Footer" element={<Footer />} />
+          <Route path="/countdownTimer" element={<CountdownTimer />} />
       </Routes>
     </Router>
   );
