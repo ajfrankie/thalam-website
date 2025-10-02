@@ -3,7 +3,7 @@ import "./ImpactCards.css";
 import a1Image from "../../assets/a1.jpg";
 import a2Image from "../../assets/a2.jpg";
 import a4Image from "../../assets/a4.jpg";
-import a5Image from "../../assets/a5.jpg";
+import a5Image from "../../assets/a5.jpg";//image
 
 const ImpactCards = () => {
   return (

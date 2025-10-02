@@ -27,7 +27,7 @@ const educationData = [
     description: [
       "We look for motivated individuals who want to contribute to social projects and community development. The role includes planning, coordination, and close teamwork to deliver measurable impact.",
       "We look for motivated individuals who want to contribute to social projects and community development. The role includes planning, coordination, and close teamwork to deliver measurable impact."
-    ],
+    ],//paragraphs
     image: a2Image,
     reverse: false,
   },
