@@ -7,7 +7,7 @@ import Home from "../pages/home";
 function AppRouters() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
     
       <Route path="/contact" element={<Contact />} />
     </Routes>

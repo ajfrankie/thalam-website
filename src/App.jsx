@@ -15,7 +15,7 @@ function App() {
 
       {/* Extra routes if needed */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/countdownTimer" element={<CountdownTimer />} />
       </Routes>
 
