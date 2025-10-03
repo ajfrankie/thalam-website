@@ -3,7 +3,7 @@ import FooterLeft from "./FooterLeft";
 import FooterRight from "./FooterRight";
 
 // Footer.jsx
-import "./Footer.css";  // Only Footer-ku styles
+import "./Footer.css";  
 
 
 

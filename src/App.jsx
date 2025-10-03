@@ -9,9 +9,7 @@ import History from "./pages/history/history";
 
 import ImpactCards from "./components/impact/ImpactCards";
 import EducationCoures from "./pages/education/EducationCoures";
-import Navbar from "./components/navbar";
-import Home from "./pages/home/home";
-import Register from "./pages/auth/register";
+import Footer from ".components/footer/footer";
 
 function App() {
   return (
@@ -24,14 +22,13 @@ function App() {
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/ourServices" element={<OurServices />} />
         <Route path="/history" element={<History />} />
+        <Route path="/Footer" element={<Footer />} />
+
 
         {/* Redirect + Other Components */}
         
         <Route path="/ImpactCards" element={<ImpactCards />} />
         <Route path="/EducationCoures" element={<EducationCoures />} />
-          <Route path="/navbar" element={<Navbar />} />
-            <Route path="/home" element={<Home />} />
-              <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
