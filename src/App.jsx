@@ -7,7 +7,8 @@ import OurServices from "./pages/history/ourServices";
 import History from "./pages/history/history";
 
 import ImpactCards from "./components/impact/ImpactCards";
-import EducationCoures from "./pages/education/EducationCoures";
+import EducationCources from "./pages/education/EducationCources";
+import JobsSection from "./components/jobs/JobsSection";   // <-- include this import
 
 function App() {
   return (
@@ -21,11 +22,12 @@ function App() {
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/ourServices" element={<OurServices />} />
         <Route path="/history" element={<History />} />
+        <Route path="/jobs" element={<JobsSection />} />   {/* <-- keep jobs route */}
 
         {/* Redirect + Other Components */}
-        <Route path="/" element={<Navigate to="/ImpactCards" />} /> {/* Default redirect */}
-        <Route path="/ImpactCards" element={<ImpactCards />} />
-        <Route path="/EducationCoures" element={<EducationCoures />} />
+        <Route path="/impact" element={<ImpactCards />} />
+        <Route path="/education" element={<EducationCources />} />
+        <Route path="*" element={<Navigate to="/impact" />} />
       </Routes>
     </Router>
   );
