@@ -4,7 +4,7 @@ import "./Jobs.css";
 import image1 from "../../assets/images/1.jpg";
 import image2 from "../../assets/images/2.jpg";
 import Jobimage from "../../assets/images/Job.png"; // logo
-import image4 from "../../assets/images/4.jpg"; // job image
+import image4 from "../../assets/images/4.jpg"; 
 
 const jobsData = [   
   {
