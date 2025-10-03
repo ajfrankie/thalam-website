@@ -1,0 +1,133 @@
+.hometab {
+  padding: 40px 20px;
+  background-color: #000;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+/* Logo Strip */
+.logo-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #444;
+  margin-bottom: 40px;
+}
+
+.logo {
+  height: 30px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* Two Column Layout */
+.two-column-layout {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left Side - Our Objectives */
+.left-card .card {
+  width: 532px;
+  height: 569.43px;
+  border-radius: 50px;
+}
+
+.left-card .card h2 {
+  font-size: 40px;
+}
+
+.left-card .card li {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Right Side - Mission + Scope */
+.right-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Our Mission Card */
+.right-stack .card.red {
+  width: 673px;
+  height: 291px;
+  border-radius: 40px;
+}
+
+.right-stack .card.red h2 {
+  font-size: 40px;
+}
+
+.right-stack .card.red p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Our Scope Card */
+.right-stack .card.gray {
+  width: 673px;
+  height: 258px;
+  border-radius: 50px;
+}
+
+.right-stack .card.gray h2 {
+  font-size: 40px;
+}
+
+.right-stack .card.gray p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Common Card Styling */
+.card {
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Colors */
+.card.red {
+  background-color: #8d1010;
+}
+
+.card.gray {
+  background-color: #ccc;
+  color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .two-column-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-card .card,
+  .right-stack .card {
+    width: 90% !important;
+    height: auto !important;
+    margin: auto;
+  }
+
+  .logo-strip {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .left-card .card h2,
+  .right-stack .card h2 {
+    font-size: 32px !important;
+  }
+
+  .left-card .card li,
+  .right-stack .card p {
+    font-size: 18px !important;
+  }
+}
