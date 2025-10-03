@@ -1,62 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/home";
-import Testimonial from "./pages/home/testimonial";
-import OurServices from "./pages/history/ourServices";
-import History from "./pages/history/history";
+// Home will auto-load from pages/home/index.jsx
+import Home from "./pages/home";  
 
-import ImpactCards from "./components/impact/ImpactCards";
-import EducationCoures from "./pages/education/EducationCoures";
-import Footer from "./components/Footer";
-import CountdownTimer from "./pages/home/countdownTimer";
+// sub components for direct routes
+import Testimonial from "./pages/home/Testimonial";
+import CountdownTimer from "./pages/home/CountdownTimer";
+import HomeTab from "./pages/home/HomeTab";
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* All routes merged here from both sides, without duplicates */}
+        {/* Main Home Page */}
+        <Route path="/" element={<Home />} />
+
+        {/* Direct routes if needed */}
         <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/ourServices" element={<OurServices />} />
-        <Route path="/history" element={<History />} />
-
-        {/* Redirect + Other Components */}
-        
-        <Route path="/ImpactCards" element={<ImpactCards />} />
-        <Route path="/EducationCoures" element={<EducationCoures />} />
-         <Route path="/Footer" element={<Footer />} />
-          <Route path="/countdownTimer" element={<CountdownTimer />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-
-// Import all necessary components 
-import Home from "./pages/home/Home";
-import Testimonial from "./pages/home/testimonial/Testimonial";
-import OurServices from "./pages/history/ourservices/OurServices";
-
-// Import components for new routes (If these components exist in your project)
-// Note: If you know the correct paths for ImpactCards and EducationCourses, use them instead of the comments.
-// import ImpactCards from "./pages/impactcards/ImpactCards"; 
-// import EducationCourses from "./pages/educationcourses/EducationCourses"; 
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        {/* All routes merged here from both sides, without duplicates */}
-        <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/ourservices" element={<OurServices />} />
-        <Route path="/history" element={<History />} /> 
-        
-        <Route path="/" element={<Home />} /> 
-        <Route path="/ImpactCards" element={<ImpactCards />} />
-        <Route path="/EducationCourses" element={<EducationCourses />} />
+        <Route path="/countdowntimer" element={<CountdownTimer />} />
+        <Route path="/hometab" element={<HomeTab />} />
       </Routes>
     </Router>
   );

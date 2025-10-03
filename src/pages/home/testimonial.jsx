@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './testimonial.css';
-import LogoImage from '../../assets/Logo.png';
+import LogoImage from '../../assets/src.jpg';
 import SrcImage from '../../assets/Src.jpg';
 
 const initialTestimonials = [
