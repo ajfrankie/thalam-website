@@ -15,7 +15,7 @@ function FooterRight() {
           placeholder="Email"
           className="subscribe-input"
         />
-        <button type="submit" className="subscribe-button">
+        <button type="submit" className="subscribe-button"> 
           Stay updated
         </button>
       </form>
