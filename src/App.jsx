@@ -1,6 +1,5 @@
 import React from "react";
-HEAD
-HEAD
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
