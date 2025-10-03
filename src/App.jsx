@@ -8,7 +8,7 @@ import History from "./pages/history/history";
 
 import ImpactCards from "./components/impact/ImpactCards";
 import EducationCoures from "./pages/education/EducationCoures";
-import Footer from ".components/footer/footer";
+import ContactUs from "./pages/home/contact-us";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/ourServices" element={<OurServices />} />
         <Route path="/history" element={<History />} />
-        <Route path="/Footer" element={<Footer />} />
+         <Route path="/contact-us" element={<contact-us />} />
 
 
         {/* Redirect + Other Components */}
