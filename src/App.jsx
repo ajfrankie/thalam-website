@@ -1,26 +1,35 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "./pages/home";
-import JobsSection from "./pages/job/JobSection";
-import EducationCources from "./pages/education/EducationCources";
-import Footer from "./components/Footer/Footer";
+import Testimonial from "./pages/home/testimonial";
+import OurServices from "./pages/history/ourServices";
+import History from "./pages/history/history";
 
-import "./App.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import ImpactCards from "./components/impact/ImpactCards";
+import EducationCoures from "./pages/education/EducationCoures";
+import Footer from ".components/footer/footer";
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Pages */}
+        {/* Home routes */}
         <Route path="/home" element={<Home />} />
-        <Route path="/jobs" element={<JobsSection />} />
-        <Route path="/education" element={<EducationCources />} />
-      </Routes>
+        <Route path="/" element={<Home />} />
 
-      {/* Footer always at bottom */}
-      <Footer />
+        {/* Other pages */}
+        <Route path="/testimonial" element={<Testimonial />} />
+        <Route path="/ourServices" element={<OurServices />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/Footer" element={<Footer />} />
+
+
+        {/* Redirect + Other Components */}
+        
+        <Route path="/ImpactCards" element={<ImpactCards />} />
+        <Route path="/EducationCoures" element={<EducationCoures />} />
+      </Routes>
     </Router>
   );
 }
