@@ -1,7 +1,7 @@
 import React from "react";
-import HomeTab from "./HomeTab";
-import CountdownTimer from "./CountdownTimer";
-import Testimonial from "./Testimonial";
+import HomeTab from "./Hometab.jsx";
+import CountdownTimer from "./CountdownTimer.jsx";
+import Testimonial from "./Testimonial.jsx";
 
 const Home = () => {
   return (
