@@ -14,7 +14,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Hometab from "./pages/home/Hometab"; // ✅ fixed path
 import Contact from './pages/contact-us/contact-us.jsx'; // ✅ from folder structure
- 81d6a80 (update: hometab)
+
 
 function App() {
   return (
