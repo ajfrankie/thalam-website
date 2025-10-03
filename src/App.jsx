@@ -1,39 +1,34 @@
- HEAD
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "./pages/home";
-
 import Testimonial from "./pages/home/testimonial";
 import OurServices from "./pages/history/ourServices";
 import History from "./pages/history/history";
 
-
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Hometab from "./pages/home/Hometab"; // ✅ fixed path
-import Contact from './pages/contact-us/contact-us.jsx';
-
+import ImpactCards from "./components/impact/ImpactCards";
+import EducationCoures from "./pages/education/EducationCoures";
+import ContactUs from "./pages/home/contact-us";
 
 function App() {
   return (
     <Router>
       <Routes>
-HEAD
+        {/* Home routes */}
+        <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />
-        
+
+        {/* Other pages */}
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/ourServices" element={<OurServices />} />
         <Route path="/history" element={<History />} />
+         <Route path="/contact-us" element={<contact-us />} />
 
-        {/* Default route: "/" → redirect to /hometab */}
-        <Route path="/" element={<Navigate to="/hometab" />} />
 
-        {/* Routes */}
-        <Route path="/hometab" element={<Hometab />} />
-        <Route path="/contact-us" element={<Contact />} />
-81d6a80 (update: hometab)
+        {/* Redirect + Other Components */}
+        
+        <Route path="/ImpactCards" element={<ImpactCards />} />
+        <Route path="/EducationCoures" element={<EducationCoures />} />
       </Routes>
     </Router>
   );
