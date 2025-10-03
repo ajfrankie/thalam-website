@@ -1,6 +1,6 @@
 import React from "react";
 import "./register.css";
-import ThalamLogo from "../../assets/thalamlogo.png"; // ✅ IMPORT panniten
+import ThalamLogo from "../../assets/thalamlogo.png"; 
 
 function Register() {
   return (
