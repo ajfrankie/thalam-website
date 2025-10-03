@@ -7,6 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/jobs" element={<JobsSection />} />
         <Route path="/footer" element={<Footer />} />
       </Routes>
     </Router>

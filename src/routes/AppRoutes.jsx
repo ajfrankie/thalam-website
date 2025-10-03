@@ -1,17 +1,18 @@
-// AppRouters.jsx
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "../pages/home";
-
+import ImpactCards from "../home/ImpactCards"; // path must match exactly
 
 function AppRouters() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-    
-      <Route path="/contact" element={<Contact />} />
+      {/* Home route */}
+      <Route path="/" element={<ImpactCards />} />
+
+      {/* Example additional routes */}
+      {/* <Route path="/about" element={<About />} /> */}
+      {/* <Route path="/contact" element={<Contact />} /> */}
     </Routes>
   );
 }
-
+// AppRouters.jsx
 export default AppRouters;
