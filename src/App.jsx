@@ -7,8 +7,12 @@ import OurServices from "./pages/history/ourServices";
 import History from "./pages/history/history";
 
 import ImpactCards from "./components/impact/ImpactCards";
+import JobsSection from "./pages/job/JobSection";
 import EducationCources from "./pages/education/EducationCources";
-import JobsSection from "./components/jobs/JobsSection";   // <-- include this import
+import Footer from "./components/Footer/Footer"; //footer
+
+
+
 
 function App() {
   return (
