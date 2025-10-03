@@ -1,24 +1,38 @@
-
-
-
-
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
-// Pages import
 import Home from "./pages/home";
-import AppRouters from "./routes/AppRoutes"; 
+import Testimonial from "./pages/home/testimonial";
+import OurServices from "./pages/history/ourServices";
+import History from "./pages/history/history";
+
+import ImpactCards from "./components/impact/ImpactCards";
+import EducationCoures from "./pages/education/EducationCoures";
+import Footer from "./components/Footer";
 import CountdownTimer from "./pages/home/countdownTimer";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import NextEvent from "./pages/event/NextEvent";
 
 function App() {
   return (
     <Router>
       <Routes>
+        {/* Home routes */}
         <Route path="/home" element={<Home />} />
-        <Route path="/ountdownTimer" element={<CountdownTimer />} />
-        <Route path="/NextEvent" element={<NextEvent />} />
+        <Route path="/" element={<Home />} />
+
+        {/* Other pages */}
+        <Route path="/testimonial" element={<Testimonial />} />
+        <Route path="/ourServices" element={<OurServices />} />
+        <Route path="/history" element={<History />} />
+
+        {/* Redirect + Other Components */}
         
+        <Route path="/ImpactCards" element={<ImpactCards />} />
+        <Route path="/EducationCoures" element={<EducationCoures />} />
+         <Route path="/Footer" element={<Footer />} />
+          <Route path="/countdownTimer" element={<CountdownTimer />} />
+              <Route path="/NextEvent" element={<NextEvent />} />
       </Routes>
     </Router>
   );
