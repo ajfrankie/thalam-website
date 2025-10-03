@@ -13,7 +13,7 @@ import History from "./pages/history/history";
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Hometab from "./pages/home/Hometab"; // ✅ fixed path
-import Contact from './pages/contact-us/contact-us.jsx'; // ✅ from folder structure
+import Contact from './pages/contact-us/contact-us.jsx';
 
 
 function App() {
