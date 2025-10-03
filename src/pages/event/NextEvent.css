@@ -1,0 +1,54 @@
+/* Heading left side */
+.next-event-heading {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Countdown box layout */
+.countdown-frame {
+  background: #1c1a1a;
+  color: #fff;
+  width: 1240px;
+  height: 446px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* space between left + right */
+  padding: 40px;
+  font-size: 100px;
+}
+
+/* Left content area (for countdown text if needed) */
+.countdown-left {
+  z-index: 1;
+}
+
+/* Right side image bigger */
+/* Right side image bigger */
+.countdown-decoration {
+  position: relative;
+  width: 711px;        /* ✅ correct */
+  height: 881px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;  /* move upwards */
+  opacity: 0.9;
+  right: -100px;
+  margin-bottom: -150px;
+}
+
+/* Decoration image */
+.decoration-img {
+  width: 100%;          /* fill parent (811px) */
+  height: auto;
+  object-fit: contain;
+}
+

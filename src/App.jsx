@@ -1,34 +1,38 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
-
-import Home from "./pages/home"; 
-import Testimonial from "./pages/home/testimonial"; 
-import OurServices from "./pages/history/ourServices"; 
-import History from "./pages/history/history"; 
+import Home from "./pages/home";
+import Testimonial from "./pages/home/testimonial";
+import OurServices from "./pages/history/ourServices";
+import History from "./pages/history/history";
 
 import ImpactCards from "./components/impact/ImpactCards";
-import EducationCoures from "./pages/education/EducationCoures"; 
-
-
-
-
+import EducationCoures from "./pages/education/EducationCoures";
+import Footer from "./components/Footer";
+import CountdownTimer from "./pages/home/countdownTimer";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import NextEvent from "./pages/event/NextEvent";
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* All routes merged here from both sides, without duplicates */}
+        {/* Home routes */}
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+
+        {/* Other pages */}
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/ourServices" element={<OurServices />} />
         <Route path="/history" element={<History />} />
 
-        {/* Home page should ideally point to /ImpactCards, so using Navigate or ImpactCards here */}
-        <Route path="/" element={<Navigate to="/ImpactCards" />} /> 
+        {/* Redirect + Other Components */}
         
         <Route path="/ImpactCards" element={<ImpactCards />} />
-        <Route path="/EducationCoures" element={<EducationCoures />} /> 
-        
+        <Route path="/EducationCoures" element={<EducationCoures />} />
+         <Route path="/Footer" element={<Footer />} />
+          <Route path="/countdownTimer" element={<CountdownTimer />} />
+              <Route path="/NextEvent" element={<NextEvent />} />
       </Routes>
     </Router>
   );
