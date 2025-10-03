@@ -10,7 +10,7 @@ function FooterLeft() {
         <li>Privacy Policy</li>
         <li>Cookie Policy</li>
       </ul>
-      <p className="copyright">© 2025 CodeOrbit. All rights reserved.</p>
+      <p className="copyright">© 2025 CodeOrbit. All rights reserved.</p> 
     </div>
   );
 }
