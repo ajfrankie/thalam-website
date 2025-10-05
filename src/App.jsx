@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/home";
-import Testimonial from "./pages/home/testimonial";//testimonial
+import Testimonial from "./pages/home/testimonial";
 import OurServices from "./pages/history/ourServices";
 import History from "./pages/history/history";
 import ImpactCards from "./components/impact/ImpactCards";
