@@ -13,7 +13,7 @@ function Navbar() {
         <span className="logo-text">THALAM</span>
       </div>
 
-      {/* Nav Links */}
+      
       <ul className="nav-links">
         <li>
           <Link to="/" className="nav-btn">Home</Link>

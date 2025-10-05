@@ -11,15 +11,16 @@ import EducationCoures from "./pages/education/EducationCoures";
 import ContactUs from "./pages/home/contact-us";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";      
+import Navbar from "./components/Navbar";      
 import JobsSection from "./pages/job/JobSection";
 import "./App.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import navbar from "./components/navbar";
-
+import "@fortawesome/fontawesome-free/css/all.min.css"; 
+import Home from "./pages/home/home";
 function App() {
   return (
     <Router>
       <Routes>
+
         {/* Home routes */}
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />
@@ -33,14 +34,20 @@ function App() {
 
         {/* Redirect + Other Components */}
         
-        <Route path="/ImpactCards" element={<ImpactCards />} />
-        <Route path="/EducationCoures" element={<EducationCoures />} />
-        <Route path="/jobs" element={<JobsSection />} />
-        <Route path="/footer" element={<Footer />} />
-        <Route path="/Navbar" element={<Navbar />} />
+      <Route path="/ImpactCards" element={<ImpactCards />} />
+      <Route path="/EducationCoures" element={<EducationCoures />} />
+      <Route path="/jobs" element={<JobsSection />} />
+      <Route path="/footer" element={<Footer />} />
+       
+       <Route path="/jobs" element={<JobsSection />} />
+       <Route path="/footer" element={<Footer />} />
+       <Route path="navbar" element={<Navbar />} />
+       <Route path="home" element={<Home />} />
+       <Route path="/Footer" element={<Footer />} />
+    
       </Routes>
     </Router>
   );
 }
 
-export default App;
+export default App; 
