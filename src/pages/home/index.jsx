@@ -1,28 +1,16 @@
-<<<<<<< HEAD
-
 import React from "react";
-import Testimonial from "./testimonial";
-=======
-import React from "react";
->>>>>>> 785ab25 (update:update time)
+import HomeTab from "./HomeTab";
+import CountdownTimer from "./CountdownTimer";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
   return (
-    <div>
-         
-
-      
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 785ab25 (update:update time)
-    </div>
+    <>
+      <HomeTab />
+      <CountdownTimer />
+      <Testimonial />
+    </>
   );
 };
 
-<<<<<<< HEAD
-export default Home; 
-=======
 export default Home;
->>>>>>> 785ab25 (update:update time)
