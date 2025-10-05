@@ -1,37 +1,37 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+ 
 
 import Home from "./pages/home";
 import Testimonial from "./pages/home/testimonial";
 import OurServices from "./pages/history/ourServices";
 import History from "./pages/history/history";
 
-import ImpactCards from "./components/impact/ImpactCards";
-import EducationCoures from "./pages/education/EducationCoures";
-import Navbar from "./components/navbar";
-import Home from "./pages/home/home";
-import Register from "./pages/auth/register";
+// Home will auto-load from pages/home/index.jsx
+import Home from "./pages/home";  
+ 
+
+// sub components for direct routes
+import Testimonial from "./pages/home/Testimonial";
+import CountdownTimer from "./pages/home/CountdownTimer";
+import HomeTab from "./pages/home/HomeTab";
 
 function App() {
   return (
     <Router>
       <Routes>
+
         {/* Home page */}
         <Route path="/home" element={<Home />} />
 
-        {/* Other pages */}
-        <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/ourServices" element={<OurServices />} />
-        <Route path="/history" element={<History />} />
+        {/* Main Home Page */}
+        <Route path="/" element={<Home />} />
 
-        {/* Redirect + Other Components */}
-        
-        <Route path="/ImpactCards" element={<ImpactCards />} />
-        <Route path="/EducationCoures" element={<EducationCoures />} />
-          <Route path="/navbar" element={<Navbar />} />
-            <Route path="/home" element={<Home />} />
-              <Route path="/register" element={<Register />} />
+
+        {/* Direct routes if needed */}
+        <Route path="/testimonial" element={<Testimonial />} />
+        <Route path="/countdowntimer" element={<CountdownTimer />} />
+        <Route path="/hometab" element={<HomeTab />} />
       </Routes>
     </Router>
   );

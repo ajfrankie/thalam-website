@@ -1,7 +1,11 @@
 .hometab {
   padding: 40px 20px;
   background-color: #000;
+ Education
   font-family: 'Syne', sans-serif;
+
+  font-family: 'Arial', sans-serif;
+ main
   color: #fff;
 }
 
@@ -94,11 +98,19 @@
 
 /* Card Colors */
 .card.red {
+ Education
   background-color: #8b030c;
 }
 
 .card.gray {
   background-color: #c3c3c3cc;
+
+  background-color: #8d1010;
+}
+
+.card.gray {
+  background-color: #ccc;
+  main
   color: #222;
 }
 
