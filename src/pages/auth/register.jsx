@@ -19,7 +19,7 @@ function Register() {
 </div>
 
 
-      
+      //register box
       <div className="register-box">
         <div className="register-card">
          
@@ -31,7 +31,7 @@ function Register() {
                 details.
               </p>
             </div>
-               /* Form */
+              
             <form className="register-form">
               <input type="text" placeholder="Name" required />
               <input type="email" placeholder="Email" required />

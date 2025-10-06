@@ -10,6 +10,8 @@
   font-family: "Poppins", sans-serif;
 }
 
+/*header*/
+
 
 .register-header {
   width: 1240px;
@@ -37,7 +39,7 @@
 .register-header h1 span {
   display: block; 
 }
-
+ 
 .register-logo {
   position: absolute;
   right: 0;
@@ -123,7 +125,7 @@
 }
 
 
-/* Button */
+
 .register-btn {
   background: #8B030C;
   color: white;
