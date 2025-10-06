@@ -8,7 +8,6 @@
     justify-content: center; 
     padding: 60px 0;
 }
-
   {/* Left side text */}
 .container {
     width: 1240px; 
@@ -166,6 +165,10 @@
         margin-top: 0;
     }
 
+        margin-right: 0; /* left-align all text */
+        margin-top: 0;
+    }
+      
     .thalam-logo-box .english-text,
     .thalam-logo-box .tamil-text {
         font-size: 28px;

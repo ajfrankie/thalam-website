@@ -85,8 +85,8 @@
   color: #555;
   text-align: left;
 }
-
 /* Card Logo inside */
+
 .card-logo {
   position: absolute;
   right: 30px;
@@ -94,6 +94,7 @@
   width: 80px;
   opacity: 0.8;
 }
+
 
 /* Form */
 .register-form {
