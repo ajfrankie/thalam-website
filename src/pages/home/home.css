@@ -1,0 +1,173 @@
+
+.home-section {
+    background-color: #1a1a1a;
+    color: white;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 60px 0;
+}
+
+  
+.container {
+    width: 1240px; 
+    height: 804px;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+
+.text-content h1 {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-family: 'Syne', sans-serif;
+}
+
+
+.text-content p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+
+.read-more-btn {
+    width: 247px;
+    height: 68px;
+    border-radius: 100px;
+    font-size: 22px;
+    font-family: 'Salsa', cursive;
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #8b0000 0%, #3e0303 100%);
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
+}
+
+.read-more-btn:hover {
+    background: linear-gradient(90deg, #a00000 0%, #4e0404 100%);
+}
+
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    position: relative;
+}
+
+
+.thalam-logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+
+.thalam-logo-box img {
+    width: 1010px;   
+    height: 1252px;  
+    object-fit: contain;
+    margin-bottom: 15px;
+    margin-left: -80px; 
+    margin-top: 100px;   
+}
+
+
+.thalam-logo-box .tamil-text {
+    font-size: 36px;
+    font-family: 'Salsa', cursive;
+    font-weight: 400;
+    color: #6d0a0a;
+    line-height: 1;
+}
+
+.thalam-logo-box .english-text {
+    font-size: 36px;
+    font-family: 'Salsa', cursive;
+    font-weight: 700;
+    color: #8b0000;
+    line-height: 1.1;
+    letter-spacing: 5px;
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        width: 95%;
+        height: auto;
+        border-radius: 30px;
+        padding: 30px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .text-content h1 {
+        font-size: 60px;
+    }
+
+    .text-content p {
+        font-size: 18px;
+    }
+
+    .read-more-btn {
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .image-content {
+        justify-content: center;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .thalam-logo-box img {
+        width: 300px;
+        height: auto;
+        margin-right: 0; /* left-align all text */
+        margin-top: 0;
+    }
+      
+    .thalam-logo-box .english-text,
+    .thalam-logo-box .tamil-text {
+        font-size: 28px;
+    }
+}
