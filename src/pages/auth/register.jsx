@@ -20,7 +20,7 @@ function Register() {
 
 
       
-      <div className="register-box">
+      <div className="register-box"> 
         <div className="register-card">
          
           <div className="form-side">
