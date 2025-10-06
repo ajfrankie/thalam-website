@@ -1,62 +1,45 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
+// Main Pages
 import Home from "./pages/home";
+import Testimonial from "./pages/home/Testimonial";
+import OurServices from "./pages/history/OurServices";
+import History from "./pages/history/History";
+import EducationCourses from "./pages/education/EducationCourses";
+import Register from "./pages/auth/Register";
 
-import Testimonial from "./pages/home/testimonial";//
-import OurServices from "./pages/history/ourServices";
-import History from "./pages/history/history";
-import ImpactCards from "./components/impact/ImpactCards";
-import EducationCources from "./pages/education/EducationCources";
+// Sub Components
+import CountdownTimer from "./pages/home/CountdownTimer";
+import HomeTab from "./pages/home/HomeTab";
 import JobsSection from "./components/jobs/JobsSection";
-import CountdownTimer from "./components/countdown/CountdownTimer"; 
-import HomeTab from "./components/home/HomeTab"; 
-import Testimonial from "./pages/home/testimonial";
-import OurServices from "./pages/history/ourServices";
-import History from "./pages/history/history";
-
-
 import ImpactCards from "./components/impact/ImpactCards";
-import EducationCoures from "./pages/education/EducationCoures";
-import Register from "./pages/auth/register";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
-
-        
+        {/* Home */}
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
 
-        {/* Additional routes */}
+        {/* Other Pages */}
         <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/countdowntimer" element={<CountdownTimer />} />
-        <Route path="/hometab" element={<HomeTab />} />
-        <Route path="/jobs" element={<JobsSection />} /> {/* ✅ Added this */}
         <Route path="/ourservices" element={<OurServices />} />
         <Route path="/history" element={<History />} />
-        <Route path="/education" element={<EducationCources />} />
+        <Route path="/education" element={<EducationCourses />} />
+        <Route path="/register" element={<Register />} />
 
-        {/* Home routes */}
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Home />} />
+        {/* Sub Components */}
+        <Route path="/countdowntimer" element={<CountdownTimer />} />
+        <Route path="/hometab" element={<HomeTab />} />
+        <Route path="/jobs" element={<JobsSection />} />
+        <Route path="/impactcards" element={<ImpactCards />} />
 
-        {/* Other pages */}
-        <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/ourServices" element={<OurServices />} />
-        <Route path="/history" element={<History />} />
-          <Route path="/register" element={<Register />} />
-
-        {/* Redirect + Other Components */}
+        {/* Redirect fallback */}
         
-        <Route path="/ImpactCards" element={<ImpactCards />} />
-        <Route path="/EducationCoures" element={<EducationCoures />} />
-
-
-          <Route path="/navbar" element={<Navbar />} />
-            <Route path="/home" element={<Home />} />
-
-
       </Routes>
     </Router>
   );
