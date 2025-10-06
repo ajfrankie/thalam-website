@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Main Home Page */}
+        
         <Route path="/" element={<Home />} />
 
         {/* Additional routes */}
