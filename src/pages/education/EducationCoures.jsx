@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./EducationCoures.css";
 
 // ✅ Logo import
-import logo from "../../assets/thalam.png";
+import logo from "../../assets/images/logo.png";
 
 // ✅ Import images
-import a1Image from "../../assets/a1.jpg";
-import a2Image from "../../assets/a2.jpg";
-import a4Image from "../../assets/a4.jpg";
+import education1image from "../../assets/images/education1.jpg";
+import education2image from "../../assets/images/education2.jpg";
+import education3image from "../../assets/images/education3.jpg";
 
 const educationData = [
   {
@@ -18,7 +18,7 @@ const educationData = [
       "Founded in 2018, Thalam Organization has been creating opportunities for youth in Trincomalee to learn, lead, and contribute to their communities. Through projects, volunteer programs, and partnerships, we aim to inspire the next generation of leaders.",
       "Founded in 2018, Thalam Organization has been creating opportunities for youth in Trincomalee to learn, lead, and contribute to their communities. Through projects, volunteer programs, and partnerships, we aim to inspire the next generation of leaders."
     ],
-    image: a1Image,
+    image: education1image,
     reverse: true,
   },
   {
@@ -28,7 +28,7 @@ const educationData = [
       "We look for motivated individuals who want to contribute to social projects and community development. The role includes planning, coordination, and close teamwork to deliver measurable impact.",
       "We look for motivated individuals who want to contribute to social projects and community development. The role includes planning, coordination, and close teamwork to deliver measurable impact."
     ],//paragraphs
-    image: a2Image,
+    image: education2image,
     reverse: false,
   },
   {
@@ -38,7 +38,7 @@ const educationData = [
       "Join our friendly team. You will work on outreach, training sessions, and creating resources that help youth gain leadership skills and practical experience.",
       "Join our friendly team. You will work on outreach, training sessions, and creating resources that help youth gain leadership skills and practical experience."
     ],
-    image: a4Image,
+    image: education3image,
     reverse: true,
   },
 ];

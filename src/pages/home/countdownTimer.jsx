@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./CountdownTimer.css";
-import a12Image from "../../assets/a12.png"; // சரியான path கொடு
+import countdowntimer1image from "../../assets/images/countdownTimer1.png";
 
 const CountdownTimer = () => {
   const [time, setTime] = useState({
@@ -57,7 +57,7 @@ const CountdownTimer = () => {
 
         {/* Decoration image on the right */}
         <div className="countdown-decoration">
-          <img src={a12Image} alt="decoration" className="decoration-img" />
+          <img src={countdowntimer1image} alt="decoration" className="decoration-img" />
         </div>
 
         <button className="countdown-btn">More info.....</button>
