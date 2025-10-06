@@ -60,7 +60,7 @@
   align-items: center;
 }
 
-
+/* Card inside */
 .register-card {
   width: 533px;
   height: 845px;
@@ -85,7 +85,7 @@
   color: #555;
   text-align: left;
 }
-
+/* Card Logo inside */
 
 .card-logo {
   position: absolute;
@@ -96,6 +96,7 @@
 }
 
 
+/* Form */
 .register-form {
   display: flex;
   flex-direction: column;

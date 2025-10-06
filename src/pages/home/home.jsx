@@ -9,7 +9,7 @@ const Home = () => {
     <div className="home-section">
       <div className="container">
         <div className="content-wrapper">
-       
+          {/* Left side text */
           <div className="text-content">
             <h1>Thalam <br />Organization</h1>
             <p>

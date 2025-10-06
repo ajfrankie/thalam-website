@@ -19,7 +19,8 @@ function Register() {
 </div>
 
 
-      
+     
+  <div className="register-box"> 
       <div className="register-box">
         <div className="register-card">
          
@@ -31,7 +32,8 @@ function Register() {
                 details.
               </p>
             </div>
-               /* Form */
+
+               /* Form *
             <form className="register-form">
               <input type="text" placeholder="Name" required />
               <input type="email" placeholder="Email" required />
@@ -41,7 +43,6 @@ function Register() {
               <input type="text" placeholder="City" />
               <input type="text" placeholder="Country" />
               <textarea placeholder="Message" rows="4" required></textarea>
-             
               <div className="btn-container">
                 <button type="submit" className="register-btn">
                   REGISTER
