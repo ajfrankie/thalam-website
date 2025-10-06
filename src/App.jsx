@@ -1,18 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
- 
 
+// ✅ Main Pages
 import Home from "./pages/home";
-import Testimonial from "./pages/home/testimonial";
-import OurServices from "./pages/history/ourServices";
-import History from "./pages/history/history";
-
-// Home will auto-load from pages/home/index.jsx
-import Home from "./pages/home";  
- 
-
-// sub components for direct routes
 import Testimonial from "./pages/home/Testimonial";
+import OurServices from "./pages/history/OurServices";
+import History from "./pages/history/History";
+
+// ✅ Sub Components for Direct Routes
 import CountdownTimer from "./pages/home/CountdownTimer";
 import HomeTab from "./pages/home/HomeTab";
 
@@ -20,16 +15,16 @@ function App() {
   return (
     <Router>
       <Routes>
-
-        {/* Home page */}
-        <Route path="/home" element={<Home />} />
-
         {/* Main Home Page */}
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
 
-
-        {/* Direct routes if needed */}
+        {/* Other Pages */}
         <Route path="/testimonial" element={<Testimonial />} />
+        <Route path="/ourservices" element={<OurServices />} />
+        <Route path="/history" element={<History />} />
+
+        {/* Direct Sub Routes */}
         <Route path="/countdowntimer" element={<CountdownTimer />} />
         <Route path="/hometab" element={<HomeTab />} />
       </Routes>
