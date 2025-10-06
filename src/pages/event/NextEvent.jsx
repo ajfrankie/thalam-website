@@ -1,7 +1,7 @@
 // NextEvent.jsx
 import React from "react";
 import "./NextEvent.css";
-import DecorationImg from "../../assets/12.png"; // correct path
+import logo from "../../assets/images/logo.png"; // correct path
 
 const NextEvent = () => {
   return (
@@ -17,7 +17,7 @@ const NextEvent = () => {
 
         {/* Right decoration image */}
         <div className="countdown-decoration">
-          <img src={DecorationImg} alt="Decoration" className="decoration-img" />
+          <img src={logo} alt="Decoration" className="decoration-img" />
         </div>
       </div>
     </div>
