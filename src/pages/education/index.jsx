@@ -3,7 +3,7 @@ import React from "react";
 
 import Navbar from "../../components/navbar";
 import EducationCoures from "./EducationCoures";
-import Footer from "../../components/Footer/Footer"; // Footer.jsx
+import Footer from "../../components/Footer/Footer"; 
 
 const Education = () => {
   return (
