@@ -10,14 +10,20 @@ import Event from "../pages/event";
 
 
 
+
+
 function AppRoutes() {
   return (
     <Router>
       <Routes>
-        {/* "/" path la Home component render aagum */}
+       
         <Route path="/Home" element={<Home />} />
         <Route path="/Education" element={<Education />} />
         <Route path="/Event" element={<Event />} />
+        
+        
+
+
         
       </Routes>
     </Router>

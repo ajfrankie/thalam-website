@@ -11,3 +11,4 @@ function App() {
 }
 
 export default App;
+ {/* "/" path la Home component render aagum */}

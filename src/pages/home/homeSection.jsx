@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './homeSection .css';
-import logo from "../../assets/images/logo.png"; // லோகோ image import
+import logo from "../../assets/images/logo.png"; 
 
 const Homesection = () => {
   return (
