@@ -1,18 +1,33 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import ImpactCards from "../home/ImpactCards"; // path must match exactly
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
-function AppRouters() {
+// Home (index.jsx) matthum import pannunga
+import Home from "../pages/Home";       
+import Education from "../pages/Education";
+import Event from "../pages/event";
+
+
+
+
+
+
+function AppRoutes() {
   return (
-    <Routes>
-      {/* Home route */}
-      <Route path="/" element={<ImpactCards />} />
+    <Router>
+      <Routes>
+       
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Education" element={<Education />} />
+        <Route path="/Event" element={<Event />} />
+        
+        
 
-      {/* Example additional routes */}
-      {/* <Route path="/about" element={<About />} /> */}
-      {/* <Route path="/contact" element={<Contact />} /> */}
-    </Routes>
+
+        
+      </Routes>
+    </Router>
   );
 }
-// AppRouters.jsx
-export default AppRouters;
+
+export default AppRoutes;
