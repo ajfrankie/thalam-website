@@ -9,7 +9,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <nav className="navbar">
-      {/* Logo Section */}
+   
       <div className="logo">
         <img src={logo} alt="logo" className="logo-img" />
         <span className="logo-text">THALAM</span>
