@@ -2,23 +2,21 @@ body {
     background-color: #181619;
     padding: 20px;
     font-family: 'Syne', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     min-height: 100vh;
 }
 
 .testimonial-section {
     background-color: #181619;
     padding: 60px 0;
-    width: 1390px;
-    height: 581.85px;
+    /* full width or needed width */
     margin: 0 auto;
-    border-radius: 50px;
+    border-radius: 0;  /* big border radius remove */
     overflow: visible;
     text-align: center;
-    perspective: 1200px;
+    perspective: none; /* optional */
 }
+
 
 .testimonial-header {
     display: flex;
@@ -33,6 +31,7 @@ body {
     font-weight: 700;
     margin: 0;
     color: #DEDEED;
+    text-align: right;
 }
 
 .testimonial-navigation {
@@ -67,12 +66,13 @@ body {
 
 .testimonial-container {
     display: flex;
-    justify-content: center;
+    justify-content: center;  /* center all 3 cards */
     align-items: center;
-    gap: 0px;
+    gap: 30px; /* spacing between cards */
     flex-wrap: nowrap;
     position: relative;
 }
+
 
 
 .testimonial-card {
@@ -91,10 +91,7 @@ body {
     position: relative;
 }
 
-.testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
+
 
 .testimonial-card-black {
     background-color: #181619;
@@ -102,6 +99,7 @@ body {
     border: 1px solid #DEDEED;
     z-index: 2;
     transform-style: preserve-3d;
+     margin-left: -10px;
 }
 
 

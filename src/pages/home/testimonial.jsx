@@ -59,8 +59,7 @@ const Testimonial = () => {
 
   return (
     <section className="testimonial-section">
-      <div className="container d-flex flex-column justify-content-center align-items-center">
-        
+     
         {/* Header */}
         <div className="testimonial-header d-flex justify-content-between align-items-center w-100 mb-4">
           <h2 className="text-white">What Past Attendees Say</h2>
@@ -92,7 +91,7 @@ const Testimonial = () => {
           })}
         </div>
 
-      </div>
+    
     </section>
   );
 };

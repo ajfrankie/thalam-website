@@ -1,46 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
-import Home from "./pages/home";
-import Testimonial from "./pages/home/testimonial";
-import OurServices from "./pages/history/ourServices";
-import History from "./pages/history/history";
-<<<<<<< Updated upstream
-
-import ImpactCards from "./components/impact/ImpactCards";
-import EducationCoures from "./pages/education/EducationCoures";
-import Navbar from "./components/navbar/";
-import Home from "./pages/home/home/";
-=======
-import Footer from "./components/Footer";
-import "@fortawesome/fontawesome-free/css/all.min.css";
->>>>>>> Stashed changes
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        {/* Home routes */}
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Home />} />
-
-        {/* Other pages */}
-        <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/ourServices" element={<OurServices />} />
-        <Route path="/history" element={<History />} />
-<<<<<<< Updated upstream
-
-        {/* Redirect + Other Components */}
-        
-        <Route path="/ImpactCards" element={<ImpactCards />} />
-        <Route path="/EducationCoures" element={<EducationCoures />} />
-          <Route path="/navbar" element={<Navbar />} />
-            <Route path="/home" element={<Home />} />
-=======
-        <Route path="/Footer" element={<Footer />} />
->>>>>>> Stashed changes
-      </Routes>
-    </Router>
+   
+      <AppRoutes />
+   
   );
 }
 

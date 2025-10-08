@@ -6,17 +6,21 @@
   color: white;
   height: 533px;
   width: 1240px;
-  top: 150px;
-  left: 112px;
   border-radius: 50px;
 
+  /* 👇 Center align */
+  margin: 20px auto 0 auto;  /* top:150px, auto horizontal center */
+  position: relative;
 }
 
 /* Mobile responsive */
-@media (max-width: 768px) { /*max*/
+@media (max-width: 768px) {
   .footer {
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    width: 90%;              /* 👈 make it responsive */
+    height: auto;            /* 👈 auto height for mobile */
+    margin: 50px auto;       /* 👈 center even on mobile */
   }
 }

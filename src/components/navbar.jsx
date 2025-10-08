@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.jpeg";   // 👈 correct import (src/assets/logo.png irundha)
+import logo from "../assets/images/logo.png";
+
+
 
 import "./Navbar.css";
 
