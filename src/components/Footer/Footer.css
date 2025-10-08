@@ -1,15 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+  background-color: #000; /* 🔹 body background black */
+  color: #fff;            /* optional: default text white for contrast */
+}
+
+/* Footer styling */
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #dedee0; /* full footer background */
+  background-color: white; /* 🔹 footer background black */
   color: white;
   height: 533px;
   width: 1240px;
   border-radius: 50px;
 
-  /* 👇 Center align */
-  margin: 20px auto 0 auto;  /* top:150px, auto horizontal center */
+  margin: 20px auto 0 auto;  /* top margin 20px, center horizontally */
   position: relative;
 }
 
@@ -19,8 +26,8 @@
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    width: 90%;              /* 👈 make it responsive */
-    height: auto;            /* 👈 auto height for mobile */
-    margin: 50px auto;       /* 👈 center even on mobile */
+    width: 90%;              /* responsive width */
+    height: auto;            /* auto height for mobile */
+    margin: 50px auto;       /* center on mobile */
   }
 }

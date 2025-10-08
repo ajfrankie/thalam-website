@@ -5,7 +5,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import Home from "../pages/Home";       
 import Education from "../pages/Education";
-import Event from "../pages/event";
+import History from "../pages/history";
+
+
 
 
 
@@ -19,7 +21,9 @@ function AppRoutes() {
        
         <Route path="/Home" element={<Home />} />
         <Route path="/Education" element={<Education />} />
-        <Route path="/Event" element={<Event />} />
+         <Route path="/history" element={<History />} />
+       
+       
         
         
 
