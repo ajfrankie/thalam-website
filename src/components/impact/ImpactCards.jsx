@@ -2,8 +2,9 @@ import React from 'react';
 import "./ImpactCards.css";
 import impactcards1image from "../../assets/images/impactcards1.jpg";
 import impactcards2image from "../../assets/images/impactcards2.jpg";
-import impactcards3image from "../../assets/images/impactcards3image.jpg";
-import impactcards4image from "../../assets/images/impactcards4image.jpg";//image
+import impactcards3image from "../../assets/images/impactcards3.jpg";
+import impactcards4image from "../../assets/images/impactcards4.jpg";
+//image
 
 const ImpactCards = () => {
   return (

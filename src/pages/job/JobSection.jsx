@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./Jobs.css";
 
-import image1 from "../../assets/images/1.jpg";
-import image2 from "../../assets/images/2.jpg";
-import Jobimage from "../../assets/images/Job.png"; // logo
-import image4 from "../../assets/images/4.jpg"; 
+import image1 from "../../assets/images/job1.jpg";
+import image2 from "../../assets/images/job2.jpg";
+import image3 from "../../assets/images/job3.jpg";
+import logoimage from "../../assets/images/logo.png"; // logo
 
-const jobsData = [   
+const jobsData = [
   {
     id: 1,
     title: "Job title",
@@ -35,12 +35,12 @@ const jobsData = [
       "Join our friendly team. You will work on outreach, training sessions, and creating resources that help youth gain leadership skills and practical experience.",
       "Join our friendly team. You will work on outreach, training sessions, and creating resources that help youth gain leadership skills and practical experience."
     ],
-    image: image4,
+    image: image3,
     reverse: true,
   },
 ];
 
-export default function JobsSection() {
+export default function JobSection() {
   const [activeIndexes, setActiveIndexes] = useState(jobsData.map(() => 0));
 
   const handleDotClick = (jobId, index) => {
@@ -55,7 +55,7 @@ export default function JobsSection() {
         <div className="jobs-header-text">Jobs</div>
         <div className="jobs-header-logo">
           <img
-            src={Jobimage}
+            src={logoimage}
             alt="Logo"
             className="logo-image"
             onError={(e) => {
@@ -68,10 +68,7 @@ export default function JobsSection() {
 
       <div className="jobs-list">
         {jobsData.map((job, jobIndex) => (
-          <article
-            key={job.id}
-            className={`jobs-card ${job.reverse ? "reverse" : ""}`}
-          >
+          <article key={job.id} className={`jobs-card ${job.reverse ? "reverse" : ""}`}>
             <div className="job-image-wrapper">
               <img
                 src={job.image}
@@ -86,12 +83,9 @@ export default function JobsSection() {
 
             <div className="job-content">
               <h3 className={`job-title job-title-${job.id}`}>{job.title}</h3>
-
               <div className="job-desc-wrapper">
                 {job.description.map((para, idx) => (
-                  <p key={idx} className={`job-desc job-desc-${job.id}`}>
-                    {para}
-                  </p>
+                  <p key={idx} className={`job-desc job-desc-${job.id}`}>{para}</p>
                 ))}
               </div>
 
@@ -100,9 +94,7 @@ export default function JobsSection() {
                   {job.description.map((_, index) => (
                     <span
                       key={index}
-                      className={`dot ${
-                        activeIndexes[jobIndex] === index ? "active" : ""
-                      }`}
+                      className={`dot ${activeIndexes[jobIndex] === index ? "active" : ""}`}
                       onClick={() => handleDotClick(job.id, index)}
                     ></span>
                   ))}

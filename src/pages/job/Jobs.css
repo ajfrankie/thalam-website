@@ -7,6 +7,7 @@
 
 .body {
   font-family: syne;
+  
 
 }
 }
@@ -184,7 +185,7 @@
 .dot {
   width: 60px;
   height: 60px;
-  background-color: #dedeed;  
+  background-color: #dedeed;
   border-radius: 100%;
   cursor: pointer;
   top: 2023px;
