@@ -35,3 +35,5 @@ function AppRoutes() {
 }
 
 export default AppRoutes;
+
+/* 🔹 Added Syne font */

@@ -1,3 +1,4 @@
+// src/pages/home/index.jsx
 import React from "react";
 import "./historySection.css";
 import education2 from "../../assets/images/education2.jpg";

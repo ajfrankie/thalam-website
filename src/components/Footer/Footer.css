@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Syne', sans-serif;
   background-color: #000; /* 🔹 body background black */
-  color: #fff;            /* optional: default text white for contrast */
+  color: #fff;            
 }
 
 /* Footer styling */
