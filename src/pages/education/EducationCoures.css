@@ -22,6 +22,7 @@
   padding: 40px;
   margin-bottom: 60px;
   margin-top: 40px;
+  top: 50px;
 }
 
 .education-title {
@@ -29,6 +30,9 @@
   font-weight: 700;
   line-height: 300%;
   height:300px
+  
+ 
+  
   
   
   
@@ -39,7 +43,8 @@
   height: 750px;
   object-fit: contain;
   border-radius: 355px;
-  opacity: 31%;
+  opacity: -20%;
+  filter: brightness(60%) saturate(70%);
 }
 
 /* Education Cards Section */
@@ -88,6 +93,9 @@
   color: #fff;
   margin-bottom: 20px;
   line-height: 100%;
+  position: relative;
+  z-index: 2;
+  top: -80px;
 }
 
 .education-desc {
@@ -97,6 +105,8 @@
   font-size: 22px;
   font-weight: 400;
   text-align: justify;
+  position: relative;
+  z-index: 2;
 }
 
 /* Footer Dots */
