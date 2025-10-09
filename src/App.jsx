@@ -1,5 +1,9 @@
 import React from "react";
 
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";//code
+import EducationCoures from "./pages/education/EducationCoures";//code
+
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Component name should start with uppercase
@@ -8,6 +12,7 @@ import Job from "./pages/job";
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import EducationCoures from "./pages/education/EducationCoures";
+
 import ImpactCards from "./components/impact/ImpactCards";//code
 
 
