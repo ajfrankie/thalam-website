@@ -1,22 +1,28 @@
 import React from "react";
 import "./register.css";
-import ThalamLogo from "../../assets/thalamlogo.png";
+import ThalamLogo from "../../assets/thalamlogo.png"; 
 
 function Register() {
   return (
     <div className="register-section">
-      {/* Header */}
+      
       <div className="register-header">
-        <h1>
-          <span>Register</span>
-          <span> With Us</span>
-        </h1>
-        <img src={ThalamLogo} alt="Thalam Logo" className="register-logo" />
-      </div>
+  <h1>
+    <span>Register</span>
+    <span>With Us</span>
+  </h1>
+  <img
+    src={ThalamLogo}
+    alt="Thalam Logo"
+    className="register-logo"
+  />
+</div>
 
-      <div className="register-box">
+
+      
+      <div className="register-box"> 
         <div className="register-card">
-          {/* Form Side */}
+         
           <div className="form-side">
             <div className="card-header">
               <h3>GET IN TOUCH</h3>
@@ -26,7 +32,6 @@ function Register() {
               </p>
             </div>
 
-            {/* Form */}
             <form className="register-form">
               <input type="text" placeholder="Name" required />
               <input type="email" placeholder="Email" required />
@@ -45,8 +50,10 @@ function Register() {
             </form>
           </div>
 
-          {/* Image Side */}
-          <div className="image-side">{/* Add image if needed */}</div>
+       
+          <div className="image-side">
+            
+          </div>
         </div>
       </div>
     </div>
