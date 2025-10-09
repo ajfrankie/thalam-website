@@ -1,17 +1,23 @@
-// AppRouters.jsx
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "../pages/home";
-
-
-function AppRouters() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+ 
+import Register from "../pages/auth/register";
+function AppRoutes() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+    <Router>
+      <Routes>
+
+        
+        
+          
+          <Route path="/register" element={<Register />} />
+       
+       
+
+
+      </Routes>
+    </Router>
   );
 }
 
-export default AppRouters;
+export default AppRoutes;
