@@ -3,10 +3,7 @@ import "./Jobs.css";
 
 import image1 from "../../assets/images/job1.jpg";
 import image2 from "../../assets/images/job2.jpg";
-
-import Jobimage from "../../assets/images/logo.png"; // logo
 import image3 from "../../assets/images/job3.jpg"; 
-
 import logoimage from "../../assets/images/logo.png"; // log
 
 
