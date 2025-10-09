@@ -97,7 +97,13 @@
   object-fit: contain;
   margin-bottom: 10px;
   margin-top: 40px;
+
+  /* 🔹 Added new styling */
+  opacity: 0.40;              /* light color look */
+  transform: scale(1.2) translateX(100px); /* bigger + move right */
+  transition: all 0.3s ease; /* smooth animation if resized */
 }
+
 
 .thalam-logo-box .tamil-text {
   font-size: 34px;
