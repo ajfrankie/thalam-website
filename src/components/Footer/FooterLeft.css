@@ -1,11 +1,18 @@
 footer-left {
   background-color: #e5e5e5; /* light gray */
   padding: 40px;
-  flex: 1;
+  height: 533px;
+  margin-left: 92px;
+  border-radius: 50px;
+  
+  
 }
 
 body {
   font-family: syne;
+  padding: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 
