@@ -1,7 +1,7 @@
 body {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             min-height: 100vh;
             margin: 0;
             background: #000000;
@@ -11,11 +11,13 @@ body {
             width: 100%;
             padding: 40px 20px;
             word-spacing: normal; 
-            gap:60px ;
+            gap:40px ;
             box-sizing: border-box;
             font-family: 'Syne';
             background: #000000;
             color: #ffffff;
+            
+             
           }
           .impact-container h2 {
             text-align: left;
@@ -25,8 +27,14 @@ body {
             row-gap: 10;
             color: #ffffff;
             font-family: 'Syne';
-            font-weight: bold;
-            
+            font-weight: 700;
+            margin-right: 70px;
+            margin-top: 60px;
+            width: 925px;
+            height: 240px;
+            top: 1895px;
+            left: 134px;
+            transform: translateX(50px);
           }
           .impact-grid {
             display: flex;
