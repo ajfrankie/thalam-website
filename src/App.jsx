@@ -1,4 +1,5 @@
 import React from "react";
+
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import EducationCoures from "./pages/education/EducationCoures";
 import ImpactCards from "./components/impact/ImpactCards";//code
@@ -12,7 +13,18 @@ function App() {
         <Route path="/impact" element={<ImpactCards />} />
       </Routes>
     </Router>
+
+
+import AppRoutes from "./routes/AppRoutes";
+
+function App() {
+  return (
+   
+      <AppRoutes />
+   
+
   );
 }
 
 export default App;
+ 
