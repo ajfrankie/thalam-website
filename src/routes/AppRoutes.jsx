@@ -1,20 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 // Import only the needed components
-import JobSection from "../pages/job/JobSection";
-import Footer from "../components/footer/Footer";
+import Job from "../pages/job";
+
+import EducationCoures from "../pages/education/EducationCoures";
+import ImpactCards from "../components/impact/ImpactCards";
 
 function AppRoutes() {
   return (
     <Router>
       <Routes>
-        {/* Default route */}
-        <Route path="/" element={<Navigate to="/job" replace />} />
+        {/* Redirect root "/" to /impact */}
+        <Route path="/" element={<Navigate to="/impact" replace />} />
 
-        {/* Job & Footer routes */}
-        <Route path="/job" element={<JobSection />} />
-        <Route path="/footer" element={<Footer />} />
+        {/* Main routes */}
+        <Route path="/job" element={<Job />} />
+        
+        <Route path="/education" element={<EducationCoures />} />
+        <Route path="/impact" element={<ImpactCards />} />
       </Routes>
     </Router>
   );
