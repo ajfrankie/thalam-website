@@ -9,7 +9,11 @@
     padding: 60px 0;
 }
 
+
   {/* Left side text */}
+
+  
+
 .container {
     width: 1240px; 
     height: 804px;
@@ -162,9 +166,16 @@
     .thalam-logo-box img {
         width: 300px;
         height: auto;
+
         margin-right: 0;
         margin-top: 0;
     }
+
+
+        margin-right: 0; /* left-align all text */
+        margin-top: 0;
+    }
+      
 
     .thalam-logo-box .english-text,
     .thalam-logo-box .tamil-text {

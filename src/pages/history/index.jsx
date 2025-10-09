@@ -1,15 +1,17 @@
-// src/pages/home/index.jsx
+
 import React from "react";
 
 import Navbar from "../../components/navbar";
-import EducationCoures from "./EducationCoures";
+import HistorySection from "./historySection";
 import Footer from "../../components/Footer/Footer"; 
+import OurServices from "./ourServices";
 
-const Education = () => {
+const History = () => {
   return (
     <div className="home-page">
       <Navbar/>
-      <EducationCoures />
+      <HistorySection />
+      <OurServices/>
       
       <Footer />
     </div>
@@ -17,4 +19,4 @@ const Education = () => {
 };
 
 
-export default Education;
+export default History;

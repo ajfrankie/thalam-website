@@ -1,16 +1,32 @@
 /* Navbar Styles */
 .navbar {
   display: flex;
+
   justify-content: center; /* center-align all navbar items */
+
+  justify-content: center; 
+
+  justify-content: space-between; /* 👈 logo left, others right */
+
+
   align-items: center;
   background: black;
   padding: 12px 40px;
   width: 100%;
   box-sizing: border-box;
+
   gap: 300px; 
 }
 
 /* Logo */
+
+
+  gap: 300px; 
+
+}
+
+/* Logo Section */
+
 .logo {
   display: flex;
   align-items: center;
@@ -21,7 +37,14 @@
   width: 74px;
   height: 75px;
   border-radius: 50%;
+
 }
+
+
+  border: 2px solid red; /* 👈 test border */
+}
+
+
 
 .logo-text {
   font-size: 50px;

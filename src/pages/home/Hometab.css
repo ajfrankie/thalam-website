@@ -1,0 +1,153 @@
+.hometab {
+  padding: -100px 20px;
+  background-color: #000;
+  font-family: 'Syne', sans-serif;
+  color: #fff;
+}
+
+/* Logo Strip */
+/* Logo Strip */
+.logo-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px; /* 🟢 gap added between logos */
+  padding-bottom: 30px;
+  border-bottom: 1px solid #444;
+  margin-bottom: 40px;
+}
+
+.logo {
+  height: 40px; /* slightly bigger for visibility */
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* 🟢 smooth zoom effect on hover */
+}
+
+
+/* Two Column Layout */
+.two-column-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/* Left Side - Our Objectives */
+/* Left Side - Our Objectives */
+.left-card .card {
+  width: 100%;
+  max-width: 400px; /* 🔼 Increased from 400px to 480px */
+  height: auto;
+  max-height: 620px; /* 🔼 Increased height from 569.43px to 620px */
+  border-radius: 50px;
+  padding:1px;
+}
+
+
+.left-card .card h2 {
+  font-size: 40px;
+}
+
+/* புல்லட் குறிகளை நீக்குவதற்கான புதிய மற்றும் துல்லியமான திருத்தம் */
+.left-card .card ul {
+  list-style-type: none; /* புல்லட் குறிகளை நீக்குகிறது */
+  padding-left: 0;      /* இயல்பாக list-ஆல் வரும் இடதுபுற padding-ஐ நீக்குகிறது */
+  margin: 0;            /* மேலதிக margin-ஐ நீக்குகிறது */
+}
+
+.left-card .card li {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Right Side - Mission + Scope */
+.right-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Our Mission Card */
+.right-stack .card.red {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 40px;
+}
+
+.right-stack .card.red h2 {
+  font-size: 40px;
+}
+
+.right-stack .card.red p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Our Scope Card */
+.right-stack .card.gray {
+  width: 600px;
+  height: 258px;
+  border-radius: 50px;
+}
+
+.right-stack .card.gray h2 {
+  font-size: 40px;
+}
+
+.right-stack .card.gray p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Common Card Styling */
+.card {
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Colors */
+.card.red {
+  background-color: #8B030c;
+}
+
+
+
+.card.gray {
+  background-color: #c3c3c3;
+  color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .left-card .card, .right-stack .card {
+    width: 95%;
+    margin: auto;
+  }
+
+  .left-card .card,
+  .right-stack .card {
+    width: 90% !important;
+    height: auto !important;
+    margin: auto;
+  }
+
+  .logo-strip {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .left-card .card h2,
+  .right-stack .card h2 {
+    font-size: 32px !important;
+  }
+
+  .left-card .card li,
+  .right-stack .card p {
+    font-size: 18px !important;
+  }
+}

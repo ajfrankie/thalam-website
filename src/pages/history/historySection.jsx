@@ -1,6 +1,7 @@
+// src/pages/home/index.jsx
 import React from "react";
-import "./history.css";
-import historyimage1 from "../../assets/images/history1.jpg";
+import "./historySection.css";
+import education2 from "../../assets/images/education2.jpg";
 import logo from "../../assets/images/logo.png"; 
 
 export default function History() {
@@ -9,7 +10,7 @@ export default function History() {
       <div className="history-title-box">
         <h2 className="history-title">History</h2>
 
-        //this is paragraph 
+        
 
         
         <div className="jobs-header-logo">
@@ -39,13 +40,13 @@ export default function History() {
           </p>
         </div>
         <div className="history-image-box">
-          <img src={historyimage1} alt="History of Thalam Organization" className="history-image" />
+          <img src={education2} alt="History of Thalam Organization" className="history-image" />
         </div>
       </div>
 
       <div className="history-content-box second-box">
         <div className="history-image-box">
-          <img src={historyimage1} alt="History of Thalam Organization" className="history-image" />
+          <img src={education2} alt="History of Thalam Organization" className="history-image" />
         </div>
         
         <div className="history-text-section">

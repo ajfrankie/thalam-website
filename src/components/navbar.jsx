@@ -1,19 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import logo from "../assets/logo.jpeg";   // 👈 correct import (src/assets/logo.png irundha)
+
+
+import logo from "../assets/images/logo.png";   
+
+
 
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
+
       
+
+   
+
       <div className="logo">
         <img src={logo} alt="logo" className="logo-img" />
         <span className="logo-text">THALAM</span>
       </div>
 
+
       {/* Nav Links */}
+
+      
+
       <ul className="nav-links">
         <li>
           <Link to="/" className="nav-btn">Home</Link>
@@ -35,4 +49,8 @@ function Navbar() {
   );
 }
 
+
 export default Navbar;
+
+export default Navbar;
+

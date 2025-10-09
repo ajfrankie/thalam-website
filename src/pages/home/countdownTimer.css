@@ -1,0 +1,175 @@
+/* Body styling */
+body {
+  margin: 0;
+  min-height: 100vh;        /* 🔁 changed from height: 100vh */
+  background-color: #000;   
+  font-family: 'Syne', sans-serif;
+  overflow-x: hidden;       /* to prevent horizontal scroll */
+}
+
+/* Container for event section */
+.next-event-section {
+  width: 1240px;
+  margin: 60px auto 50px;
+  position: relative;
+  text-align: left;  
+}
+
+.next-event-heading {
+  position: relative;       /* 🔁 removed absolute positioning */
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-bottom: 40px;      /* space before the box */
+}
+
+/* Countdown box */
+.countdown-frame {
+  background: #1c1a1a;
+  color: #fff;
+  width: 100%;
+  max-width: 1240px;
+  height: auto;             /* 🔁 changed from fixed 442px */
+  border-radius: 50px;
+  position: relative;
+  overflow: visible;        /* 🔁 make sure not hidden */
+  padding: 40px 20px;
+  margin: 0 auto;   
+  min-height: 500px;        /* center align */
+}
+
+/* Background image container */
+.background-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.background-image-container .background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+/* Decoration image */
+.countdown-decoration {
+  position: absolute;
+
+  top: 200px;
+  bottom: 0;
+
+  top: 10px;
+
+  right: 0;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.decoration-img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Countdown content */
+.countdown-title,
+.countdown-time,
+.countdown-labels,
+.countdown-btn {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Early bird text */
+/* Remove the “right: 400px;” positioning */
+
+.countdown-title {
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.countdown-time {
+  position: absolute;       /* instead of relative */
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  font-size: 200px;
+  line-height: 1;
+
+  color: #fff;
+  text-align: center;
+  width: auto;              /* உங்களுக்கே ஏற்ப width or max-width */
+  z-index: 2;
+}
+
+/* Also adjust labels so that they are under the centered timer */
+
+  text-align: left;
+  width: 100%;
+  color: #fff;
+}
+.countdown-labels {
+  position: absolute;
+  top: calc(50% + 110px);   /* adjust the vertical offset: timer height / 2 + spacing */
+  left: 32%;
+  transform: translateX(-50%);
+  display: flex;
+
+  gap: 120px;
+  z-index: 2;
+}
+
+/* If needed, adjust the title above timer too */
+.countdown-title {
+  position: absolute;
+  top: calc(50% - 150px);    /* above the timer by some amount */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  text-align: center;
+  z-index: 2;
+
+  justify-content: flex-start; /* 🔹 flex-start for left alignment */
+  margin-top: 15px;
+  gap: 250px;
+  width: 100%;
+
+}
+
+
+.countdown-labels span {
+  color: #fff;
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+
+/* Button */
+.countdown-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  background: #ffffff;
+  color: #000000;
+  padding: 8px 25px;
+  border-radius: 30px;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
