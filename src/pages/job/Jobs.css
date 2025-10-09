@@ -8,8 +8,7 @@
 
 .body {
   font-family: syne;
-
-}
+  }
 }
 
 .jobs-header {
@@ -66,12 +65,11 @@
 }
 
 .jobs-card.reverse {
-  flex-direction: row-reverse; /* image right, text left */
+  flex-direction: row-reverse; 
 }
 
-.job-image-wrapper {
-  flex: 1;
-}
+
+
 
 .job-image {
   width: 531px;
@@ -141,7 +139,7 @@
   width: 500px;
   height: 140px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
 }
 
@@ -166,7 +164,7 @@
   padding-bottom: 1px;
 }
 
-/* Job Footer Dots */
+
 
 .job-footer {
   flex-direction: column;
@@ -178,7 +176,7 @@
   display: flex;
   justify-content: center;
   gap: 15px;               
-  margin-top: 10px; 
+  margin-top: 40px; 
   margin-left: 550px; 
   position: absolute;      
 }
@@ -188,7 +186,7 @@
 .dot {
   width: 60px;
   height: 60px;
-  background-color: #dedeed;  
+  background-color: #dedeed;
   border-radius: 100%;
   cursor: pointer;
   top: 2023px;
@@ -209,9 +207,8 @@
   border-radius: 15px; /* Rounded corners for the 3rd card */
 }
 
-.third-layer .job-title {
-  color: #0073e6; 
-}
+
+
 
 .third-layer .job-desc-wrapper {
   font-style: italic; 
