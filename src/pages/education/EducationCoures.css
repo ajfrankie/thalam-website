@@ -47,7 +47,7 @@
   filter: brightness(60%) saturate(70%);
 }
 
-/* Education Cards Section */
+/* Education Cards section*/
 .education-list {
   display: flex;
   flex-direction: column;
