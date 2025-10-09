@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import "./EducationCoures.css";
 
-// ✅ Logo import
+
+// Logo
 import logo from "../../assets/images/logo.png";
+
+
+// Images
+
 
 
 import education1image from "../../assets/images/education1.jpg";
@@ -17,6 +22,7 @@ const educationData = [
       "Foundation and Vision Organization has been creating opportunities for youth. This enables them to learn, lead, and contribute to their communities. Through projects, volunteer programs, and mentorship, we aim to inspire the next generation of leaders.",
       "Founded in 2018, Thalam Organization has been creating opportunities for youth in Trincomalee to learn, lead, and contribute to their communities. Through projects, volunteer programs, and partnerships, we aim to inspire the next generation of leaders.",
       "Founded in 2018, Thalam Organization has been creating opportunities for youth in Trincomalee to learn, lead, and contribute to their communities. Through projects, volunteer programs, and partnerships, we aim to inspire the next generation of leaders."
+    
     ],
     image: education1image,
     reverse: true,
@@ -27,7 +33,7 @@ const educationData = [
     description: [
       "We look for motivated individuals who want to contribute to social projects and community development. The role includes planning, coordination, and close teamwork to deliver measurable impact.",
       "We look for motivated individuals who want to contribute to social projects and community development. The role includes planning, coordination, and close teamwork to deliver measurable impact."
-    ],//paragraphs
+    ],
     image: education2image,
     reverse: false,
   },
@@ -35,6 +41,7 @@ const educationData = [
     id: 3,
     title: "Course 03",
     description: [
+      
       "Join our friendly team. You will work on outreach, training sessions, and creating resources that help youth gain leadership skills and practical experience.",
       "Join our friendly team. You will work on outreach, training sessions, and creating resources that help youth gain leadership skills and practical experience."
     ],
@@ -43,7 +50,7 @@ const educationData = [
   },
 ];
 
-export default function EducationCoures() {
+export default function EducationCourses() {
   const [activeIndexes, setActiveIndexes] = useState(
     educationData.map(() => 0)
   );
@@ -56,7 +63,6 @@ export default function EducationCoures() {
 
   return (
     <section className="education-section">
-      {/* 🔹 Header with Logo + Title */}
       <div className="education-header">
         <h1 className="education-title">Education</h1>
         <img src={logo} alt="Logo" className="edu-logo" />
@@ -73,10 +79,6 @@ export default function EducationCoures() {
                 src={edu.image}
                 alt={edu.title}
                 className={`education-image education-image-${edu.id}`}
-                onError={(e) => {
-                  e.target.src =
-                    "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23222' /><text x='50%' y='50%' fill='%23fff' font-size='20' text-anchor='middle' alignment-baseline='middle'>Image</text></svg>";
-                }}
               />
             </div>
 
@@ -96,7 +98,7 @@ export default function EducationCoures() {
                 ))}
               </div>
 
-              {/* 🔹 Footer dots – last card only */}
+              {/* Footer dots – last card only */}
               {eduIndex === educationData.length - 1 && (
                 <div className="education-footer-dots">
                   {edu.description.map((_, index) => (

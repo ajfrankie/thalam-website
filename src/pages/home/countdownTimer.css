@@ -61,7 +61,12 @@ body {
 /* Decoration image */
 .countdown-decoration {
   position: absolute;
+
+  top: 200px;
+  bottom: 0;
+
   top: 10px;
+
   right: 0;
   width: 300px;
   display: flex;
@@ -85,6 +90,10 @@ body {
   z-index: 2;
 }
 
+
+/* Early bird text */
+/* Remove the “right: 400px;” positioning */
+
 .countdown-title {
   margin-top: 40px;
   font-size: 20px;
@@ -92,20 +101,53 @@ body {
 }
 
 .countdown-time {
+  position: absolute;       /* instead of relative */
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
   font-size: 200px;
   line-height: 1;
+
+  color: #fff;
+  text-align: center;
+  width: auto;              /* உங்களுக்கே ஏற்ப width or max-width */
+  z-index: 2;
+}
+
+/* Also adjust labels so that they are under the centered timer */
+
   text-align: left;
   width: 100%;
   color: #fff;
 }
-
 .countdown-labels {
+  position: absolute;
+  top: calc(50% + 110px);   /* adjust the vertical offset: timer height / 2 + spacing */
+  left: 32%;
+  transform: translateX(-50%);
   display: flex;
+
+  gap: 120px;
+  z-index: 2;
+}
+
+/* If needed, adjust the title above timer too */
+.countdown-title {
+  position: absolute;
+  top: calc(50% - 150px);    /* above the timer by some amount */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  text-align: center;
+  z-index: 2;
+
   justify-content: flex-start; /* 🔹 flex-start for left alignment */
   margin-top: 15px;
   gap: 250px;
   width: 100%;
+
 }
+
 
 .countdown-labels span {
   color: #fff;

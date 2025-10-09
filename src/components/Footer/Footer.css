@@ -15,6 +15,13 @@ body {
   height: 533px;
   width: 1240px;
   border-radius: 50px;
+  margin-left: 50px;
+  padding-left: 40px;
+
+
+}
+body {
+  background-color: black;
 
   margin: 20px auto 0 auto;  /* top margin 20px, center horizontally */
   position: relative;
