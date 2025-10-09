@@ -82,7 +82,7 @@
 /* 🔹 Background logo shape */
 .jobs-header-logo {
   position: absolute;
-  bottom: -250px;
+  bottom: -550px;
   left: 75%;
   transform: translateX(-50%);
   z-index: 0;
