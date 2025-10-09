@@ -43,7 +43,7 @@ const CountdownTimer = () => {
           
         </div>
 
-        <p className="countdown-title">Early Bird Pricing Ends In:</p>
+       
         <div className="countdown-time">
           <span>{String(time.days).padStart(2, "0")}</span>:
           <span>{String(time.hours).padStart(2, "0")}</span>:
