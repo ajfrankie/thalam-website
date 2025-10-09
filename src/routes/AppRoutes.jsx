@@ -1,18 +1,60 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import ImpactCards from "../home/ImpactCards"; // path must match exactly
 
-function AppRouters() {
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import EducationCoures from "./pages/education/EducationCoures";
+import ImpactCards from "./components/impact/ImpactCards";
+
+function App() {
   return (
-    <Routes>
-      {/* Home route */}
-      <Route path="/" element={<ImpactCards />} />
+    <Router>
+      <Routes>
+        {/* Default redirect */}
+        <Route path="/" element={<Navigate to="/impact" replace />} />//code
+        
+        {/* Routes */}
+        <Route path="/education" element={<EducationCoures />} />
+        <Route path="/impact" element={<ImpactCards />} />
 
-      {/* Example additional routes */}
-      {/* <Route path="/about" element={<About />} /> */}
-      {/* <Route path="/contact" element={<Contact />} /> */}
-    </Routes>
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+import Home from "../pages/Home";       
+import Education from "../pages/Education";
+import History from "../pages/history";
+
+
+
+
+
+
+
+
+function AppRoutes() {
+  return (
+    <Router>
+      <Routes>
+       
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Education" element={<Education />} />
+         <Route path="/history" element={<History />} />
+       
+       
+        
+        
+
+
+        
+
+      </Routes>
+    </Router>
   );
 }
-// AppRouters.jsx
-export default AppRouters;
+
+
+export default App;
+
+export default AppRoutes;
+
+/* 🔹 Added Syne font */
+
