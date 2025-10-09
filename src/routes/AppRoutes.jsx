@@ -1,18 +1,17 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import ImpactCards from "../home/ImpactCards"; // path must match exactly
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function AppRouters() {
+// ✅ Correct import path
+import Job from "../pages/job/Job";
+
+function App() {
   return (
-    <Routes>
-      {/* Home route */}
-      <Route path="/" element={<ImpactCards />} />
-
-      {/* Example additional routes */}
-      {/* <Route path="/about" element={<About />} /> */}
-      {/* <Route path="/contact" element={<Contact />} /> */}
-    </Routes>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Job />} />
+      </Routes>
+    </Router>
   );
 }
-// AppRouters.jsx
-export default AppRouters;
+
+export default App;
