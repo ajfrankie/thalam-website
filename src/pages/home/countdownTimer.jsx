@@ -37,13 +37,13 @@ const CountdownTimer = () => {
 
   return (
     <div className="next-event-section">
-      <h2 className="next-event-title">NEXT EVENT</h2>
+      <h2 className="next-event-heading">NEXT EVENT</h2>
       <div className="countdown-frame">
         <div className="background-image-container">
           
         </div>
 
-        <p className="countdown-title">Early Bird Pricing Ends In:</p>
+       
         <div className="countdown-time">
           <span>{String(time.days).padStart(2, "0")}</span>:
           <span>{String(time.hours).padStart(2, "0")}</span>:
