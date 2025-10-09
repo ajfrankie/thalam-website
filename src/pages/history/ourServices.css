@@ -3,7 +3,7 @@
   color: #fff;
   width: 1590px;
   height: 881.85px;
-  margin: 0 auto;
+  margin: 0 auto 80px auto; 
   padding: 40px;
   border-radius: 16px;
   text-align: center;
@@ -13,11 +13,14 @@
   justify-content: center;
 }
 
+
 .section-title {
-  font-size: 48px;
+  font-size: 100px;
   font-weight: 100;
   margin-bottom: 40px;
   text-align: left;
+  margin-left: 180px; /* Shift right by 100px */
+  font-family: 'Syne', sans-serif; /* 🔹 Added Syne font */
 }
 
 .services-grid {
@@ -50,22 +53,24 @@
 }
 
 .service-number {
-  font-size: 300px;
   font-family: "Syne", sans-serif;
-  background: linear-gradient(180deg, #8B030C 30%, rgba(26, 26, 26, 0) 75%);
+  font-weight: 100; /* Change to 900 */
+  font-size: 300px;
+  letter-spacing: -10px; /* More tighter */
+  background: linear-gradient(180deg, #8B030C 35%, rgba(26, 26, 26, 0) 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 1;
+  line-height: 0.8; /* Adjust line height */
   position: absolute;
-  bottom: -90px;
+  bottom: -50px;
   z-index: 0;
-  text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.5);
 }
 
 .service-card:nth-child(1) .service-number,
 .service-card:nth-child(2) .service-number {
   left: 0px;
+ 
 }
 
 .service-card:nth-child(1) .service-content,
@@ -73,11 +78,13 @@
   margin-left: auto;
   text-align: justify;
   align-self: flex-start;
+  
 }
 
 .service-card:nth-child(3) .service-number,
 .service-card:nth-child(4) .service-number {
   right: 80px;
+
 }
 
 .service-card:nth-child(3) .service-content,
