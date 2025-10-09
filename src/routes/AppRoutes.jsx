@@ -1,6 +1,24 @@
 import React from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+ 
+import Register from "../pages/auth/register";//code
+function AppRoutes() {
+  return (
+    <Router>
+      <Routes>
+
+        
+        
+          
+          <Route path="/register" element={<Register />} />
+       
+       
+
+
+
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 
@@ -42,10 +60,14 @@ function App() {
         <Route path="/education" element={<EducationCoures />} />
         <Route path="/impact" element={<ImpactCards />} />
 
+
       </Routes>
     </Router>
   );
 }
+
+
+export default AppRoutes;
 
 
 export default App;
@@ -54,5 +76,6 @@ export default App;
 export default AppRoutes;
 
 export default App;
+
 
 
