@@ -1,4 +1,6 @@
 import React from "react";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 
@@ -21,25 +23,36 @@ import EducationCoures from "../pages/education/EducationCoures";
 import ImpactCards from "../components/impact/ImpactCards";// code
 import AppRoutes from "../routes/AppRoutes"; // separate file import
 
+
+// இந்தப் பாதையில் மாற்றம் செய்யப்பட்டுள்ளது: "./" -> "../"
+import Contact from "../pages/contact-us/contact"; 
+import Hometab from "../pages/home/Hometab";
 function App() {
   return (
     <Router>
       <Routes>
+        
+         
+        
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/hometab" element={<Hometab />} />
+
        
         <Route path="/" element={<Navigate to="/impact" replace />} />
         <Route path="/education" element={<EducationCoures />} />
         <Route path="/impact" element={<ImpactCards />} />
 
       </Routes>
-
- 
-      <AppRoutes />
     </Router>
   );
 }
 
 
+export default App;
+
+
 export default AppRoutes;
 
 export default App;
+
 
