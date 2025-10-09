@@ -14,7 +14,7 @@ function App() {
         <Route path="/impact" element={<ImpactCards />} />
       </Routes>
 
-      {/* Include extra route set */}
+      {/* Include extra  */}
       <AppRoutes />
     </Router>
   );
