@@ -1,4 +1,4 @@
-
+/* 🔹 History Section */
 .history-main-container {
   font-family: "Syne", sans-serif;
   color: #fff;
@@ -8,25 +8,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 40px; /* 🔹 increased gap between boxes */
 }
 
+/* 🔹 Title box */
 .history-title-box {
   background-color: #1a1a1a;
   width: 1240px;
-  height: 446px;
+  height: 500px;             /* 🔹 slightly taller */
   border-radius: 50px;
   display: flex;
   justify-content: flex-start;   
   align-items: center;           
-  padding: 40px;
+  padding: 80px;               /* 🔹 increased padding for spacious look */
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  margin: 0 50px;
 }
 
 .history-title {
-  font-size: 100px;
+  font-size: 110px; /* 🔹 slightly larger title */
   margin: 0;
   font-weight: 700;
   color: #fff;
@@ -35,18 +37,19 @@
   transform: translateY(-10px); 
 }
 
-
+/* 🔹 Content box */
 .history-content-box {
-  width: 1234px;
-  height: 738px;
+  width: 1240px;
+  height: 780px;             /* 🔹 slightly larger */
   background-color: #1a1a1a;
-  border-radius: px;
+  border-radius: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  padding: 40px;
+  gap: 30px;
+  padding: 80px;             /* 🔹 increased padding */
   box-sizing: border-box;
+  margin: 0 50px;
 }
 
 .first-box {
@@ -76,22 +79,37 @@
   filter: grayscale(100%);
 }
 
-
+/* 🔹 Background logo shape */
 .jobs-header-logo {
   position: absolute;
-  top: -220px;       
-  right: -90px;      
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
+  bottom: -250px;
+  left: 75%;
+  transform: translateX(-50%);
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  width: 811px;
+  height: 981px;
+  border-radius: 355.5px;
+  overflow: hidden;
 }
 
 .logo-image {
-  width: 711px;
-  height: 881px;
+  width: 1000px;
+  height: 1200px;
   object-fit: contain;
-  opacity: 0.41;
 }
 
+
+
+
+@media (max-width: 768px) {
+  .history-title-box,
+  .history-content-box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px; 
+  }
+}

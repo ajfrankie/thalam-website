@@ -35,7 +35,7 @@ body {
             height: 240px;
             top: 1895px;
             left: 134px;
-            transform: translateX(50px);
+            transform: translateX(200px);
           }
           .impact-grid {
             display: flex;
@@ -124,7 +124,7 @@ body {
 .impact-card.image img {
   width: 400%;
   mix-blend-mode: luminosity;
-=======
+}
 .impact-container {
   width: 100%;
   padding: 80px 20px;
