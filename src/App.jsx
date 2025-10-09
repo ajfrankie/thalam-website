@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+
 
 import Home from "./pages/home";
 
@@ -17,43 +17,15 @@ import HomeTab from "./components/home/HomeTab";
 
 import Navbar from "./components/navbar/";
 import Home from "./pages/home/home/";
+import AppRoutes from "./routes/AppRoutes"
 
 function App() {
   return (
-    <Router>
-      <Routes>
-
-        
-        <Route path="/" element={<Home />} />
-
-        {/* Additional routes */}
-        <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/countdowntimer" element={<CountdownTimer />} />
-        <Route path="/hometab" element={<HomeTab />} />
-        <Route path="/jobs" element={<JobsSection />} /> {/* ✅ Added this */}
-        <Route path="/ourservices" element={<OurServices />} />
-        <Route path="/history" element={<History />} />
-        <Route path="/education" element={<EducationCources />} />
-
-        {/* Home routes */}
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Home />} />
-
-        {/* Other pages */}
-        <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/ourServices" element={<OurServices />} />
-        <Route path="/history" element={<History />} />
-
-        {/* Redirect + Other Components */}
-        
-        <Route path="/ImpactCards" element={<ImpactCards />} />
-        <Route path="/EducationCoures" element={<EducationCoures />} />
-          <Route path="/navbar" element={<Navbar />} />
-            <Route path="/home" element={<Home />} />
-
-      </Routes>
-    </Router>
+   
+      <AppRoutes />
+   
   );
 }
 
 export default App;
+ 

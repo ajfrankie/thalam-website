@@ -1,42 +1,52 @@
 .hometab {
-  padding: 40px 20px;
+  padding: -100px 20px;
   background-color: #000;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Syne', sans-serif;
   color: #fff;
 }
 
+/* Logo Strip */
 /* Logo Strip */
 .logo-strip {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 180px; /* 🟢 gap added between logos */
   padding-bottom: 30px;
   border-bottom: 1px solid #444;
   margin-bottom: 40px;
 }
 
 .logo {
-  height: 30px;
+  height: 40px; /* slightly bigger for visibility */
   object-fit: contain;
   filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
 }
+
+.logo:hover {
+  transform: scale(1.1); /* 🟢 smooth zoom effect on hover */
+}
+
 
 /* Two Column Layout */
 .two-column-layout {
   display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: flex-start;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
-
+/* Left Side - Our Objectives */
 /* Left Side - Our Objectives */
 .left-card .card {
-  width: 532px;
-  height: 569.43px;
+  width: 100%;
+  max-width: 400px; /* 🔼 Increased from 400px to 480px */
+  height: auto;
+  max-height: 620px; /* 🔼 Increased height from 569.43px to 620px */
   border-radius: 50px;
+  padding:1px;
 }
+
 
 .left-card .card h2 {
   font-size: 40px;
@@ -56,8 +66,9 @@
 
 /* Our Mission Card */
 .right-stack .card.red {
-  width: 673px;
-  height: 291px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   border-radius: 40px;
 }
 
@@ -72,7 +83,7 @@
 
 /* Our Scope Card */
 .right-stack .card.gray {
-  width: 673px;
+  width: 600px;
   height: 258px;
   border-radius: 50px;
 }
@@ -94,19 +105,21 @@
 
 /* Card Colors */
 .card.red {
-  background-color: #8d1010;
+  background-color: #8B030c;
 }
 
+
+
 .card.gray {
-  background-color: #ccc;
+  background-color: #c3c3c3cc;
   color: #222;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .two-column-layout {
-    flex-direction: column;
-    align-items: center;
+  .left-card .card, .right-stack .card {
+    width: 95%;
+    margin: auto;
   }
 
   .left-card .card,
