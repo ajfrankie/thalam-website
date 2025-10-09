@@ -52,6 +52,13 @@
   font-size: 40px;
 }
 
+/* புல்லட் குறிகளை நீக்குவதற்கான புதிய மற்றும் துல்லியமான திருத்தம் */
+.left-card .card ul {
+  list-style-type: none; /* புல்லட் குறிகளை நீக்குகிறது */
+  padding-left: 0;      /* இயல்பாக list-ஆல் வரும் இடதுபுற padding-ஐ நீக்குகிறது */
+  margin: 0;            /* மேலதிக margin-ஐ நீக்குகிறது */
+}
+
 .left-card .card li {
   font-size: 20px;
   line-height: 1.6;
