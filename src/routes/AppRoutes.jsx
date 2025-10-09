@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import EducationCoures from "../pages/education/EducationCoures";
-import ImpactCards from "../components/impact/ImpactCards";
+import ImpactCards from "../components/impact/ImpactCards";// code
 import AppRoutes from "../routes/AppRoutes"; // separate file import
 
 function App() {
