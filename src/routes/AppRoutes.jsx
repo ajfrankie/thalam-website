@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         {/* Default redirect */}
-        <Route path="/" element={<Navigate to="/impact" replace />} />
+        <Route path="/" element={<Navigate to="/impact" replace />} />//code
         
         {/* Routes */}
         <Route path="/education" element={<EducationCoures />} />
