@@ -110,6 +110,6 @@
   .history-content-box {
     width: 90%;
     margin: 0 auto;
-    padding: 30px; /* 🔹 adjust padding for small screen */
+    padding: 30px; 
   }
 }
