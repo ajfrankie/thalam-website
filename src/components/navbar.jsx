@@ -1,13 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.png";   // 👈 correct import (src/assets/logo.png irundha)
+
+import logo from "../assets/images/logo.png";   
+
+
 
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      {/* Logo Section */}
+   
       <div className="logo">
         <img src={logo} alt="logo" className="logo-img" />
         <span className="logo-text">THALAM</span>

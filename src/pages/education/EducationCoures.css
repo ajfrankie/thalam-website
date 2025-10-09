@@ -1,59 +1,74 @@
+/* Section */
 .education-section {
   background: #000;
   color: #fff;
+  padding: 40px;
+  padding-bottom: 90px;
+  font-family: 'Syne', sans-serif;
   border-radius: 50px;
-  padding: 50px;
-  padding-top: 70px;
+}
+.body{
+  padding:90px
 }
 
-.body {
-  font-family: Syne;
-}
-
-/* 🔹 Header updated for logo + heading */
+/* Header with title + logo */
 .education-header {
   display: flex;
+  text-align: left;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between; /* heading left, logo right */
-  gap: 25px;
-  padding: 30px 40px;
-  font-size: 80px;
-  font-weight: 700;
-  line-height: 120%;
-  margin-bottom: 50px;
-  border-radius: 50px;
   background: #1A1A1A;
-  color: #ffffff;
+  border-radius: 50px;
+  padding: 40px;
+  margin-bottom: 60px;
+  margin-top: 40px;
 }
 
-.edu-logo {
-  width: 100px;
-  height: auto;
-  border-radius: 20px;
+.education-title {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 300%;
+  height:300px
+  
+  
+  
 }
 
-/* 🔹 Education List */
+.education-logo {
+  width: 500px;
+  height: 750px;
+  object-fit: contain;
+  border-radius: 355px;
+  opacity: 31%;
+}
+
+
+/* Education Cards Section */
+
+
+
 .education-list {
   display: flex;
   flex-direction: column;
-  gap: 50px;
   width: 100%;
+  gap: 50px;
 }
 
-/* 🔹 Card Styling */
+/* Card layout */
 .education-card {
   display: flex;
   align-items: center;
   gap: 30px;
   background: #1A1A1A;
   border-radius: 50px;
-  padding: 25px;
+  padding: 30px;
 }
 
 .education-card.reverse {
-  flex-direction: row-reverse; /* image right, text left 1*/
+  flex-direction: row-reverse;
 }
 
+/* Image styling */
 .education-image-wrapper {
   flex: 1;
 }
@@ -66,77 +81,77 @@
   mix-blend-mode: luminosity;
 }
 
+/* Content */
 .education-content {
   flex: 1;
+}
+
+.education-card-title {
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 100%;
 }
 
 .education-desc {
   color: #ffffff;
   line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 22px;
   font-weight: 400;
   text-align: justify;
-  font-family: syne;
 }
 
-/* 🔹 Header Title (EducationCourses) */
-.education-title {
-  font-size: 80px; 
-  font-weight: 700; 
-  color: #fff;       
-  line-height: 110%;  
-  margin-bottom: 20px;
-  font-family: syne;
-}
-
-/* 🔹 Course Card Title */
-.education-card-title {
-  font-size: 50px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 20px;
-  line-height: 120%;
-  text-align: left;
-  font-family: syne;
-}
-
-/* 🔹 Footer dots */
+/* Footer Dots */
 .education-footer-dots {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 15px;
-  
+  margin-top: 160px;
+  margin-left: 480px;
+  position: absolute;
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
-  background: #555;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #dedeed;
+  border-radius: 100%;
   cursor: pointer;
-  transition: 0.3s ease;
+}
+
+.dot:hover {
+  transform: scale(1.2);
 }
 
 .dot.active {
-  background: #fff;
-  transform: scale(1.3);
+  background-color: #fff;
 }
 
-/* 🔹 Responsive for mobile */
-@media (max-width: 768px) {
-  .education-header {
-    flex-direction: column;
-    text-align: center;
-    font-size: 50px;
-    line-height: 130%;
-  }
+/* Third layer (special card variation) */
+.third-layer {
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 40px;
+  border-radius: 25px;
+}
 
-  .edu-logo {
-    width: 70px;
-  }
+.third-layer .education-card-title {
+  color: #0073e6;
+}
 
+.third-layer .education-desc {
+  font-style: italic;
+}
+
+.third-layer .education-image {
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .education-card,
   .education-card.reverse {
     flex-direction: column;
@@ -145,23 +160,42 @@
 
   .education-image {
     width: 100%;
-    height: 220px;
+    height: 350px;
   }
 
   .education-card-title {
-    font-size: 35px;
-    text-align: center;
+    font-size: 50px;
   }
 
   .education-desc {
     font-size: 18px;
-    line-height: 26px;
-    text-align: center;
+    line-height: 28px;
   }
 
   .education-footer-dots {
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
+    margin-left: 0;
+    position: relative;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-title {
+    font-size: 50px;
+    margin-top: -20px;
+  }
+
+  .education-card-title {
+    font-size: 35px;
+  }
+
+  .education-desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .dot {
+    width: 40px;
+    height: 40px;
   }
 }

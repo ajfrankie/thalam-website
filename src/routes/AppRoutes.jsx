@@ -1,18 +1,22 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import ImpactCards from "../home/ImpactCards"; // path must match exactly
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function AppRouters() {
+// 🔹 Import only the components you need
+import JobSection from "../pages/job/JobSection";
+import Footer from "../components/footer/Footer";
+
+function AppRoutes() {
   return (
-    <Routes>
-      {/* Home route */}
-      <Route path="/" element={<ImpactCards />} />
+    <Router>
+      <Routes>
+        {/* ✅ Job Page Route */}
+        <Route path="/job" element={<JobSection />} />
 
-      {/* Example additional routes */}
-      {/* <Route path="/about" element={<About />} /> */}
-      {/* <Route path="/contact" element={<Contact />} /> */}
-    </Routes>
+        {/* ✅ Footer Page Route */}
+        <Route path="/footer" element={<Footer />} />
+      </Routes>
+    </Router>
   );
 }
-// AppRouters.jsx
-export default AppRouters;
+
+export default AppRoutes;

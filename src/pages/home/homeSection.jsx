@@ -1,10 +1,10 @@
 
 
 import React from 'react';
-import './home.css';
-import ThalamLogo from "../../assets/thalamlogo.png"; // லோகோ image import
+import './homeSection .css';
+import logo from "../../assets/images/logo.png"; 
 
-const Home = () => {
+const Homesection = () => {
   return (
     <div className="home-section">
       <div className="container">
@@ -24,7 +24,7 @@ const Home = () => {
           {/* Right side image + texts */}
           <div className="image-content">
             <div className="thalam-logo-box">
-              <img src={ThalamLogo} alt="Thalam Logo" />
+              <img src={logo} alt=" logo" />
               <span className="tamil-text"></span>
               <span className="english-text"></span>
             </div>
@@ -35,4 +35,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Homesection;
