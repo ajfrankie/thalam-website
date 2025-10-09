@@ -4,7 +4,7 @@ import "./EducationCoures.css";
 // ✅ Logo import
 import logo from "../../assets/images/logo.png";
 
-// ✅ Import images
+
 import education1image from "../../assets/images/education1.jpg";
 import education2image from "../../assets/images/education2.jpg";
 import education3image from "../../assets/images/education3.jpg";

@@ -1,18 +1,39 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import ImpactCards from "../home/ImpactCards"; // path must match exactly
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
-function AppRouters() {
+
+import Home from "../pages/Home";       
+import Education from "../pages/Education";
+import History from "../pages/history";
+
+
+
+
+
+
+
+
+function AppRoutes() {
   return (
-    <Routes>
-      {/* Home route */}
-      <Route path="/" element={<ImpactCards />} />
+    <Router>
+      <Routes>
+       
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Education" element={<Education />} />
+         <Route path="/history" element={<History />} />
+       
+       
+        
+        
 
-      {/* Example additional routes */}
-      {/* <Route path="/about" element={<About />} /> */}
-      {/* <Route path="/contact" element={<Contact />} /> */}
-    </Routes>
+
+        
+      </Routes>
+    </Router>
   );
 }
-// AppRouters.jsx
-export default AppRouters;
+
+export default AppRoutes;
+
+/* 🔹 Added Syne font */

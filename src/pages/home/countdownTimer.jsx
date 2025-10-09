@@ -37,7 +37,7 @@ const CountdownTimer = () => {
 
   return (
     <div className="next-event-section">
-      <h2 className="next-event-title">NEXT EVENT</h2>
+      <h2 className="next-event-heading">NEXT EVENT</h2>
       <div className="countdown-frame">
         <div className="background-image-container">
           
