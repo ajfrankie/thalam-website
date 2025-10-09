@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
-// 🔹 Import only the components you need
+// Import only the needed components
 import JobSection from "../pages/job/JobSection";
 import Footer from "../components/footer/Footer";
 
@@ -9,10 +9,11 @@ function AppRoutes() {
   return (
     <Router>
       <Routes>
-        {/* ✅ Job Page Route */}
-        <Route path="/job" element={<JobSection />} />
+        {/* Default route */}
+        <Route path="/" element={<Navigate to="/job" replace />} />
 
-        {/* ✅ Footer Page Route */}
+        {/* Job & Footer routes */}
+        <Route path="/job" element={<JobSection />} />
         <Route path="/footer" element={<Footer />} />
       </Routes>
     </Router>

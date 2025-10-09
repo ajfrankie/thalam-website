@@ -67,7 +67,7 @@
 }
 
 .jobs-card.reverse {
-  flex-direction: row-reverse; /* image right, text left */
+  flex-direction: row-reverse; 
 }
 
 
