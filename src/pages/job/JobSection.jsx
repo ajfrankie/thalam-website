@@ -3,10 +3,13 @@ import "./Jobs.css";
 
 import image1 from "../../assets/images/job1.jpg";
 import image2 from "../../assets/images/job2.jpg";
-import logoimage from "../../assets/images/logo.png"; // logo
 import image3 from "../../assets/images/job3.jpg"; 
+import logoimage from "../../assets/images/logo.png"; 
 
-const jobsData = [   
+
+
+
+const jobsData = [
   {
     id: 1,
     title: "Job title",
@@ -68,10 +71,7 @@ export default function JobSection() {
 
       <div className="jobs-list">
         {jobsData.map((job, jobIndex) => (
-          <article
-            key={job.id}
-            className={`jobs-card ${job.reverse ? "reverse" : ""}`}
-          >
+          <article key={job.id} className={`jobs-card ${job.reverse ? "reverse" : ""}`}>
             <div className="job-image-wrapper">
               <img
                 src={job.image}
@@ -86,12 +86,9 @@ export default function JobSection() {
 
             <div className="job-content">
               <h3 className={`job-title job-title-${job.id}`}>{job.title}</h3>
-
               <div className="job-desc-wrapper">
                 {job.description.map((para, idx) => (
-                  <p key={idx} className={`job-desc job-desc-${job.id}`}>
-                    {para}
-                  </p>
+                  <p key={idx} className={`job-desc job-desc-${job.id}`}>{para}</p>
                 ))}
               </div>
 
@@ -100,9 +97,7 @@ export default function JobSection() {
                   {job.description.map((_, index) => (
                     <span
                       key={index}
-                      className={`dot ${
-                        activeIndexes[jobIndex] === index ? "active" : ""
-                      }`}
+                      className={`dot ${activeIndexes[jobIndex] === index ? "active" : ""}`}
                       onClick={() => handleDotClick(job.id, index)}
                     ></span>
                   ))}
