@@ -28,7 +28,7 @@ const OurServices = () => {
         "Explore groundbreaking AI solutions, from emerging startups to tech giants redefining the future.",
     },
   ];
-
+/* 🔹 Added Syne font */
   return (
     <section className="our-services">
       <h2 className="section-title">Our Services</h2>
