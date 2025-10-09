@@ -1,4 +1,3 @@
-
 .history-main-container {
   font-family: "Syne", sans-serif;
   color: #fff;
@@ -11,6 +10,7 @@
   gap: 20px;
 }
 
+/* 🔹 Title box */
 .history-title-box {
   background-color: #1a1a1a;
   width: 1240px;
@@ -23,6 +23,7 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  margin: 0 50px;    /* ✅ added left & right margin */
 }
 
 .history-title {
@@ -35,18 +36,19 @@
   transform: translateY(-10px); 
 }
 
-
+/* 🔹 Content box */
 .history-content-box {
   width: 1234px;
   height: 738px;
   background-color: #1a1a1a;
-  border-radius: px;
+  border-radius: 50px;     /* 🔹 fixed missing value */
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
   padding: 40px;
   box-sizing: border-box;
+  margin: 0 50px;          /* ✅ added left & right margin */
 }
 
 .first-box {
@@ -76,16 +78,21 @@
   filter: grayscale(100%);
 }
 
-
+/* 🔹 Background logo shape */
 .jobs-header-logo {
   position: absolute;
-  top: -220px;       
-  right: -90px;      
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
+  bottom: -250px;
+  left: 75%;
+  transform: translateX(-50%);
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  width: 811px;
+  height: 981px;
+  border-radius: 355.5px;
+  overflow: hidden;
 }
 
 .logo-image {
@@ -95,3 +102,11 @@
   opacity: 0.41;
 }
 
+@media (max-width: 768px) {
+  .history-title-box,
+  .history-content-box {
+    width: 90%;
+    margin: 0 auto;  /* center on mobile */
+    padding: 20px;
+  }
+}
