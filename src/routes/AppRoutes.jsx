@@ -8,13 +8,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Default redirect */}
+       
         <Route path="/" element={<Navigate to="/impact" replace />} />
         <Route path="/education" element={<EducationCoures />} />
         <Route path="/impact" element={<ImpactCards />} />
       </Routes>
 
-      {/* Include extra  */}
+ 
       <AppRoutes />
     </Router>
   );
