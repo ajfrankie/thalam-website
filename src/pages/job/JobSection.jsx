@@ -3,10 +3,16 @@ import "./Jobs.css";
 
 import image1 from "../../assets/images/job1.jpg";
 import image2 from "../../assets/images/job2.jpg";
+
 import Jobimage from "../../assets/images/logo.png"; // logo
 import image3 from "../../assets/images/job3.jpg"; 
 
-const jobsData = [   
+import logoimage from "../../assets/images/logo.png"; // log
+
+
+
+
+const jobsData = [
   {
     id: 1,
     title: "Job title",
@@ -40,7 +46,7 @@ const jobsData = [
   },
 ];
 
-export default function JobsSection() {
+export default function JobSection() {
   const [activeIndexes, setActiveIndexes] = useState(jobsData.map(() => 0));
 
   const handleDotClick = (jobId, index) => {
@@ -55,7 +61,7 @@ export default function JobsSection() {
         <div className="jobs-header-text">Jobs</div>
         <div className="jobs-header-logo">
           <img
-            src={Jobimage}
+            src={logoimage}
             alt="Logo"
             className="logo-image"
             onError={(e) => {
@@ -68,10 +74,7 @@ export default function JobsSection() {
 
       <div className="jobs-list">
         {jobsData.map((job, jobIndex) => (
-          <article
-            key={job.id}
-            className={`jobs-card ${job.reverse ? "reverse" : ""}`}
-          >
+          <article key={job.id} className={`jobs-card ${job.reverse ? "reverse" : ""}`}>
             <div className="job-image-wrapper">
               <img
                 src={job.image}
@@ -86,12 +89,9 @@ export default function JobsSection() {
 
             <div className="job-content">
               <h3 className={`job-title job-title-${job.id}`}>{job.title}</h3>
-
               <div className="job-desc-wrapper">
                 {job.description.map((para, idx) => (
-                  <p key={idx} className={`job-desc job-desc-${job.id}`}>
-                    {para}
-                  </p>
+                  <p key={idx} className={`job-desc job-desc-${job.id}`}>{para}</p>
                 ))}
               </div>
 
@@ -100,9 +100,7 @@ export default function JobsSection() {
                   {job.description.map((_, index) => (
                     <span
                       key={index}
-                      className={`dot ${
-                        activeIndexes[jobIndex] === index ? "active" : ""
-                      }`}
+                      className={`dot ${activeIndexes[jobIndex] === index ? "active" : ""}`}
                       onClick={() => handleDotClick(job.id, index)}
                     ></span>
                   ))}
