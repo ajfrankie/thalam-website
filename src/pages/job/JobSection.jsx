@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Jobs.css";
 
-import image1 from "../../assets/images/1.jpg";
-import image2 from "../../assets/images/2.jpg";
-import Jobimage from "../../assets/images/Job.png"; // logo
-import image4 from "../../assets/images/4.jpg"; 
+import image1 from "../../assets/images/job1.jpg";
+import image2 from "../../assets/images/job2.jpg";
+import Jobimage from "../../assets/images/logo.png"; // logo
+import image3 from "../../assets/images/job3.jpg"; 
 
 const jobsData = [   
   {
@@ -35,7 +35,7 @@ const jobsData = [
       "Join our friendly team. You will work on outreach, training sessions, and creating resources that help youth gain leadership skills and practical experience.",
       "Join our friendly team. You will work on outreach, training sessions, and creating resources that help youth gain leadership skills and practical experience."
     ],
-    image: image4,
+    image: image3,
     reverse: true,
   },
 ];
