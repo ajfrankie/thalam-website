@@ -3,7 +3,7 @@ import "./EducationCoures.css";
 
 
 // Logo
-import logo from "../../assets/images/logo.png";//image
+import logo from "../../assets/images/logo.png";
 
 // Images
 import education1image from "../../assets/images/education1.jpg";
