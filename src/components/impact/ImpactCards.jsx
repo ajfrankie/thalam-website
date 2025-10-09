@@ -16,9 +16,6 @@ const ImpactCards = () => {
   return (
     <div className="impact-container">
 
-      <h2>
-        Creating Impact <br/> in Trincomalee
-      </h2>
 
   <h2 className="impact-heading">
     Creating Impact <br /> in Trincomalee
