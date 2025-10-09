@@ -7,7 +7,7 @@ import JobSection from "../../pages/job/JobSection";
 
 import Footer from "../components/Footer/Footer"; // Footer.jsx
 
-const Home = () => {
+const Job  = () => {
   return (
     <>
       {/* Render all components in one page */}
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Job;

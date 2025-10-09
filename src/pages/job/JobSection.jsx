@@ -12,7 +12,7 @@ import logoimage from "../../assets/images/logo.png";
 const jobsData = [
   {
     id: 1,
-    title: "Job title",
+    title: "Job title", //
     description: [
       "Foundation and Vision Organization has been creating opportunities for youth. This enables them to learn, lead, and contribute to their communities. Through projects, volunteer programs, and mentorship, we aim to inspire the next generation of leaders.",
       "Founded in 2018, Thalam Organization has been creating opportunities for youth in Trincomalee to learn, lead, and contribute to their communities. Through projects, volunteer programs, and partnerships, we aim to inspire the next generation of leaders.",
