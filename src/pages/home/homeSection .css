@@ -99,6 +99,18 @@
   margin-top: 40px;
 }
 
+
+  max-width: 100%;          /* container width இல் ஏற்பட */
+  width: 400px;             /* 🔹 width adjust */
+  height: 400px;            /* 🔹 height adjust */
+  object-fit: contain;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  opacity: 31%; 
+  margin-right: -100px;            /* 🔹 light color / transparency */
+}
+
+
 .thalam-logo-box .tamil-text {
   font-size: 34px;
   font-family: 'Salsa', cursive;

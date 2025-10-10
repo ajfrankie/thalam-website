@@ -35,7 +35,10 @@ body {
             height: 240px;
             top: 1895px;
             left: 134px;
+
             transform: translateX(50px);
+
+            transform: translateX(200px);
           }
           .impact-grid {
             display: flex;
@@ -45,25 +48,25 @@ body {
             width: 100%;
           }
           .impact-card {
-            background-color: #DEDEE0;
-            border-radius: 50px;
-            overflow: hidden;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 295px;
-            height: 452px;
-            position: relative;
-            border: 1px solid #ffffff;
-          }
+  background-color: #DEDEE0;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 23%;       /* fixed width ~4 cards per row */
+  height: 452px;
+  position: relative;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
           .impact-card.image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
-            border-radius: 50px;
+            border-radius: 50px;/* fixed width ~4 cards per row */
           }
           .impact-card.text .details {
             text-align: center;
@@ -124,7 +127,12 @@ body {
 .impact-card.image img {
   width: 400%;
   mix-blend-mode: luminosity;
-=======
+
+
+
+
+}
+
 .impact-container {
   width: 100%;
   padding: 80px 20px;
@@ -172,6 +180,7 @@ overflow: visible;
   width: 100%;
   max-width: 295px;
   
+
   height: auto;
   position: relative;
   border: 1px solid #ffffff;

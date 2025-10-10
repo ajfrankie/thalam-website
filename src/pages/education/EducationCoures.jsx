@@ -65,7 +65,9 @@ export default function EducationCourses() {
     <section className="education-section">
       <div className="education-header">
         <h1 className="education-title">Education</h1>
-        <img src={logo} alt="Logo" className="edu-logo" />
+        <div>
+          <img src={logo} alt="Logo" className="education-logo" />
+        </div>
       </div>
 
       <div className="education-list">

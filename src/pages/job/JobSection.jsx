@@ -8,6 +8,12 @@ import image3 from "../../assets/images/job3.jpg";
 import logoimage from "../../assets/images/logo.png";
 
 
+import image3 from "../../assets/images/job3.jpg"; 
+import logoimage from "../../assets/images/logo.png"; 
+
+
+
+
 const jobsData = [
   {
     id: 1,

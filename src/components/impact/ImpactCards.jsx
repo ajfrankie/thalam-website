@@ -6,9 +6,16 @@ import impactcards2 from "../../assets/images/impactcards2.jpg";
 import impactcards3 from "../../assets/images/impactcards3.jpg";//image
 import impactcards4 from "../../assets/images/impactcards4.jpg";//image
 
+
 //image
 
 
+
+
+import impactcards1image from "../../assets/images/impactcards1.jpg";
+import impactcards2image from "../../assets/images/impactcards2.jpg";
+import impactcards3image from "../../assets/images/impactcards3.jpg";
+import impactcards4image from "../../assets/images/impactcards4.jpg";//image
 
 
 
@@ -16,7 +23,7 @@ const ImpactCards = () => {
   return (
     <div className="impact-container">
 
-      
+
 
   <h2 className="impact-heading">
     Creating Impact <br /> in Trincomalee
