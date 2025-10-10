@@ -2,21 +2,19 @@
 import React from "react";
 
 import Navbar from "../../components/navbar";
-import NextEvent from "./NextEvent";
-import CountdownTimer from "../../pages/home/CountdownTimer";
+import EducationCoures from "./EducationCoures";
 import Footer from "../../components/Footer/Footer"; 
 
-
-const Event = () => {
+const Education = () => {
   return (
     <div className="home-page">
       <Navbar/>
-      <NextEvent />
-      <CountdownTimer />
+      <EducationCoures />
+      
       <Footer />
     </div>
   );
 };
 
 
-export default Event;
+export default Education;

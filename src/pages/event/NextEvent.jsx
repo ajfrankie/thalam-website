@@ -7,7 +7,7 @@ const NextEvent = () => {
   return (
     <div className="next-event-section">
       {/* Heading on the left */}
-      <h1 className="next-event-heading">Next Event</h1>
+
 
       <div className="countdown-frame">
         {/* Left content area */}

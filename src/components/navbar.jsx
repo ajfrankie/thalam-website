@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.png";   // 👈 correct import (src/assets/logo.png irundha)
+
+import logo from "../assets/images/navbar1.jpeg";   
+
+
 
 import "./Navbar.css";
 
@@ -16,7 +19,7 @@ function Navbar() {
       
       <ul className="nav-links">
         <li>
-          <Link to="/" className="nav-btn">Home</Link>
+          <Link to="/Home" className="nav-btn">Home</Link>
         </li>
         <li>
           <Link to="/contact" className="nav-link">Contact Us</Link>

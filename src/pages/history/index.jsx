@@ -1,22 +1,22 @@
-// src/pages/home/index.jsx
+
 import React from "react";
 
 import Navbar from "../../components/navbar";
-import NextEvent from "./NextEvent";
-import CountdownTimer from "../../pages/home/CountdownTimer";
+import HistorySection from "./historySection";
 import Footer from "../../components/Footer/Footer"; 
+import OurServices from "./ourServices";
 
-
-const Event = () => {
+const History = () => {
   return (
     <div className="home-page">
       <Navbar/>
-      <NextEvent />
-      <CountdownTimer />
+      <HistorySection />
+      <OurServices/>
+      
       <Footer />
     </div>
   );
 };
 
 
-export default Event;
+export default History;

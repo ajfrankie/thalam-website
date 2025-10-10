@@ -1,16 +1,27 @@
 import React from 'react';
 import "./ImpactCards.css";
-import impactcards1image from "../../assets/images/impactcards1.jpg";
-import impactcards2image from "../../assets/images/impactcards2.jpg";
-import impactcards3image from "../../assets/images/impactcards3image.jpg";
-import impactcards4image from "../../assets/images/impactcards4image.jpg";//image
+
+import impactcards1 from "../../assets/images/impactcards1.jpg";
+import impactcards2 from "../../assets/images/impactcards2.jpg";
+import impactcards3 from "../../assets/images/impactcards3.jpg";//image
+import impactcards4 from "../../assets/images/impactcards4.jpg";//image
+
+//image
+
+
+
+
 
 const ImpactCards = () => {
   return (
     <div className="impact-container">
-      <h2>
-        Creating Impact <br /> in Trincomalee
-      </h2>
+
+      
+
+  <h2 className="impact-heading">
+    Creating Impact <br /> in Trincomalee
+  </h2>
+
       <div className="impact-grid">
         {/* 1st box (text) */}
         <div className="impact-card text">
@@ -23,7 +34,7 @@ const ImpactCards = () => {
 
         {/* 2nd box (image) */}
         <div className="impact-card image">
-          <img src={impactcards1image} alt="Custom image for 2nd box" />
+          <img src={impactcards1} alt="Custom image for 2nd box" />
         </div>
 
         {/* 3rd box (text) */}
@@ -37,7 +48,7 @@ const ImpactCards = () => {
 
         {/* 4th box (image) */}
         <div className="impact-card image">
-          <img src={impactcards2image} alt="Custom image for 4th box" />
+          <img src={impactcards2} alt="Custom image for 4th box" />
         </div>
 
         {/* 5th box (text) */}
@@ -51,7 +62,7 @@ const ImpactCards = () => {
 
         {/* 6th box (image) */}
         <div className="impact-card image">
-          <img src={impactcards3image} alt="Custom image for 5th box" />
+          <img src={impactcards3} alt="Custom image for 5th box" />
         </div>
 
         {/* 7th box (text) */}
@@ -65,7 +76,7 @@ const ImpactCards = () => {
 
         {/* 8th box (image) */}
         <div className="impact-card image">
-          <img src={impactcards4image} alt="Custom image for 6th box" />
+          <img src={impactcards4} alt="Custom image for 6th box" />
         </div>
       </div>
     </div>
