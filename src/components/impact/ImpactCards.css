@@ -62,7 +62,7 @@ body {
             height: 100%;
             object-fit: cover;
             display: block;
-            border-radius: 50px;/* fixed width ~4 cards per row */
+            border-radius: 50px;/* update*/
           }
           .impact-card.text .details {
             text-align: center;
