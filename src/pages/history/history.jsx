@@ -1,7 +1,7 @@
 import React from "react";
 import "./history.css";
-import A1 from "../../assets/a1.jpg";
-import A11 from "../../assets/a11.png"; 
+import historyimage1 from "../../assets/images/history1.jpg";
+import logo from "../../assets/images/logo.png"; 
 
 export default function History() {
   return (
@@ -13,7 +13,7 @@ export default function History() {
 
         
         <div className="jobs-header-logo">
-          <img src={A11} alt="Thalam Logo" className="logo-image" />
+          <img src={logo} alt="Thalam Logo" className="logo-image" />
         </div>
       </div>
 
@@ -39,13 +39,13 @@ export default function History() {
           </p>
         </div>
         <div className="history-image-box">
-          <img src={A1} alt="History of Thalam Organization" className="history-image" />
+          <img src={historyimage1} alt="History of Thalam Organization" className="history-image" />
         </div>
       </div>
 
       <div className="history-content-box second-box">
         <div className="history-image-box">
-          <img src={A1} alt="History of Thalam Organization" className="history-image" />
+          <img src={historyimage1} alt="History of Thalam Organization" className="history-image" />
         </div>
         
         <div className="history-text-section">

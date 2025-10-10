@@ -32,7 +32,7 @@ function Navbar() {
           <Link to="/history" className="nav-link">History</Link>
         </li>
         <li>
-          <Link to="/events" className="nav-link">Events</Link>
+          <Link to="/event" className="nav-link">Events</Link>
         </li>
          <li>
           <Link to="/job" className="nav-link">Job</Link>

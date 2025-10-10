@@ -1,5 +1,9 @@
+// src/pages/home/Hometab.jsx
+
 import React from 'react';
-import './Hometab.css'; 
+// CSS path corrected from './Hometab.css' to '../../home/Hometab.css'
+// (Goes up to 'src/pages/', then up to 'src/', then down to 'home/Hometab.css')
+import '../home/Hometab.css'; 
 
 const logos = [
   { name: 'Amazon', src: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg', active: true },
