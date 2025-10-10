@@ -69,7 +69,7 @@ export default function Job() {
         </div>
       </div>
 
-      {/* Job List */}
+      
       <div className="jobs-list">
         {jobsData.map((job, jobIndex) => (
           <article key={job.id} className={`jobs-card ${job.reverse ? "reverse" : ""}`}>
