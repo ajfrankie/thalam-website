@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 0 0 23%;       /* fixed width ~4 cards per row */
+  flex: 0 0 23%;       /* update  */
   height: 452px;
   position: relative;
   border: 1px solid #ffffff;
@@ -62,7 +62,7 @@ body {
             height: 100%;
             object-fit: cover;
             display: block;
-            border-radius: 50px;/* fixed width ~4 cards per row */
+            border-radius: 50px;/* update*/
           }
           .impact-card.text .details {
             text-align: center;
