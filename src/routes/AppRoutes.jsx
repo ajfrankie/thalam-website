@@ -16,6 +16,7 @@ function AppRoutes() {
         <Route path="/Home" element={<Home />} />
         <Route path="/Education" element={<Education />} />
         <Route path="/history" element={<History />} />
+        {/* <Route path="/Job" element={<Job />} /> */}
         <Route path="/Job" element={<Job />} />
         
         </Routes>
@@ -23,4 +24,4 @@ function AppRoutes() {
   );
 }
 
-export default AppRoutes;
+export default AppRoutes; 
