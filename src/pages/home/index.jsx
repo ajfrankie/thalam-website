@@ -5,12 +5,11 @@ import React from "react";
 
 import HomeTab from "./HomeTab";
 import CountdownTimer from "./CountdownTimer";
-import Testimonial from "./Testimonial";
 
 
           
 
-
+import Testimonial from "./Testimonial";  // Testimonial.jsx
 import Navbar from "../../components/navbar";
 import HomeSection from "./homeSection";
 import ImpactCards from "../../components/impact/impactCards";

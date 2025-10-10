@@ -92,16 +92,14 @@
 }
 
 .thalam-logo-box img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%;          /* container width இல் ஏற்பட */
+  width: 400px;             /* 🔹 width adjust */
+  height: 400px;            /* 🔹 height adjust */
   object-fit: contain;
   margin-bottom: 10px;
   margin-top: 40px;
-
-  /* 🔹 Added new styling */
-  opacity: 0.40;              /* light color look */
-  transform: scale(1.2) translateX(100px); /* bigger + move right */
-  transition: all 0.3s ease; /* smooth animation if resized */
+  opacity: 31%; 
+  margin-right: -100px;            /* 🔹 light color / transparency */
 }
 
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../assets/images/logo.png";   
+import navbar1 from "../assets/images/thalam-logo.png";   
 
 
 
@@ -14,7 +14,9 @@ function Navbar() {
     <nav className="navbar">
    
       <div className="logo">
-        <img src={logo} alt="logo" className="logo-img" />
+        <div className="logo-img">
+        <img src={navbar1} alt="logo" />
+        </div>
         <span className="logo-text">THALAM</span>
       </div>
 
@@ -31,6 +33,12 @@ function Navbar() {
         </li>
         <li>
           <Link to="/event" className="nav-link">Events</Link>
+        </li>
+         <li>
+          <Link to="/job" className="nav-link">Job</Link>
+        </li>
+         <li>
+          <Link to="/Education" className="nav-link">Education</Link>
         </li>
         <li>
           <Link to="/register" className="nav-btn red">Register</Link>

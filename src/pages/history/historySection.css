@@ -9,23 +9,27 @@
   flex-direction: column;
   align-items: center;
   gap: 40px; /* 🔹 increased gap between boxes */
+  position: relative;
 }
 
 /* 🔹 Title box */
 .history-title-box {
   background-color: #1a1a1a;
   width: 1240px;
-  height: 500px;             /* 🔹 slightly taller */
+  height: 500px;
   border-radius: 50px;
   display: flex;
   justify-content: flex-start;   
   align-items: center;           
-  padding: 80px;               /* 🔹 increased padding for spacious look */
+  padding: 20px;               
   box-sizing: border-box;
-  position: relative;
+  position: relative; /* 👉 இதை இங்கே சேர்க்கணும் */
   overflow: hidden;
   margin: 0 50px;
+  padding-left: 10px;
+  padding-right: 100px;
 }
+
 
 .history-title {
   font-size: 110px; /* 🔹 slightly larger title */
@@ -51,6 +55,8 @@
   box-sizing: border-box;
   margin: 0 50px;
 }
+
+
 
 .first-box {
   margin-top: 40px;
@@ -82,8 +88,8 @@
 /* 🔹 Background logo shape */
 .jobs-header-logo {
   position: absolute;
-  bottom: -550px;
-  left: 75%;
+  bottom: -200px;       
+  left: 85%;
   transform: translateX(-50%);
   z-index: 0;
   display: flex;
@@ -94,22 +100,26 @@
   height: 981px;
   border-radius: 355.5px;
   overflow: hidden;
+  margin-top: -80px;
+  
+
 }
+
 
 .logo-image {
-  width: 1000px;
-  height: 1200px;
+  width: 711px;
+  height: 881px;
   object-fit: contain;
+  opacity: 0.41;
+  
 }
 
-
-
-
+/* 🔹 Mobile responsive */
 @media (max-width: 768px) {
   .history-title-box,
   .history-content-box {
     width: 90%;
     margin: 0 auto;
-    padding: 30px; 
+    padding: 30px; /* 🔹 adjust padding for small screen */
   }
 }

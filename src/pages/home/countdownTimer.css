@@ -65,7 +65,7 @@ body {
   top: 200px;
   bottom: 0;
 
-  top: 10px;
+  top: 90px;
 
   right: 0;
   width: 300px;
@@ -116,6 +116,7 @@ body {
 
 /* Also adjust labels so that they are under the centered timer */
 
+ 
 .countdown-labels {
   position: absolute;
   top: calc(50% + 110px);   /* adjust the vertical offset: timer height / 2 + spacing */
