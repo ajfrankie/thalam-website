@@ -1,16 +1,23 @@
 import React from 'react';
 import "./ImpactCards.css";
-import impactcards1 from "../../assets/images/impactcards1.jpg";//image
-import impactcards2 from "../../assets/images/impactcards2.jpg";//image
-import impactcards3 from "../../assets/images/impactcards3.jpg";//image
-import impactcards4 from "../../assets/images/impactcards4.jpg";//image
+
+
+
+import impactcards1image from "../../assets/images/impactcards1.jpg";
+import impactcards2image from "../../assets/images/impactcards2.jpg";
+import impactcards3image from "../../assets/images/impactcards3.jpg";
+import impactcards4image from "../../assets/images/impactcards4.jpg";//image
+
 
 const ImpactCards = () => {
   return (
     <div className="impact-container">
-      <h2>
-        Creating Impact <br/> in Trincomalee
-      </h2>
+
+
+  <h2 className="impact-heading">
+    Creating Impact <br /> in Trincomalee
+  </h2>
+
       <div className="impact-grid">
         {/* 1st box (text) */}
         <div className="impact-card text">

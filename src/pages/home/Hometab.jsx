@@ -1,5 +1,9 @@
+// src/pages/home/Hometab.jsx
+
 import React from 'react';
-import './Hometab.css'; 
+// CSS path corrected from './Hometab.css' to '../../home/Hometab.css'
+// (Goes up to 'src/pages/', then up to 'src/', then down to 'home/Hometab.css')
+import '../home/Hometab.css'; 
 
 const logos = [
   { name: 'Amazon', src: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg', active: true },
@@ -27,10 +31,10 @@ const Hometab = () => {
           <div className="card red">
             <h2>Our Objectives</h2>
             <ul>
-              <li>To build the skills and capacity of young people through training, workshops, and mentorship.</li>
-              <li>To create a platform for volunteerism and civic engagement, encouraging youth to contribute positively to their communities.</li>
-              <li>To support educational and cultural initiatives that strengthen knowledge and identity.</li>
-              <li>To collaborate with local, national, and international organizations for youth development and community upliftment.</li>
+              To build the skills and capacity of young people through training, workshops, and mentorship.
+              To create a platform for volunteerism and civic engagement, encouraging youth to contribute positively to their communities.
+              To support educational and cultural initiatives that strengthen knowledge and identity.
+              To collaborate with local, national, and international organizations for youth development and community upliftment.
             </ul>
           </div>
         </div>

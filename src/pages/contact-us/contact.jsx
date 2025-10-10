@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/css/contact.css";
+import "./contact.css";
 
 const Contact = () => {
   // Optional: handle form submission to prevent page reload

@@ -34,7 +34,7 @@ body {
             height: 240px;
             top: 1895px;
             left: 134px;
-            transform: translateX(50px);
+            transform: translateX(200px);
           }
           .impact-grid {
             display: flex;
@@ -123,6 +123,57 @@ body {
 .impact-card.image img {
   width: 400%;
   mix-blend-mode: luminosity;
+
+
+}
+.impact-container {
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+height: auto;
+overflow: visible;
+
+}
+
+.impact-heading {
+  width: 100%;
+  max-width: 100%;
+  flex: 1 0 100%;
+  flex-basis: 100%;
+  margin: 0 0 40px 0 !important; /* bottom margin */
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 100px;
+  font-weight: 700;
+  text-align: left;
+  margin-left:60px;/* 🟢 Shifted 60px to the right */
+}
+
+.impact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.impact-card {
+  background-color: #DEDEE0;
+  border-radius: 50px;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 295px;
+  
+
   height: auto;
   object-fit: cover;
   filter: grayscale(100%); /* <-- black & white */
