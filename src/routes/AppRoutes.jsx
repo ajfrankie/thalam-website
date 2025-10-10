@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-// Home (index.jsx) matthum import pannunga
+//Home index
 import Home from "../pages/home";       
 import Education from "../pages/Education";
 import History from "../pages/history";
