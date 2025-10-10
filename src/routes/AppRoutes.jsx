@@ -2,19 +2,31 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-//Home index
+// Home (index.jsx) matthum import pannunga
+import Home from "../pages/home";       
 
-import HomeTab from "../pages/home/Hometab";
+
+
+
+
+
+
 
 function AppRoutes() {
   return (
     <Router>
       <Routes>
        
+        <Route path="/Home" element={<Home />} />
         
-        <Route path="/Hometab" element={<HomeTab />} />
         
-        </Routes>
+         
+        
+        
+
+
+        
+      </Routes>
     </Router>
   );
 }
