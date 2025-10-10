@@ -9,18 +9,15 @@
   box-sizing: border-box;
 }
 
-/* Logo Section */
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;    /* space between logo image and text */
+ 
+  border-radius: 0;
+  padding: 0;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 15px; /* space between logo and text */
-}
 
 .logo-img {
   width: 75px;

@@ -29,16 +29,18 @@ body {
 .countdown-frame {
   background: #1c1a1a;
   color: #fff;
-  width: 100%;
-  max-width: 1240px;
-  height: auto;             /* 🔁 changed from fixed 442px */
+  width: 100%;             /* box stays full width of container */
+  max-width: 1240px;       /* same size as before */
+  min-height: 442px;       /* same height */
+  height: auto;
   border-radius: 50px;
   position: relative;
-  overflow: visible;        /* 🔁 make sure not hidden */
-  padding: 40px 20px;
-  margin: 0 auto;   
-  min-height: 500px;        /* center align */
+  overflow: visible;
+  padding: 60px 60px;      /* 🔁 increase left and right padding */
+  margin: 0 auto;           /* center box horizontally */
+  right: 60px;
 }
+
 
 /* Background image container */
 .background-image-container {
@@ -65,7 +67,7 @@ body {
   top: 200px;
   bottom: 0;
 
-  top: 90px;
+  top: 250px;
 
   right: 0;
   width: 300px;
