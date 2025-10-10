@@ -10,14 +10,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: white;  /* footer background */
+  background-color: white;
   color: white;
   height: 533px;
   width: 1240px;
   border-radius: 50px;
-  margin: 0 auto;           /* ✅ footer center horizontally */
+  margin-left: 100px;
   padding-left: 40px;
+
+  /* 🔹 Add this line for gap between education and footer */
+  margin-top: 80px;  /* You can change 80px → 50px or 100px as needed */
 }
+
 
 /* Mobile responsive */
 @media (max-width: 768px) {

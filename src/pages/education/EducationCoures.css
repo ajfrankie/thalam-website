@@ -14,15 +14,15 @@
 /* Header with title + logo */
 .education-header {
   display: flex;
-  text-align: left;
   justify-content: space-between;
   align-items: center;
   background: #1A1A1A;
-  border-radius: 50px;
-  padding: 40px;
-  margin-bottom: 60px;
-  margin-top: 40px;
-  top: 50px;
+  border-radius: 50px;     /* matches your Figma radius */
+  width: 1240px;           /* 🔹 From your layout */
+  height: 446px;           /* 🔹 From your layout */
+  margin: 164px auto 40px auto; /* center + top 164px */
+  padding: 70px;           /* keep inner spacing nice */
+  position: relative;
 }
 
 .education-title {
@@ -43,8 +43,8 @@
   height: 750px;
   object-fit: contain;
   border-radius: 355px;
-  opacity: -20%;
-  filter: brightness(60%) saturate(70%);
+  opacity: 31%;
+  
 }
 
 
