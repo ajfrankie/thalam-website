@@ -5,12 +5,30 @@ import impactcards2 from "../../assets/images/impactcards2.jpg";
 import impactcards3 from "../../assets/images/impactcards3.jpg";//image
 import impactcards4 from "../../assets/images/impactcards4.jpg";//image
 
+
 const ImpactCards = () => {
   return (
     <div className="impact-container">
       <h2>
         Creating Impact <br/> in Trincomalee
       </h2>
+
+//image
+
+
+
+
+
+const ImpactCards = () => {
+  return (
+    <div className="impact-container">
+
+
+  <h2 className="impact-heading">
+    Creating Impact <br /> in Trincomalee
+  </h2>
+
+
       <div className="impact-grid">
         {/* 1st box (text) */}
         <div className="impact-card text">

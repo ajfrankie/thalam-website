@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Syne', sans-serif;
-  background-color: #000; /* 🔹 body background black */
-  color: #fff;            
+  background-color: #000;
+  color: #fff;
 }
 
 /* Footer styling */
@@ -10,21 +10,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: white; /* 🔹 footer background black */
+  background-color: white;  /* footer background */
   color: white;
   height: 533px;
   width: 1240px;
   border-radius: 50px;
-  margin-left: 50px;
+  margin: 0 auto;           /* ✅ footer center horizontally */
   padding-left: 40px;
-
-
-}
-body {
-  background-color: black;
-
-  margin: 20px auto 0 auto;  /* top margin 20px, center horizontally */
-  position: relative;
+   margin-top: 80px;
 }
 
 /* Mobile responsive */
@@ -33,8 +26,8 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    width: 90%;              /* responsive width */
-    height: auto;            /* auto height for mobile */
-    margin: 50px auto;       /* center on mobile */
+    width: 90%;
+    height: auto;
+    margin: 50px auto;       /* ✅ still centered in mobile */
   }
 }

@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../assets/images/logo.png";   // 👈 correct import (src/assets/logo.png irundha)
+import logo from "../assets/images/logo.png";   
 
-import logo from "../assets/images/logo.png";
 
 
 
@@ -22,7 +21,7 @@ function Navbar() {
       
       <ul className="nav-links">
         <li>
-          <Link to="/" className="nav-btn">Home</Link>
+          <Link to="/Home" className="nav-btn">Home</Link>
         </li>
         <li>
           <Link to="/contact" className="nav-link">Contact Us</Link>
@@ -31,7 +30,7 @@ function Navbar() {
           <Link to="/history" className="nav-link">History</Link>
         </li>
         <li>
-          <Link to="/events" className="nav-link">Events</Link>
+          <Link to="/event" className="nav-link">Events</Link>
         </li>
         <li>
           <Link to="/register" className="nav-btn red">Register</Link>
