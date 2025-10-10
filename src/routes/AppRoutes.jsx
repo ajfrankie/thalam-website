@@ -9,16 +9,33 @@ import Job from "../pages/Job";
 import Footer from "../components/Footer/Footer";
 
 
+import Education from "../pages/Education";
+import History from "../pages/history";
+
+
 function AppRoutes() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* ✅ இந்த line சேர்க்கணும் */}
         <Route path="/register" element={<Register />} />
         <Route path="/contact" element={<Contact />} />
          <Route path="/Job" element={<Job />} />
          <Route path= "/Footer" element={<Footer/>}/>
+        
+=======
+       
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Education" element={<Education />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/Job" element={<Job />} />
+        <Route path="/register" element={<Register />} />
+        
+         
+        
+        
+
+
         
       </Routes>
     </Router>
