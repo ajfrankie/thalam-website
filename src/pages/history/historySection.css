@@ -1,3 +1,5 @@
+
+
 /* 🔹 History Section */
 .history-main-container {
   font-family: "Syne", sans-serif;
@@ -8,6 +10,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+}
+
+.history-title-box {
+  background-color: #1a1a1a;
+  width: 1240px;
+  height: 446px;
   gap: 40px; /* 🔹 increased gap between boxes */
   position: relative;
 }
@@ -21,6 +30,15 @@
   display: flex;
   justify-content: flex-start;   
   align-items: center;           
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.history-title {
+  font-size: 100px;
+
   padding: 20px;               
   box-sizing: border-box;
   position: relative; /* 👉 இதை இங்கே சேர்க்கணும் */
@@ -41,22 +59,19 @@
   transform: translateY(-10px); 
 }
 
-/* 🔹 Content box */
+
 .history-content-box {
-  width: 1240px;
-  height: 780px;             /* 🔹 slightly larger */
+  width: 1234px;
+  height: 738px;
   background-color: #1a1a1a;
-  border-radius: 50px;
+  border-radius: px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  padding: 80px;             /* 🔹 increased padding */
+  gap: 20px;
+  padding: 40px;
   box-sizing: border-box;
-  margin: 0 50px;
 }
-
-
 
 .first-box {
   margin-top: 40px;
@@ -85,6 +100,18 @@
   filter: grayscale(100%);
 }
 
+
+.jobs-header-logo {
+  position: absolute;
+  top: -220px;       
+  right: -90px;      
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+  z-index: 0;
+}
+
 /* 🔹 Background logo shape */
 .jobs-header-logo {
   position: absolute;
@@ -111,6 +138,8 @@
   height: 881px;
   object-fit: contain;
   opacity: 0.41;
+}
+
   
 }
 

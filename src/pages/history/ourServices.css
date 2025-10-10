@@ -53,6 +53,18 @@
 }
 .service-number {
   font-family: "Syne", sans-serif;
+  font-weight: 100; /* Change to 900 */
+  font-size: 300px;
+  letter-spacing: -10px; /* More tighter */
+  background: linear-gradient(180deg, #8B030C 35%, rgba(26, 26, 26, 0) 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 0.8; /* Adjust line height */
+  position: absolute;
+  bottom: -50px;
+  z-index: 0;
+
   font-weight: 500; /* bold */
   font-size: 300px;
   letter-spacing: -10px;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import logo from "../assets/images/navbar1.jpeg";   
 import navbar1 from "../assets/images/thalam-logo.png";   
 
 

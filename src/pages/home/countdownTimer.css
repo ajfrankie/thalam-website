@@ -65,6 +65,7 @@ body {
   top: 200px;
   bottom: 0;
 
+  top: 190px;
   top: 90px;
 
   right: 0;
@@ -115,6 +116,9 @@ body {
 }
 
 /* Also adjust labels so that they are under the centered timer */
+
+
+
 
  
 .countdown-labels {

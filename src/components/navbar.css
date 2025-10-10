@@ -1,12 +1,25 @@
 /* Navbar Styles */
 .navbar {
   display: flex;
+
+
+  justify-content: center; 
+
+  justify-content: space-between; /* 👈 logo left, others right */
+
+
   justify-content: space-between; /* 👈 logo left, others right */
   align-items: center;
   background: black;
   padding: 12px 40px;
   width: 100%;
   box-sizing: border-box;
+
+  gap: 300px; 
+
+}
+
+
 }
 
 /* Logo Section */
@@ -25,6 +38,8 @@
 .logo-img {
   width: 75px;
   height: 75px;
+  border-radius: 50%;
+  border: 2px solid red; /* 👈 test border */
   border-radius: 50%;        
   background-color: black;   /* dark background */
   display: flex;
@@ -41,6 +56,7 @@
   object-fit: cover;
   border-radius: 50%;        /* optional: makes image itself circular */
 }
+
 
 .logo-text {
   font-size: 50px;

@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import "./Jobs.css";
 
+// ✅ சரியான image import path
 import image1 from "../../assets/images/job1.jpg";
 import image2 from "../../assets/images/job2.jpg";
+import image3 from "../../assets/images/job3.jpg";
+import logoimage from "../../assets/images/logo.png";
+
+
 import image3 from "../../assets/images/job3.jpg"; 
 import logoimage from "../../assets/images/logo.png"; 
 
@@ -43,7 +48,7 @@ const jobsData = [
   },
 ];
 
-export default function JobSection() {
+export default function Job() {
   const [activeIndexes, setActiveIndexes] = useState(jobsData.map(() => 0));
 
   const handleDotClick = (jobId, index) => {
@@ -54,6 +59,7 @@ export default function JobSection() {
 
   return (
     <section className="jobs-section">
+      {/* Header */}
       <div className="jobs-header">
         <div className="jobs-header-text">Jobs</div>
         <div className="jobs-header-logo">
@@ -69,6 +75,7 @@ export default function JobSection() {
         </div>
       </div>
 
+      
       <div className="jobs-list">
         {jobsData.map((job, jobIndex) => (
           <article key={job.id} className={`jobs-card ${job.reverse ? "reverse" : ""}`}>
@@ -92,6 +99,7 @@ export default function JobSection() {
                 ))}
               </div>
 
+              {/* Dots (only last job) */}
               {jobIndex === jobsData.length - 1 && (
                 <div className="jobs-footer-dots">
                   {job.description.map((_, index) => (
