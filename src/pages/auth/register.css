@@ -4,7 +4,7 @@
 
 
 .register-section {
-  background-color: #1
+  background-color: 1;
   color: white;
   min-height: 100vh;
   display: flex;
@@ -81,8 +81,7 @@
 
 /* Register box */
 
-  display: block; 
-}
+  
 
 .register-logo {
   position: absolute;
