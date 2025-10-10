@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 // 🔹 Import only the components you need
 import JobSection from "../pages/job/JobSection";
 import Footer from "../components/footer/Footer";
-import EducationCoures from "../pages/education/EducationCoures";
+import EducationCoures from "../pages/education/EducationCoures";//education
 import ImpactCards from "../components/impact/ImpactCards";
 
 function AppRoutes() {
