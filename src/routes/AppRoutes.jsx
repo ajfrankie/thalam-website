@@ -7,7 +7,7 @@ function AppRoutes() {
   return (
     <Router>
       <Routes>
-        {/* Home Tab Page */}
+        
         <Route path="/hometab" element={<Hometab />} />
 
       

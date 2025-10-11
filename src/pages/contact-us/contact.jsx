@@ -16,9 +16,9 @@ const Contact = () => {
         <img src={logoimage} alt="Thalam Logo" className="contact-logo" />
       </header>
 
-      {/* ---------------- Main Content ---------------- */}
+      
       <div className="contact-content">
-        {/* Contact Info (Dark Box) */}
+        
         <div className="contact-info">
           <h2>We’re Here To Connect And Assist You</h2>
           <p>
