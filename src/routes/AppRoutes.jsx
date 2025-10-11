@@ -1,23 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import EducationCoures from "../pages/education/EducationCoures";
-import ImpactCards from "../components/impact/ImpactCards";// code
-import AppRoutes from "../routes/AppRoutes"; // separate file import
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Contact from "../pages/contact-us/contact";
+import Hometab from "../pages/home/Hometab";
 
-function App() {
+function AppRoutes() {
   return (
     <Router>
       <Routes>
-       
-        <Route path="/" element={<Navigate to="/impact" replace />} />
-        <Route path="/education" element={<EducationCoures />} />
-        <Route path="/impact" element={<ImpactCards />} />
-      </Routes>
+        {/* Home Tab Page */}
+        <Route path="/hometab" element={<Hometab />} />
 
- 
-      <AppRoutes />
+        {/* Contact Us Page */}
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </Router>
   );
 }
 
-export default App;
+export default AppRoutes;
