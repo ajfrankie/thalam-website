@@ -10,7 +10,7 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      {/* ---------------- Header ---------------- */}
+      
       <header className="contact-header">
         <h1>Contact Us</h1>
         <img src={logoimage} alt="Thalam Logo" className="contact-logo" />
