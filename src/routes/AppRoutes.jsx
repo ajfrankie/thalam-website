@@ -10,7 +10,7 @@ function AppRoutes() {
         {/* Home Tab Page */}
         <Route path="/hometab" element={<Hometab />} />
 
-        {/* Contact Us Page */}
+      
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
