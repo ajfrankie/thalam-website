@@ -1,9 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import Navbar from "../../components/navbar";
+import Register from "../../pages/auth/register";
+import Footer from "../../components/Footer/Footer";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const RegisterPage = () => {
+  return (
+    <>
+      <Navbar />
+      <Register />
+      <Footer />
+    </>
+  );
+};
+
+export default RegisterPage;
