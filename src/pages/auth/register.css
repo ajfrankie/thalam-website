@@ -29,7 +29,7 @@
 .register-header h1 {
   font-size: 100px;
   font-weight: 700;
-  font-family: "Syne", sans-serif; /* corrected from Sysne */
+  font-family: "Syne", sans-serif; 
   margin: 0;
   line-height: 1.2;
 }

@@ -14,7 +14,6 @@ function Register() {
         <img src={ThalamLogo} alt="Thalam Logo" className="register-logo" />
       </div>
 
-      {/* Register Box */}
       <div className="register-box">
         <div className="register-card">
           {/* Form Side */}
