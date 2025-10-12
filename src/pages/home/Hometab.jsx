@@ -1,45 +1,50 @@
-// src/pages/home/Hometab.jsx
-
 import React from 'react';
-// CSS path corrected from './Hometab.css' to '../../home/Hometab.css'
-// (Goes up to 'src/pages/', then up to 'src/', then down to 'home/Hometab.css')
-import '../home/Hometab.css'; 
+import '../home/Hometab.css';
+
+// ✅ Importing your local logo files
+import eluna from '../../assets/images/eluna.png';
+import thamilari from '../../assets/images/tamillari.png'; // ✅ check spelling
+import maatram from '../../assets/images/maatram.png';
+import naita from '../../assets/images/naita.png';
+import noolaham from '../../assets/images/noolaham.png';
 
 const logos = [
-  { name: 'Amazon', src: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg', active: true },
-  { name: 'Dribbble', src: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Dribbble_logo.png', active: true },
-  { name: 'HubSpot', src: 'https://upload.wikimedia.org/wikipedia/commons/2/21/HubSpot_Logo.svg', active: true },
-  { name: 'Notion', src: 'https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png', active: true },
-  { name: 'Gumroad', src: 'https://upload.wikimedia.org/wikipedia/commons/6/66/Gumroad_logo_2023.svg', active: true }
+  { name: 'Eluna', src: eluna },
+  { name: 'Thamilari', src: thamilari },
+  { name: 'Maatram', src: maatram },
+  { name: 'Naita', src: naita },
+  { name: 'Noolaham', src: noolaham },
 ];
-
 
 const Hometab = () => {
   return (
     <div className="hometab">
-      {/* Logo strip */}
+      {/* 🔹 Logo Strip Section */}
       <div className="logo-strip">
         {logos.map((logo) => (
-          <img key={logo.name} src={logo.src} alt={logo.name} className="logo" />
+          <img
+            key={logo.name}
+            src={logo.src}
+            alt={logo.name}
+            className="logo"
+          />
         ))}
       </div>
 
-      {/* Two column layout */}
+      {/* 🔹 Two Column Layout */}
       <div className="two-column-layout">
-        {/* Left Column */}
+        {/* Left Column - Objectives */}
         <div className="left-card">
           <div className="card red">
             <h2>Our Objectives</h2>
-            <ul>
-              To build the skills and capacity of young people through training, workshops, and mentorship.
-              To create a platform for volunteerism and civic engagement, encouraging youth to contribute positively to their communities.
-              To support educational and cultural initiatives that strengthen knowledge and identity.
-              To collaborate with local, national, and international organizations for youth development and community upliftment.
-            </ul>
+            <p>To build the skills and capacity of young people through training, workshops, and mentorship.</p>
+            <p>To create a platform for volunteerism and civic engagement, encouraging youth to contribute positively to their communities.</p>
+            <p>To support educational and cultural initiatives that strengthen knowledge and identity.</p>
+            <p>To collaborate with local, national, and international organizations for youth development and community upliftment.</p>
           </div>
         </div>
 
-        {/* Right Column */}
+        {/* Right Column - Mission + Scope */}
         <div className="right-stack">
           <div className="card red">
             <h2>Our Mission</h2>
@@ -54,7 +59,8 @@ const Hometab = () => {
             <h2>Our Scope</h2>
             <p>
               Our scope focuses on youth development, education, volunteerism, and community empowerment across
-              Trincomalee, fostering inclusivity and sustainable growth.
+              Trincomalee, fostering inclusivity and sustainable growth. This extensive range of activities
+              ensures that all facets of youth development are covered effectively.
             </p>
           </div>
         </div>
