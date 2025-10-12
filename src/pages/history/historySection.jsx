@@ -32,6 +32,7 @@ const historyData = [
 
 export default function HistorySection() {
   return (
+<<<<<<< Updated upstream
     <section className="history-section">
       <div className="history-header">
         <div className="history-header-text">History</div>
@@ -45,6 +46,17 @@ export default function HistorySection() {
                 "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><circle cx='50' cy='50' r='50' fill='%23222' /><text x='50%' y='50%' fill='%23fff' font-size='20' text-anchor='middle' alignment-baseline='middle'>Logo</text></svg>";
             }}
           />
+=======
+    <div className="history-main-container">
+      <div className="history-title-box">
+        <h2 className="history-title">History</h2>
+
+      
+
+        
+        <div className="history-header-logo">
+          <img src={logo} alt="Thalam Logo" className="logo-image" />
+>>>>>>> Stashed changes
         </div>
       </div>
 

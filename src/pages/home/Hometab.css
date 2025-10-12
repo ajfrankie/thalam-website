@@ -9,7 +9,11 @@
   overflow-x: hidden;
 }
 
+<<<<<<< Updated upstream
 
+=======
+/* 🔹 Logo Strip */
+>>>>>>> Stashed changes
 .logo-strip {
   display: flex;
   justify-content: center;
@@ -24,7 +28,11 @@
 
 /* 🔹 Individual Logo */
 .logo {
+<<<<<<< Updated upstream
   height: clamp(110px, 10vw, 440px);  /* Minimum 50px → Maximum 80px */
+=======
+  height: clamp(110px, 10vw, 140px);  /* Minimum 50px → Maximum 80px */
+>>>>>>> Stashed changes
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -32,6 +40,10 @@
   background-color: #fff;
   padding: clamp(4px, 1vw, 6px) clamp(8px, 2vw, 10px);
   flex-shrink: 0;
+<<<<<<< Updated upstream
+=======
+  background:none;
+>>>>>>> Stashed changes
 }
 
 
@@ -81,6 +93,16 @@
   color: #fff;
   line-height: 1.2;
   overflow-wrap: break-word;
+<<<<<<< Updated upstream
+}
+
+/* புல்லட் குறிகளை நீக்குவதற்கான புதிய மற்றும் துல்லியமான திருத்தம் */
+.left-card .card ul {
+  list-style-type: none; /* புல்லட் குறிகளை நீக்குகிறது */
+  padding-left: 0;      /* இயல்பாக list-ஆல் வரும் இடதுபுற padding-ஐ நீக்குகிறது */
+  margin: 0;            /* மேலதிக margin-ஐ நீக்குகிறது */
+=======
+>>>>>>> Stashed changes
 }
 
 .left-card .card p {
@@ -115,7 +137,11 @@
   word-wrap: break-word;
   box-sizing: border-box;
   padding: 300px -280px;
+<<<<<<< Updated upstream
     margin-left: -20px; 
+=======
+    margin-left: -20px;
+>>>>>>> Stashed changes
   
 }
 
@@ -290,6 +316,8 @@ section {
   .logo {
     height: 30px;
   }
+<<<<<<< Updated upstream
+=======
   
   .left-card .card,
   .right-stack .card.red,
@@ -297,4 +325,5 @@ section {
     padding: 15px 10px;
     border-radius: 20px;
   }
+>>>>>>> Stashed changes
 }

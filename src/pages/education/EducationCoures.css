@@ -2,11 +2,20 @@
 .education-section {
   background: #000;
   color: #fff;
-  padding: 190px;
+<<<<<<< Updated upstream
+  padding: 40px;
+  padding-bottom: 90px;
+  font-family: 'Syne';
+  border-radius: 50px;
+}
+.body{
+  padding:90px
+=======
+  padding: 130px;
   padding-top: 60px;
-  margin-top: -10px;
   padding-bottom: 120px;
   font-family: 'Syne', sans-serif;
+>>>>>>> Stashed changes
 }
 
 .education-header {
@@ -14,21 +23,35 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 300%;
+<<<<<<< Updated upstream
   height: 446px;      
   margin-top: -50px; 
+=======
+  height: 446px;       
+>>>>>>> Stashed changes
   margin-bottom: 60px;
   border-radius: 50px;
   background: #1A1A1A;
   color: #fff;
+<<<<<<< Updated upstream
   padding-left: 92px;       
+=======
+  padding-left: 92px;
+  width: 1240px;       
+>>>>>>> Stashed changes
   margin: 0 auto; 
   position: relative;
 }
 
 .education-header-logo {
   position: absolute;
+<<<<<<< Updated upstream
   bottom: -290px;       
   left: 82%;
+=======
+  bottom: -280px;       
+  left: 80%;
+>>>>>>> Stashed changes
   transform: translateX(-50%);
   z-index: 0;
   display: flex;
@@ -39,7 +62,11 @@
   height: 981px;
   border-radius: 355.5px;
   overflow: hidden;
+<<<<<<< Updated upstream
   margin-top: 120px;
+=======
+  margin-top: -100px;
+>>>>>>> Stashed changes
   
 
 }
@@ -56,8 +83,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+<<<<<<< Updated upstream
   gap: 20px;
   margin-top: 60px;  /* Gap between boxes */
+=======
+  gap: 40px;
+  margin-top: 40px;  /* Gap between boxes */
+>>>>>>> Stashed changes
 }
 
 .education-card {
@@ -66,12 +98,19 @@
   gap: 10px;
   background: #1A1A1A;
   border-radius: 50px;
+<<<<<<< Updated upstream
   padding:20px;
   padding-bottom: -10px;
   margin: 0 auto;
 }
 .education-card:nth-course(1) {
   margin-top:-40px;   
+=======
+  padding: 30px;
+  padding-bottom: 1px;
+  max-width: 1240px;
+  margin: 0 auto;
+>>>>>>> Stashed changes
 }
 
 .education-card.reverse {
@@ -129,13 +168,19 @@
     font-weight: 700;
     color: #fff;
     line-height: 1.1;
+<<<<<<< Updated upstream
    margin-top:0px;        /*  */
     margin-bottom: 20px;
+=======
+    top: 257px;        /*  */
+    margin-bottom: 120px;
+>>>>>>> Stashed changes
     margin-left: 60px;
 }
 
 /* Paragraph 1 */
 .education-desc-1 {
+<<<<<<< Updated upstream
     color: #ffffff;
   line-height: 28px;
   margin-bottom: 40px;
@@ -144,11 +189,23 @@
   text-align: justify;
   margin-top: 20px;
   margin-left: 10px;
+=======
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    text-align: justify;
+    top: 257px;    /* heading*/
+    margin-bottom: 40px;
+   left: 609px;
+    font-weight: 500;
+    height: 150px;
+>>>>>>> Stashed changes
     
 }
 
 /* Paragraph 2 */
 .education-desc-2 {
+<<<<<<< Updated upstream
     color: #ffffff;
   line-height: 28px;
   margin-bottom: 40px;
@@ -157,10 +214,23 @@
   text-align: justify;
   margin-top: 20px;
   margin-left: 10px;
+=======
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    text-align: justify;
+    top: -50px;     /* */
+    position:relative;
+    margin-bottom: 40px;
+    left:0px;
+    font-weight: 500;
+    height: 150px;
+>>>>>>> Stashed changes
 }
 
 /* Paragraph 3 */
 .education-desc-3 {
+<<<<<<< Updated upstream
    color: #ffffff;
   line-height: 30px;
   margin-bottom: 40px;
@@ -169,11 +239,24 @@
   text-align: justify;
   margin-top: 70px;
   margin-left: 60px;
+=======
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    text-align: justify;
+    position:relative;
+    top: -30px;      /*  */
+    margin-bottom: 40px;
+    left: 0px;
+    font-weight: 500;
+    height: 150px;
+>>>>>>> Stashed changes
 }
 
 
 
 
+<<<<<<< Updated upstream
 .education-image-1
 {
     width: 531px;
@@ -194,13 +277,20 @@
   top: 42px;
   mix-blend-mode: luminosity;
 }
+=======
+.education-image-1,
+.education-image-2,
+>>>>>>> Stashed changes
 .education-image-3 {
   width: 531px;
   height: 657px;
   object-fit: cover;
   border-radius: 50px;
+<<<<<<< Updated upstream
   left: 667px;
   top: 42px;
+=======
+>>>>>>> Stashed changes
   mix-blend-mode: luminosity;
 }
 
@@ -209,7 +299,11 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+<<<<<<< Updated upstream
   margin-top: 130px;
+=======
+  margin-top: 90px;
+>>>>>>> Stashed changes
   margin-left: 550px;
   position: absolute;
 }
@@ -220,14 +314,18 @@
   background-color: #dedeed;
   border-radius: 100%;
   cursor: pointer;
+<<<<<<< Updated upstream
   top: 2023px;
   left: 740.68px;
+=======
+>>>>>>> Stashed changes
 }
 
 .dot.active {
   background-color: #fff;
 }
 
+<<<<<<< Updated upstream
 /* ---------------- Enhanced Responsive Fix ---------------- */
 
 /* Tablets and Laptops */
@@ -332,6 +430,14 @@
     flex-direction: column;
     text-align: center;
     gap: 25px;
+=======
+/* ---------------- Responsive ---------------- */
+@media (max-width: 1024px) {
+  .education-card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+>>>>>>> Stashed changes
   }
 
   .education-title-1,
@@ -353,6 +459,7 @@
   .education-image-2,
   .education-image-3 {
     width: 100%;
+<<<<<<< Updated upstream
     border-radius: 20px;
     height: auto;
   }
@@ -366,5 +473,137 @@
   .dot {
     width: 16px;
     height: 16px;
+=======
+    height: auto;
+    border-radius: 40px;
+  }
+
+  .education-content {
+    flex: unset;
+    width: 100%;
+  }
+
+  .education-title,
+  .education-title-1,
+  .education-title-2,
+  .education-title-3 {
+    font-size: 60px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .education-desc,
+  .education-desc-1,
+  .education-desc-2,
+  .education-desc-3 {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .education-header {
+    font-size: 60px;
+    line-height: 120%;
+    height: auto;
+    padding-left: 20px;
+  }
+
+  .education-header-logo {
+    margin-top: -200px;
+    margin-left: -100px;
+    height: auto;
+  }
+
+  .logo-image {
+    width: 400px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: -50px;
+  }
+
+  .education-footer-dots {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-card {
+    padding: 15px;
+  }
+
+  .education-title,
+  .education-title-1,
+  .education-title-2,
+  .education-title-3 {
+    font-size: 36px;
+  }
+
+  .education-desc,
+  .education-desc-1,
+  .education-desc-2,
+  .education-desc-3 {
+    font-size: 16px;
+  }
+
+  .education-header {
+    font-size: 40px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .education-header-logo,
+  .logo-image {
+    display: flex;
+    height: auto;
+    margin-left: 40px;
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-section {
+    padding: 20px 10px;
+  }
+
+  .education-card {
+    padding: 10px;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .education-title,
+  .education-title-1,
+  .education-title-2,
+  .education-title-3 {
+    font-size: 28px;
+  }
+
+  .education-desc,
+  .education-desc-1,
+  .education-desc-2,
+  .education-desc-3 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .logo-image {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+>>>>>>> Stashed changes
+  }
+
+  .education-footer-dots {
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .dot {
+    width: 35px;
+    height: 35px;
   }
 }

@@ -16,11 +16,7 @@ import Job from "../pages/Job";
 
 
 
-import Footer from "../components/Footer/Footer";
-import History from "../pages/History";
-import Education from "../pages/education";
-import ContactUs from "../pages/contact-us";
-import Job from "../pages/job";
+
 
 
 

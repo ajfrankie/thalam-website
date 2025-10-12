@@ -1,4 +1,11 @@
+// src/pages/home/Hometab.jsx
+
 import React from 'react';
+<<<<<<< Updated upstream
+// CSS path corrected from './Hometab.css' to '../../home/Hometab.css'
+// (Goes up to 'src/pages/', then up to 'src/', then down to 'home/Hometab.css')
+import '../home/Hometab.css'; 
+=======
 import './Hometab.css';
 
 import eluna from '../../assets/images/eluna.png';
@@ -6,6 +13,7 @@ import thamilari from '../../assets/images/tamillari.png';
 import maatram from '../../assets/images/maatram.png';
 import naita from '../../assets/images/naita.png';
 import noolaham from '../../assets/images/noolaham.png';
+>>>>>>> Stashed changes
 
 const logos = [
   { name: 'Eluna', src: eluna },

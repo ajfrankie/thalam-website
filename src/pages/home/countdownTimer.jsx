@@ -37,7 +37,11 @@ const CountdownTimer = () => {
 
   return (
     <div className="container next-event-section">
+<<<<<<< Updated upstream
       <h2 className="next-event-heading">Next Event</h2>
+=======
+      <h2 className="next-event-heading">NEXT EVENT</h2>
+>>>>>>> Stashed changes
       <div className="countdown-frame position-relative overflow-hidden">
         <div className="background-image-container"></div>
 

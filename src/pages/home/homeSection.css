@@ -1,6 +1,10 @@
 .home-section {
   height: 700px;
+<<<<<<< Updated upstream
   width: 75%;
+=======
+  width: 77%;
+>>>>>>> Stashed changes
   margin: 40px auto;
   border-radius: 50px;
   background-color: #080000;
@@ -32,7 +36,11 @@
   opacity: 0.5;
 }
 
+<<<<<<< Updated upstream
 
+=======
+/* 🔹 Text styling (Title + Paragraph) - RESPONSIVE */
+>>>>>>> Stashed changes
 .home-section h1 {
   font-size: clamp(48px, 6vw, 80px) !important; /* Responsive font size */
   font-family: 'Syne', sans-serif;

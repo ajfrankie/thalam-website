@@ -18,7 +18,11 @@ body {
 
 /* Event heading */
 .next-event-heading {
+<<<<<<< Updated upstream
   font-weight: 600;
+=======
+  font-weight: 700;
+>>>>>>> Stashed changes
   font-size: 100px;
   line-height: 1;
   margin-bottom: 40px;
@@ -87,6 +91,12 @@ body {
   text-align: center;
   color: #fff;
   z-index: 2;
+<<<<<<< Updated upstream
+}
+
+/* Also adjust labels so that they are under the centered timer */
+
+=======
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,6 +105,7 @@ body {
   margin-left: -50px;
 }
 
+>>>>>>> Stashed changes
 .countdown-labels {
   position: absolute;
   top: calc(50% + 110px);

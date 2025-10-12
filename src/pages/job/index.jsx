@@ -6,7 +6,11 @@ import Footer from "../../components/Footer/Footer";
 
 import JobSection from "../../pages/job/JobSection";
 
+import Footer from "../components/Footer/Footer"; // Footer.jsx
+
+
 import Footer from "../../components/Footer/Footer"; 
+
 
 
 

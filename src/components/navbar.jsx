@@ -1,6 +1,17 @@
 import React from "react";
+<<<<<<< Updated upstream
+import { Link } from "react-router-dom";
+
+import logo from "../assets/images/logo.png";   
+
+
+
+
+
+=======
 import { NavLink } from "react-router-dom";
 import navbar1 from "../assets/images/thalam-logo.png";
+>>>>>>> Stashed changes
 import "./Navbar.css";
 
 function Navbar() {
@@ -14,6 +25,26 @@ function Navbar() {
         <span className="logo-text ms-2">THALAM</span>
       </NavLink>
 
+<<<<<<< Updated upstream
+      
+      <ul className="nav-links">
+        <li>
+          <Link to="/Home" className="nav-btn">Home</Link>
+        </li>
+        <li>
+          <Link to="/contact" className="nav-link">Contact Us</Link>
+        </li>
+        <li>
+          <Link to="/history" className="nav-link">History</Link>
+        </li>
+        <li>
+          <Link to="/event" className="nav-link">Events</Link>
+        </li>
+        <li>
+          <Link to="/register" className="nav-btn red">Register</Link>
+        </li>
+      </ul>
+=======
       {/* Toggle button (for mobile) */}
       <button
         className="navbar-toggler"
@@ -55,6 +86,7 @@ function Navbar() {
         {/* Moving background indicator */}
         <span className="nav-indicator"></span>
       </div>
+>>>>>>> Stashed changes
     </nav>
   );
 }

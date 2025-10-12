@@ -1,11 +1,26 @@
 import React, { useState } from "react";
 import "./EducationCoures.css";
 
+<<<<<<< Updated upstream
+
+// Logo
+import logo from "../../assets/images/logo.png";//image
+
+
+// Images
+
+
+
+import education1image from "../../assets/images/education1.jpg";
+import education2image from "../../assets/images/education2.jpg";//image
+import education3image from "../../assets/images/education3.jpg";//image
+=======
 // logo image
 import logoimage from "../../assets/images/logo.png";
 import image1 from "../../assets/images/education1.jpg";
 import image2 from "../../assets/images/education2.jpg";
 import image3 from "../../assets/images/education3.jpg";
+>>>>>>> Stashed changes
 
 const educationData = [
   {

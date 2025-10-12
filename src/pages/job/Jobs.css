@@ -5,7 +5,16 @@
   padding-top: 60px;
   padding-bottom: 120px;
   
+<<<<<<< Updated upstream
+
+.body {
+  font-family: syne;
+  }
+=======
+>>>>>>> Stashed changes
 }
+
+
 
 .jobs-header {
   text-align: left;
@@ -29,7 +38,11 @@
 
 .jobs-header-logo {
   position: absolute;
+<<<<<<< Updated upstream
   bottom: -150px;       
+=======
+  bottom: -80px;       
+>>>>>>> Stashed changes
   left: 75%;
   transform: translateX(-50%);
   z-index: 0;
@@ -41,16 +54,22 @@
   height: 981px;
   border-radius: 355.5px;
   overflow: hidden;
+<<<<<<< Updated upstream
   margin-top: 120px;
+=======
+  margin-top: 250px;
+>>>>>>> Stashed changes
   
 
 }
+
 
 .logo-image {
   width: 711px;
   height: 881px;
   object-fit: contain;
   opacity: 31%;
+  
 }
 
 .jobs-list {
@@ -73,6 +92,26 @@
 }
 
 .jobs-card.reverse {
+<<<<<<< Updated upstream
+  flex-direction: row-reverse; 
+}
+
+
+
+
+
+
+.job-title-1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+  font-style: bold;
+  line-height: 0%;
+  margin-top: 80px;
+  margin-left: 60px;
+}
+
+=======
   flex-direction: row-reverse;
 }
 
@@ -93,6 +132,7 @@
   margin-left: 60px;
 }
 
+>>>>>>> Stashed changes
 .job-desc-1 {
   color: #ffffff;
   line-height: 30px;
@@ -146,6 +186,13 @@ width: 531px;
 
 .job-desc-3 {
   color: #ffffff;
+<<<<<<< Updated upstream
+  width: 500px;
+  height: 140px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+=======
   line-height: 30px;
   margin-bottom: 40px;
   font-size: 22px;
@@ -153,6 +200,7 @@ width: 531px;
   text-align: justify;
   margin-top: 70px;
   margin-left: 60px;
+>>>>>>> Stashed changes
 }
 
 .job-title-3 {
@@ -167,27 +215,57 @@ width: 531px;
 
 .job-image-3 {
   width: 531px;
+<<<<<<< Updated upstream
+}
+
+.job-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-bottom: 1px;
+}
+
+
+
+.job-footer {
+  flex-direction: column;
+  gap: 15px;
+  
+=======
   height: 657px;
   object-fit: cover;
   border-radius: 50px;
   left: 667px;
   top: 42px;
   mix-blend-mode: luminosity;
+>>>>>>> Stashed changes
 }
 
 .jobs-footer-dots {
   display: flex;
   justify-content: center;
+<<<<<<< Updated upstream
+  gap: 15px;               
+  margin-top: 40px; 
+  margin-left: 550px; 
+  position: absolute;      
+=======
   gap: 15px;
   margin-top: 270px;
   margin-left: 550px;
   position: absolute;
+>>>>>>> Stashed changes
 }
 
 .dot {
   width: 60px;
   height: 60px;
   background-color: #dedeed;
+<<<<<<< Updated upstream
+  background-color: #dedeed;
+=======
+>>>>>>> Stashed changes
   border-radius: 100%;
   cursor: pointer;
   top: 2023px;
@@ -199,143 +277,134 @@ width: 531px;
   background-color: #fff;
 }
 
-/* ---------------- Enhanced Responsive Fix ---------------- */
+/* ---------------- Responsive for Jobs Section ---------------- */
 
-/* Tablets and Laptops */
 @media (max-width: 1024px) {
-  .jobs-section {
-    padding: 80px 40px;
+  .jobs-card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .job-image {
+    width: 100%;
+    height: adjust;
+    border-radius: 50px;
+  }
+
+  .job-content {
+    flex: unset;
+    width: 100%;
+  }
+
+  .job-title {
+    font-size: 60px;
+    height: adjust;
+  }
+
+  .job-desc {
+    font-size: 18px;
+    line-height: adjust;
+  }
+
+  .jobs-footer-dots {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
   }
 
   .jobs-header {
     font-size: 60px;
-    height: auto;
     line-height: 120%;
-    padding-left: 30px;
-    text-align: center;
+    height: auto;
+    padding-left: 20px;
   }
 
   .jobs-header-logo {
-    position: relative;
+    margin-top: -200px;
+    margin-left: -100px;
     height: auto;
-    margin: 0 auto;
-    opacity: 0.8;
   }
 
   .logo-image {
-    height: auto;
-    opacity: 0.3;
-    margin-top: 40px;
-  }
-
-  .jobs-card,
-  .jobs-card.reverse {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-  }
-
-  .job-title-1,
-  .job-title-2,
-  .job-title-3 {
-    font-size: 50px;
-    margin: 40px 0 20px 0;
-    text-align: center;
-  }
-
-  .job-desc-1,
-  .job-desc-2,
-  .job-desc-3 {
-    font-size: 18px;
-    margin: 0 20px;
-    text-align: justify;
-  }
-
-  .job-image-1,
-  .job-image-2,
-  .job-image-3 {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 30px;
-  }
-
-  .jobs-footer-dots {
-    position: relative;
-    margin: 40px auto 0;
-    justify-content: center;
-  }
-
-  .dot {
-    width: 25px;
-    height: 25px;
+    width: 400px;
+    height: adjust;
+    margin-left: 40px;
+    margin-top: -50px;
   }
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  .jobs-section {
-    padding: 40px 20px;
+<<<<<<< Updated upstream
+
+
+=======
+@media (max-width: 768px) {
+  .jobs-card {
+    padding: 15px;
+  }
+
+  .job-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .job-desc {
+    font-size: 16px;
   }
 
   .jobs-header {
-    font-size: 38px;
-    height: auto;
-    line-height: 130%;
+    font-size: 40px;
+    text-align: center;
     padding-left: 0;
-    text-align: center;
   }
 
-  .jobs-header-logo {
-    height: auto;
-    margin: 10px auto 0;
-    opacity: 0.9;
-  }
-
+  .jobs-header-logo,
   .logo-image {
-    height: auto;
-    margin-top: -100px;
+    display: flex;
+    height: adjust;
+    margin-left: 40px;
+    margin-top: -50px;
+
+
+
+  }
+}
+>>>>>>> Stashed changes
+
+@media (max-width: 480px) {
+  .jobs-section {
+    padding: 20px 10px;
+    padding-bottom: 60px;
+    height: adjust;
   }
 
-  .jobs-card,
-  .jobs-card.reverse {
+  .jobs-card {
+    padding: 10px;
+    gap: 15px;
     flex-direction: column;
-    text-align: center;
-    gap: 25px;
   }
 
-  .job-title-1,
-  .job-title-2,
-  .job-title-3 {
+  .job-title {
     font-size: 28px;
-    margin: 20px 0 10px 0;
+    height: adjust;
   }
 
-  .job-desc-1,
-  .job-desc-2,
-  .job-desc-3 {
+  .job-desc {
     font-size: 14px;
-    text-align: justify;
-    margin: 0 10px;
-  }
-
-  .job-image-1,
-  .job-image-2,
-  .job-image-3 {
-    width: 100%;
-    border-radius: 20px;
-    height: auto;
+    height: adjust;
   }
 
   .jobs-footer-dots {
-    margin-top: 30px;
-    justify-content: center;
-    position: relative;
+    gap: 10px;
   }
 
   .dot {
-    width: 16px;
-    height: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .jobs-header {
+    font-size: 28px;
+    max-height: adjust;
   }
 }
