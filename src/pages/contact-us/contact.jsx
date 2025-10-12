@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.css";
-import logoimage from "../../assets/images/logo.png"; // ✅ Correct logo import
+import logoimage from "../../assets/images/logo.png"; 
 
 const Contact = () => {
   const handleSubmit = (e) => {
