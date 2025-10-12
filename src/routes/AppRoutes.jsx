@@ -1,31 +1,16 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-
-// Home (index.jsx) matthum import pannunga
-import Home from "../pages/home";       
-
-
-
-
-
-
-
+import Home from "../pages/home";
+import Register from "../pages/auth"; 
+import Contact from "../pages/contact-us/contact";
 
 function AppRoutes() {
   return (
     <Router>
       <Routes>
-       
-        <Route path="/Home" element={<Home />} />
-        
-        
-         
-        
-        
-
-
-        
+        <Route path="/" element={<Home />} />
+        {/* ✅ இந்த line சேர்க்கணும் */}
+        <Route path="/register" element={<Register />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

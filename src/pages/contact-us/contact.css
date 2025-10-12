@@ -1,139 +1,145 @@
-/* contact.css */
-
 /* Global Styles */
 body {
-    background-color: #000; /* முழு பின்னணி கருப்பு */
-    color: #fff;
-    font-family: "Syne", sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-.contact-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
+  background-color: #000;
+  color: #fff;
+  font-family: "Syne", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header (Dark Gray) */
+
+.contact-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
 .contact-header {
-    background: #1a1a1a;
-    color: white;
-    border-radius: 30px;
-    padding: 80px 100px;
-    margin: 80px 0 60px 0;
-    position: relative;
-    max-width: 100%;
-    box-sizing: border-box;
+  background: #1a1a1a;
+  color: white;
+  border-radius: 30px;
+  padding: 80px 100px;
+  margin: 80px 0 60px 0;
+  position: relative;
 }
 .contact-header h1 {
-    font-size: 80px;
-    font-weight: 700;
-    margin: 0;
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0;
 }
 .contact-logo {
-    position: absolute;
-    right: 80px;
-    top: 30px;
-    width: 250px;
-    opacity: 0.2;
+  position: absolute;
+  right: 80px;
+  top: 30px;
+  width: 250px;
+  opacity: 0.2;
 }
 
-/* Main Content (Dark Gray) */
+
 .contact-content {
-    /* Contact Info மற்றும் Form-ஐ சுற்றியுள்ள பகுதி Dark Gray */
-    background: #1a1a1a;
-    border-radius: 20px;
-    padding: 60px;
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
-    box-sizing: border-box;
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  box-sizing: border-box;
 }
 
-/* Left Side: Contact Info Styles */
+
 .contact-info {
-    flex: 1;
+  flex: 1;
 }
 .contact-info h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
 }
 .contact-info p {
-    color: #bbb;
-    font-size: 18px;
-    margin-bottom: 30px;
-    max-width: 600px;
+  color: #bbb;
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;
 }
 .info-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 40px;
 }
 .info-section div h3 {
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 8px;
-    font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 .info-section div p {
-    color: #bbb;
-    font-size: 16px;
-    line-height: 1.4;
+  color: #bbb; 
+  font-size: 16px;
+  line-height: 1.4;
 }
 
-/* Right Side: Contact Form (Gray Box) - இது மாறாத பகுதி */
+/* Contact Form */
 .contact-form {
-    flex: 1;
-    background: #e6e6e6; /* Gray background - நீங்கள் கேட்டது போலவே உள்ளது */
-    color: #111;
-    padding: 30px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  flex: 1;
+  background: #e6e6e6;
+  color: #111;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .contact-form h3 {
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #111;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
 }
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 14px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 .contact-form button {
-    background-color: #a30000;
-    color: #fff;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 50px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: #a30000;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .contact-form button:hover {
-    background-color: #ff3b3b;
+  background-color: #ff3b3b;
 }
 
 /* Map Section */
 .contact-map {
-    /* இந்த div-இன் பின்னணி கருப்பு (body-இன் நிறம்) என்பதால், வெளியே எதுவும் தெரியாது */
-    margin: 0 0 80px 0;
-    border-radius: 20px;
-    overflow: hidden;
+  margin: 0 0 80px 0;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .contact-map iframe {
-    /* Map-இன் அகலம் மற்றும் உயரம் JSX-இல் Inline-ஆக கொடுக்கப்பட்டுள்ளது, இங்கே அதன் border-ஐ உறுதி செய்கிறோம் */
-    display: block;
+  display: block;
+}
+
+
+.info-section div p a {
+  color: #bbb !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-section div p a:hover {
+  color: #ff3b3b !important;
 }
