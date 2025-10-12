@@ -63,7 +63,7 @@ const Contact = () => {
         </div>
       </div>
 
-      
+      {/* Header */}
       <div className="contact-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63359.2345024389!2d81.19040810274905!3d8.570622145888497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe548f6fcd264b%3A0xa77bc36a3d0c79a0!2sDockyard%20Rd%2C%20Trincomalee%2031000%2C%20Sri%20Lanka!5e0!3m2!1sen!2sin!4v1696852349101!5m2!1sen!2sin"
