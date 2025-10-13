@@ -1,4 +1,4 @@
-/* */
+/* Education Section */
 .education-section {
   background: #000;
   color: #fff;
@@ -6,36 +6,39 @@
   padding-bottom: 90px;
   font-family: 'Syne';
   border-radius: 50px;
+  margin-left: 10px;
 }
-.body{
-  padding:90px
+
+.body {
+  padding: 90px;
 }
 
 /* Header with title + logo */
 .education-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background: #1A1A1A;
-  border-radius: 50px;     /* matches your Figma radius */
-  width: 1240px;           /* 🔹 From your layout */
-  height: 446px;           /* 🔹 From your layout */
-  margin: 164px auto 40px auto; /* center + top 164px */
-  padding: 70px;           /* keep inner spacing nice */
+  border-radius: 50px;
+  width: 1410px;
+  height: 346px;
+  margin: 164px;
+  padding: -10px;
   position: relative;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: -300px;
+  gap: 200px;
 }
 
 .education-title {
   font-size: 100px;
   font-weight: 700;
   line-height: 300%;
-  height:300px
-  
- 
-  
-  
-  
-  
+  height: 300px;
+  margin-left: 60px;
+  position: relative;
+  margin-right: 20px;
 }
 
 .education-logo {
@@ -44,18 +47,10 @@
   object-fit: contain;
   border-radius: 355px;
   opacity: 31%;
-  
+  margin-right: 30px;
 }
 
-
-/* Education  section*/
-
-
 /* Education Cards Section */
-
-
-
-
 .education-list {
   display: flex;
   flex-direction: column;
@@ -70,7 +65,8 @@
   gap: 30px;
   background: #1A1A1A;
   border-radius: 50px;
-  padding: 30px;
+  padding: 40px 60px;
+  margin-bottom: 10px;
 }
 
 .education-card.reverse {
@@ -83,8 +79,8 @@
 }
 
 .education-image {
-  width: 531px;
-  height: 657px;
+  width: 650px;
+  height: 750px;
   object-fit: cover;
   border-radius: 50px;
   mix-blend-mode: luminosity;
@@ -117,14 +113,16 @@
   z-index: 2;
 }
 
-/* Footer Dots */
+/* Footer Dots (Updated for right + center) */
 .education-footer-dots {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* 🔹 Right-align dots */
   gap: 15px;
-  margin-top: 160px;
-  margin-left: 480px;
-  position: absolute;
+  margin-top: 100px;
+  margin-right: -50px; /* 🔹 Distance from right edge */
+  position: relative;
+  bottom: -200px; /* 🔹 Keeps layout normal */
+  margin-left: 50px;
 }
 
 .dot {
@@ -133,6 +131,7 @@
   background-color: #dedeed;
   border-radius: 100%;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .dot:hover {
@@ -164,6 +163,20 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* === Course 02 Specific Styling === */
+.education-list .education-card:nth-child(2) {
+  flex-direction: row; /* image right, text left */
+}
+
+.education-list .education-card:nth-child(2) .education-content {
+  text-align: left;
+  margin-left: -10px;
+  padding-left: -90px;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 30px 40px;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .education-card,
@@ -179,6 +192,7 @@
 
   .education-card-title {
     font-size: 50px;
+    margin-bottom: 15px;
   }
 
   .education-desc {
@@ -186,17 +200,18 @@
     line-height: 28px;
   }
 
+  /* 🔹 On tablets, dots center ஆகும் */
   .education-footer-dots {
     justify-content: center;
-    margin-left: 0;
-    position: relative;
+    margin: 50px auto 0 auto;
   }
 }
 
 @media (max-width: 480px) {
   .education-title {
     font-size: 50px;
-    margin-top: -20px;
+    margin-top: 50px;
+    margin-left: 40px;
   }
 
   .education-card-title {
@@ -212,4 +227,54 @@
     width: 40px;
     height: 40px;
   }
+
+  /* 🔹 Mobile view — dots center perfectly */
+  .education-footer-dots {
+    justify-content: center;
+    margin: 50px auto 0 auto;
+  }
+  /* ---------------- Responsive ---------------- */
+@media (max-width: 1024px) {
+  .contact-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 50px;
+  }
+  .contact-info h2 {
+    font-size: 28px;
+  }
+  .contact-info p {
+    font-size: 15px;
+  }
+  .contact-form h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header h1 {
+    font-size: 36px;
+  }
+  .contact-content {
+    padding: 30px 10px;
+  }
+  .contact-info h2 {
+    font-size: 22px;
+  }
+  .contact-info p {
+    font-size: 14px;
+  }
+  .contact-form h3 {
+    font-size: 20px;
+  }
+  .info-section {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+}
 }
