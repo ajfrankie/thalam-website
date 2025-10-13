@@ -93,7 +93,7 @@ export default function Job() {
                 ))}
               </div>
 
-              {/* Dots (only last job) */}
+             
               {jobIndex === jobsData.length - 1 && (
                 <div className="jobs-footer-dots">
                   {job.description.map((_, index) => (
