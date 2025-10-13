@@ -3,6 +3,7 @@ import Home from "../pages/home";
 import Register from "../pages/auth"; 
 import Contact from "../pages/contact-us/contact";
 
+
 function AppRoutes() {
   return (
     <Router>
