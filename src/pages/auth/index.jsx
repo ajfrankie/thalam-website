@@ -8,7 +8,7 @@ const RegisterPage = () => {
     <>
       <Navbar />
       <Register />
-      <Footer />
+      <Footer /> 
     </>
   );
 };

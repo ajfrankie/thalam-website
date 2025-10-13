@@ -5,6 +5,7 @@ import Register from "../pages/auth";
 import Contact from "../pages/contact-us/contact";
 import Job from "../pages/Job";
 import Footer from "../components/Footer/Footer";
+
 function AppRoutes() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function AppRoutes() {
         <Route path="/contact" element={<Contact />} />
          <Route path="/Job" element={<Job />} />
          <Route path= "/Footer" element={<Footer/>}/>
+        
       </Routes>
     </Router>
   );
