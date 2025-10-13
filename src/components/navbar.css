@@ -155,3 +155,68 @@
   color: #fff;
   font-size: 18px;
 }
+
+/* ---------------- Responsive ---------------- */
+
+/* For large tablets and below */
+@media (max-width: 1024px) {
+  .services {
+    gap: 30px;
+  }
+  .navbar {
+    padding: 12px 25px;
+  }
+}
+
+/* For tablets / small desktops */
+@media (max-width: 768px) {
+  .body-container h1 {
+    font-size: 45px;
+  }
+  .body-container p {
+    font-size: 18px;
+  }
+  .services {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .service-card {
+    width: 90%;
+    padding: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .logo-text {
+    font-size: 36px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .body-container h1 {
+    font-size: 36px;
+  }
+  .body-container p {
+    font-size: 16px;
+  }
+  .services {
+    gap: 15px;
+  }
+  .service-card {
+    width: 95%;
+    padding: 15px;
+  }
+  .nav-btn, .nav-btn.red {
+    font-size: 20px;
+    padding: 6px 18px;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+}

@@ -9,7 +9,7 @@ body {
 
           .impact-container {
             width: 100%;
-            padding: 40px 90px;
+            padding: 40px 115px;
             word-spacing: normal; 
             gap:40px ;
             box-sizing: border-box;
@@ -132,4 +132,80 @@ body {
 /* */
 .impact-card.image img:hover {
   filter: grayscale(0%);
+}
+
+
+
+/* ---------------- Responsive ---------------- */
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .impact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .impact-container {
+    padding: 40px 50px;
+  }
+  .impact-container h2 {
+    font-size: 70px;
+    width: 90%;
+    margin-right: 0;
+    transform: translateX(0);
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .impact-container {
+    padding: 30px 30px;
+  }
+  .impact-container h2 {
+    font-size: 55px;
+  }
+  .impact-card {
+    flex: 0 0 45%; /* two cards per row */
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .impact-container h2 {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .impact-card {
+    flex: 0 0 80%; /* single card per row */
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .impact-card.text .text-heading {
+    font-size: 24px;
+    width: 180px;
+    top: 15px;
+  }
+  .impact-card.text .details-number {
+    font-size: 72px;
+    line-height: 80px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .impact-container h2 {
+    font-size: 36px;
+  }
+  .impact-card {
+    flex: 0 0 95%;
+  }
+  .impact-card.text .text-heading {
+    font-size: 20px;
+    width: 150px;
+  }
+  .impact-card.text .details-number {
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
