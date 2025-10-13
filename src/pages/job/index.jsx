@@ -1,11 +1,11 @@
-// src/pages/home/index.jsx
+
 import React from "react";
 
 
 import Navbar from "../../components/navbar";
 import JobSection from "../../pages/job/JobSection";
 
-import Footer from "../../components/Footer/Footer"; // Footer.jsx
+import Footer from "../../components/Footer/Footer"; 
 
 const Job = () => {
   return (

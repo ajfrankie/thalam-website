@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Jobs.css";
 
-// ✅ சரியான image import path
+
 import image1 from "../../assets/images/job1.jpg";
 import image2 from "../../assets/images/job2.jpg";
 import image3 from "../../assets/images/job3.jpg";
