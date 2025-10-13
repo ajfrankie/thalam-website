@@ -38,3 +38,14 @@ body {
     margin: 50px auto;       /* center on mobile */
   }
 }
+
+footer .container {
+  max-width: 1280px;   /* maximum width of footer */
+  margin: 0 auto;      /* center horizontally */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;     /* wrap on small screens */
+  padding: 40px 20px;  /* spacing inside container */
+  box-sizing: border-box;
+}
