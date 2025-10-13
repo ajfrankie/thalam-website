@@ -12,8 +12,9 @@
 .container {
   width: 95%;
   max-width: 1240px;
+  max-height: 804px;
   background-color: #1a1a1a; /* dark container box */
-  border-radius: 30px;
+  border-radius: 50px;
   /* 🔻 Slightly reduced top & bottom padding */
   padding: 40px 70px 50px 70px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
@@ -45,6 +46,7 @@
   line-height: 1.1;
   margin-bottom: 20px;
   font-family: 'Syne', sans-serif;
+  margin-top: -220px;
 }
 
 .text-content p {
@@ -67,6 +69,7 @@
   background: linear-gradient(90deg, #8b0000 0%, #3e0303 100%);
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
+  margin-top: 50px;
 }
 
 .read-more-btn:hover {
