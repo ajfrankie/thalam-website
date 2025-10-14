@@ -36,31 +36,28 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="next-event-section">
+    <div className="container next-event-section">
       <h2 className="next-event-heading">NEXT EVENT</h2>
-      <div className="countdown-frame">
-        <div className="background-image-container">
-          
-        </div>
+      <div className="countdown-frame position-relative overflow-hidden">
+        <div className="background-image-container"></div>
 
-       
-        <div className="countdown-time">
+        <div className="countdown-time d-flex justify-content-center align-items-center">
           <span>{String(time.days).padStart(2, "0")}</span>:
           <span>{String(time.hours).padStart(2, "0")}</span>:
           <span>{String(time.minutes).padStart(2, "0")}</span>
         </div>
-        <div className="countdown-labels">
+
+        <div className="countdown-labels d-flex justify-content-center gap-5">
           <span>DAYS</span>
           <span>HOURS</span>
           <span>MINUTES</span>
         </div>
 
-        {/* Decoration image on the right */}
         <div className="countdown-decoration">
-          <img src={countdowntimer1image} alt="decoration" className="decoration-img" />
+          <img src={countdowntimer1image} alt="decoration" className="decoration-img img-fluid" />
         </div>
 
-        <button className="countdown-btn">More info.....</button>
+        <button className="countdown-btn btn">More info.....</button>
       </div>
     </div>
   );

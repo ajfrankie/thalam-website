@@ -1,34 +1,34 @@
-
-
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './homeSection .css';
 import logo from "../../assets/images/logo.png"; 
 
 const Homesection = () => {
   return (
-    <div className="home-section">
-      <div className="container">
-        <div className="content-wrapper">
-       
-          <div className="text-content">
-            <h1>Thalam <br />Organization</h1>
-            <p>
+    <div className="home-section d-flex align-items-center justify-content-center">
+      <div className="container py-5 px-3 rounded-4 shadow-lg bg-dark">
+        <div className="row align-items-center">
+
+          {/* Left Text Content */}
+          <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+            <h1 className="fw-bold mb-3">Thalam <br />Organization</h1>
+            <p className="lead mb-4">
               Founded in 2018, Thalam Organization has been creating opportunities for
               youth in Trincomalee to learn, lead, and contribute to their communities.
               Through projects, volunteer programs, and partnerships, we aim to inspire
               the next generation of leaders.
             </p>
-            <button className="read-more-btn">Read more</button>
+            <button className="btn btn-gradient btn-lg">Read more</button>
           </div>
 
-          {/* Right side image + texts */}
-          <div className="image-content">
-            <div className="thalam-logo-box">
-              <img src={logo} alt=" logo" />
-              <span className="tamil-text"></span>
-              <span className="english-text"></span>
+          {/* Right Image Content */}
+          <div className="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+            <div className="thalam-logo-box text-center">
+              <img src={logo} alt="logo" className="img-fluid " />
+              
             </div>
           </div>
+
         </div>
       </div>
     </div>
