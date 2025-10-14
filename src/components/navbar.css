@@ -1,8 +1,7 @@
-/* ---------------- BASE STYLES (your original code) ---------------- */
 /* Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* 👈 logo left, others right */
   align-items: center;
   background: black;
   padding: 12px 40px;
@@ -13,16 +12,18 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 15px;    /* space between logo image and text */
+ 
   border-radius: 0;
   padding: 0;
 }
 
+
 .logo-img {
   width: 75px;
   height: 75px;
-  border-radius: 50%;
-  background-color: black;
+  border-radius: 50%;        
+  background-color: black;   /* dark background */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,19 +31,23 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
+
 .logo-img img {
-  width: 60px;
+  width: 60px;               /* smaller than the circle */
   height: 60px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 50%;        /* optional: makes image itself circular */
 }
 
 .logo-text {
   font-size: 50px;
   font-weight: bold;
+  /* color: white; */
   font-family: "Salsa", cursive;
 }
 
+
+/* Nav links container */
 .nav-links {
   list-style: none;
   display: flex;
@@ -52,6 +57,7 @@
   padding: 0;
 }
 
+/* Common link styles */
 .nav-link {
   text-decoration: none;
   color: white;
@@ -64,6 +70,7 @@
   color: #ff3333;
 }
 
+/* Circle button style */
 .nav-btn {
   padding: 8px 22px;
   border: 1px solid white;
@@ -80,6 +87,7 @@
   color: black;
 }
 
+/* Red border button (Register) */
 .nav-btn.red {
   border: 1px solid red;
 }
@@ -89,6 +97,7 @@
   color: white;
 }
 
+/* Body Styles */
 .body-container {
   min-height: calc(100vh - 100px);
   display: flex;
@@ -118,7 +127,7 @@
 .services {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 50px; /* adjust cards spacing */
   flex-wrap: wrap;
 }
 
@@ -147,141 +156,67 @@
   font-size: 18px;
 }
 
-/* ---------------- RESPONSIVE MEDIA QUERIES ---------------- */
+/* ---------------- Responsive ---------------- */
 
-/* Tablets / Small laptops ≤1024px */
+/* For large tablets and below */
 @media (max-width: 1024px) {
-  .navbar {
-    padding: 12px 20px;
-  }
-
-  .logo-text {
-    font-size: 40px;
-  }
-
-  .nav-links {
-    gap: 20px;
-  }
-
-  .nav-link {
-    font-size: 22px;
-  }
-
-  .nav-btn {
-    font-size: 22px;
-    padding: 6px 18px;
-  }
-
-  .body-container h1 {
-    font-size: 50px;
-  }
-
-  .body-container p {
-    font-size: 20px;
-  }
-
   .services {
     gap: 30px;
   }
-
-  .service-card {
-    width: 250px;
-    padding: 25px 15px;
-  }
-
-  .service-card h2 {
-    font-size: 24px;
-  }
-
-  .service-card p {
-    font-size: 16px;
+  .navbar {
+    padding: 12px 25px;
   }
 }
 
-/* Mobile ≤768px */
+/* For tablets / small desktops */
 @media (max-width: 768px) {
+  .body-container h1 {
+    font-size: 45px;
+  }
+  .body-container p {
+    font-size: 18px;
+  }
+  .services {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .service-card {
+    width: 90%;
+    padding: 20px;
+  }
   .navbar {
     flex-direction: column;
-    align-items: center;
     gap: 15px;
   }
-
   .nav-links {
     flex-direction: column;
     gap: 15px;
   }
-
   .logo-text {
-    font-size: 35px;
-    text-align: center;
-  }
-
-  .nav-link,
-  .nav-btn {
-    font-size: 20px;
-  }
-
-  .body-container h1 {
-    font-size: 40px;
-  }
-
-  .body-container p {
-    font-size: 18px;
-  }
-
-  .services {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .service-card {
-    width: 90%;
-  }
-
-  .service-card h2 {
-    font-size: 22px;
-  }
-
-  .service-card p {
-    font-size: 16px;
+    font-size: 36px;
   }
 }
 
-/* Small phones ≤480px */
+/* For mobile devices */
 @media (max-width: 480px) {
-  .logo-text {
-    font-size: 28px;
-  }
-
-  .nav-link,
-  .nav-btn {
-    font-size: 18px;
-  }
-
   .body-container h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
-
   .body-container p {
     font-size: 16px;
-    margin-bottom: 30px;
   }
-
-  .service-card {
-    width: 95%;
-    padding: 20px 15px;
-  }
-
-  .service-card h2 {
-    font-size: 20px;
-  }
-
-  .service-card p {
-    font-size: 14px;
-  }
-
   .services {
     gap: 15px;
+  }
+  .service-card {
+    width: 95%;
+    padding: 15px;
+  }
+  .nav-btn, .nav-btn.red {
+    font-size: 20px;
+    padding: 6px 18px;
+  }
+  .nav-link {
+    font-size: 20px;
   }
 }

@@ -80,7 +80,7 @@
 .image-content {
   flex: 1;
   display: flex;
-  justify-content: flex-end; /* logo right side-க்கு செல்வதற்கு */
+  justify-content: flex-end; 
   align-items: center;
   position: relative;
 }
@@ -96,7 +96,7 @@
 }
 
 .thalam-logo-box img {
-  width: 900px;        /* இதை 1000px, 1100px மாதிரி பெருச்சா try pannunga */
+  width: 900px;        
   height: auto;
   object-fit: contain;
   opacity: 0.31;
@@ -167,3 +167,100 @@
     font-size: 26px;
   }
 }
+
+/* ---------------- Responsive (Home Section) ---------------- */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+  .text-content h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+
+  .text-content p {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 40px 40px;
+  }
+
+  .read-more-btn {
+    width: 200px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .thalam-logo-box img {
+    width: 600px;
+    margin-bottom: 60px;
+  }
+}
+
+/* For tablets and large phones */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .text-content h1 {
+    font-size: 50px;
+    margin-top: 0;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .read-more-btn {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .thalam-logo-box img {
+    width: 400px;
+    opacity: 0.4;
+  }
+
+  .thalam-logo-box .tamil-text,
+  .thalam-logo-box .english-text {
+    font-size: 26px;
+  }
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .text-content h1 {
+    font-size: 38px;
+    margin-top: 0;
+  }
+
+  .text-content p {
+    font-size: 15px;
+  }
+
+  .read-more-btn {
+    width: 160px;
+    height: 45px;
+    font-size: 15px;
+  }
+
+  .thalam-logo-box img {
+    width: 280px;
+    margin-bottom: 30px;
+  }
+
+  .thalam-logo-box .tamil-text,
+  .thalam-logo-box .english-text {
+    font-size: 22px;
+  }
+}
+
+

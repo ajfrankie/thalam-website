@@ -29,17 +29,22 @@ body {
 .countdown-frame {
   background: #1c1a1a;
   color: #fff;
-  width: 100%;             /* box stays full width of container */
-  max-width: 1240px;       /* same size as before */
-  min-height: 442px;       /* same height */
-  height: auto;
+  width: calc(100% - 40px);   /* 🔹 slightly wider to reach right side */
+  max-width: 1280px;          /* 🔹 allow more width */
+  min-height: 442px;
   border-radius: 50px;
   position: relative;
   overflow: visible;
-  padding: 60px 60px;      /* 🔁 increase left and right padding */
-  margin: 0 auto;           /* center box horizontally */
-  right: 60px;
+
+  margin: 0 auto 40px 0;      /* 🔹 push slightly to left */
+  margin-left: -70px;         /* 🔹 small shift to left */
+  padding-left: 120px;        /* content padding */
+  padding-right: 60px;        /* keep some space at right */
 }
+
+
+
+
 
 
 /* Background image container */
@@ -67,7 +72,7 @@ body {
   top: 200px;
   bottom: 0;
 
-  top: 250px;
+  top: 140px;
 
   right: 0;
   width: 300px;
@@ -171,4 +176,75 @@ body {
   cursor: pointer;
   z-index: 2;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------------- Responsive (Next Event Section) ---------------- */
+
+@media (max-width: 1024px) {
+  .next-event-heading {
+    font-size: 70px;
+  }
+  .countdown-frame {
+    padding: 40px 30px;
+    border-radius: 30px;
+  }
+  .countdown-time {
+    font-size: 150px;
+    left: 40%;
+  }
+  .countdown-labels {
+    gap: 80px;
+    top: calc(50% + 80px);
+    left: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .next-event-heading {
+    font-size: 50px;
+    text-align: center;
+  }
+  .countdown-frame {
+    min-height: 380px;
+    padding: 30px 20px;
+  }
+  .countdown-time {
+    font-size: 100px;
+    left: 50%;
+  }
+  .countdown-labels {
+    gap: 50px;
+    top: calc(50% + 60px);
+    left: 50%;
+  }
+  .countdown-btn {
+    font-size: 24px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .next-event-heading {
+    font-size: 34px;
+  }
+  .countdown-frame {
+    border-radius: 25px;
+    padding: 20px;
+    min-height: 300px;
+  }
+  .countdown-time {
+    font-size: 70px;
+    left: 50%;
+  }
+  .countdown-labels {
+    gap: 30px;
+    top: calc(50% + 40px);
+    left: 50%;
+  }
+  .countdown-btn {
+    font-size: 18px;
+    bottom: 15px;
+    right: 15px;
+  }
 }
