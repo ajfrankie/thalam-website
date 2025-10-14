@@ -11,7 +11,7 @@ function AppRoutes() {
   return (
     <Router>
       <Routes>
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         {/* ✅ இந்த line சேர்க்கணும் */}
         <Route path="/register" element={<Register />} />
         <Route path="/contact" element={<Contact />} />
