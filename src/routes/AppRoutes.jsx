@@ -6,6 +6,7 @@ import Contact from "../pages/contact-us/contact";
 import Job from "../pages/Job";
 import Footer from "../components/Footer/Footer";
 
+
 function AppRoutes() {
   return (
     <Router>
