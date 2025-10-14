@@ -10,18 +10,24 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: white; /* 🔹 footer background black */
+  background-color: white; 
   color: white;
+
   height: 533px;
   width: 1280px;
   border-radius: 50px;
-  margin-left: 150px;
-  margin-right: 200px;
-  padding-left: 40px;
+
+  
+  margin: 0 auto 40px auto;   
+
+  padding-left: 100px;
   padding-right: -100px;
 
-
+  position: relative;
+  z-index: 1;
+  margin-left: 125px;
 }
+
 body {
   background-color: black;
 

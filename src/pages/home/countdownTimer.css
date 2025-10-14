@@ -29,17 +29,20 @@ body {
 .countdown-frame {
   background: #1c1a1a;
   color: #fff;
-  width: calc(100% - 100px);
-  max-width: 1240px;
+  width: calc(100% - 40px);   /* 🔹 slightly wider to reach right side */
+  max-width: 1280px;          /* 🔹 allow more width */
   min-height: 442px;
   border-radius: 50px;
   position: relative;
   overflow: visible;
-  padding: 60px;        /* top, bottom, left, right padding */
-  margin: 0 auto 40px auto;
-  padding-left: 160px;
-  padding-right: 10px; /* ✅ px unit added */
+
+  margin: 0 auto 40px 0;      /* 🔹 push slightly to left */
+  margin-left: -70px;         /* 🔹 small shift to left */
+  padding-left: 120px;        /* content padding */
+  padding-right: 60px;        /* keep some space at right */
 }
+
+
 
 
 
@@ -69,7 +72,7 @@ body {
   top: 200px;
   bottom: 0;
 
-  top: 250px;
+  top: 140px;
 
   right: 0;
   width: 300px;

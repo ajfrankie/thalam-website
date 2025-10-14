@@ -36,9 +36,10 @@ body {
   display: flex;
   gap: 10px;
   position: relative;
-  right: 50px; /* 👈 moves arrows a bit left (closer to center) */
+  right: 250px; /* 🔹 both arrows move more left */
   top: 0;
 }
+
 
 .nav-arrow:hover {
   transform: scale(1.1);
