@@ -1,18 +1,11 @@
 import React from "react";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Contact from "../pages/contact-us/contact";
-import Hometab from "../pages/home/Hometab";
-
+import ContactUs from "../pages/contact-us"; 
 function AppRoutes() {
   return (
     <Router>
       <Routes>
-        
-        <Route path="/hometab" element={<Hometab />} />
-
-      
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
     </Router>
   );
