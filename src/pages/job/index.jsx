@@ -7,6 +7,9 @@ import JobSection from "../../pages/job/JobSection";
 
 import Footer from "../../components/Footer/Footer"; // Footer.jsx
 
+
+
+
 const Job  = () => {
   return (
     <>
