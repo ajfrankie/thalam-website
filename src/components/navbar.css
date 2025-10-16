@@ -1,141 +1,152 @@
-/* Navbar Styles */
+/* 🔹 Navbar container */
 .navbar {
-  display: flex;
-  justify-content: space-between; /* 👈 logo left, others right */
-  align-items: center;
-  background: black;
   padding: 12px 40px;
-  width: 100%;
   box-sizing: border-box;
-}
-
-/* Logo Section */
-.logo {
+  background-color: #000; /* 🔴 Black background */
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
 }
 
+/* 🔹 Logo image circle */
 .logo-img {
-  width: 74px;
-  height: 75px;
+  width: 65px; /* ⬇️ Reduced size */
+  height: 65px;
   border-radius: 50%;
-  border: 2px solid red; /* 👈 test border */
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(182, 60, 60, 0.15); /* Soft shadow */
 }
 
+.logo-img img {
+  width: 52px; /* ⬇️ Slightly reduced size */
+  height: 52px;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.7; /* 🔻 Reduced opacity */
+  transition: opacity 0.3s ease;
+}
 
+.logo-img img:hover {
+  opacity: 1; /* ✨ Hover effect */
+}
+
+/* 🔹 Logo text */
 .logo-text {
   font-size: 50px;
   font-weight: bold;
-  color: white;
   font-family: "Salsa", cursive;
-}
-
-/* Nav links container */
-.nav-links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-/* Common link styles */
-.nav-link {
-  text-decoration: none;
   color: white;
+  margin-left: 100px;
+}
+
+/* 🔹 Navbar links */
+.navbar-nav .nav-link {
   font-size: 25px;
   font-family: "Syne", sans-serif;
+  margin-right: 10px;
   transition: 0.3s;
+  color: white !important;
 }
 
-.nav-link:hover {
-  color: #ff3333;
+/* 🔹 Hover effect for normal links */
+.navbar-nav .nav-link:hover:not(.btn-outline-home) {
+  color: #ff3333 !important;
 }
 
-/* Circle button style */
-.nav-btn {
-  padding: 8px 22px;
-  border: 1px solid white;
+/* 🔹 Home button - white border style */
+.navbar-nav .nav-link.btn-outline-home {
+  border: 2px solid white;
   border-radius: 25px;
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-  font-family: "Syne", sans-serif;
+  padding: 6px 20px;
+  transition: 0.3s;
+  color: white !important;
+}
+
+.navbar-nav .nav-link.btn-outline-home:hover {
+  background-color: white;
+  color: black !important;
+}
+
+/* 🔹 Register button - red border style */
+.navbar-nav .btn-danger.btn-outline {
+  border: 2px solid red;
+  border-radius: 25px;
+  padding: 6px 20px;
+  color: white !important;
+  background: transparent;
   transition: 0.3s;
 }
 
-.nav-btn:hover {
-  background: white;
-  color: black;
+.navbar-nav .btn-danger.btn-outline:hover {
+  background-color: red;
+  color: white !important;
 }
 
-/* Red border button (Register) */
-.nav-btn.red {
-  border: 1px solid red;
+/* ---------------- 🔹 Responsive ---------------- */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 12px 25px;
+  }
+
+  .logo-text {
+    font-size: 40px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 22px;
+  }
 }
 
-.nav-btn.red:hover {
-  background: red;
-  color: white;
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .logo-text {
+    font-size: 36px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-nav .btn-danger.btn-outline {
+    font-size: 20px;
+    margin-right: 0;
+  }
 }
 
-/* Body Styles */
-.body-container {
-  min-height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color: #ffffff;
-  text-align: center;
-  padding: 40px 20px;
-  font-family: "Syne", sans-serif;
-}
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 28px;
+  }
 
-.body-container h1 {
-  font-size: 60px;
-  color: #ff3333;
-  font-family: "Salsa", cursive;
-  margin-bottom: 20px;
-}
+  .logo-img {
+    width: 55px;
+    height: 55px;
+  }
 
-.body-container p {
-  font-size: 22px;
-  margin-bottom: 50px;
-  color: #f2f2f2;
-}
+  .logo-img img {
+    width: 45px;
+    height: 45px;
+  }
 
-.services {
-  display: flex;
-  justify-content: center;
-  gap: 50px; /* adjust cards spacing */
-  flex-wrap: wrap;
-}
-
-.service-card {
-  background-color: #1a0b0b;
-  padding: 30px 20px;
-  border-radius: 15px;
-  width: 300px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-  background-color: #330202;
-}
-
-.service-card h2 {
-  color: #ff3333;
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.service-card p {
-  color: #fff;
-  font-size: 18px;
+  .navbar-nav .nav-link,
+  .navbar-nav .btn-danger.btn-outline {
+    font-size: 18px;
+    padding: 6px 18px;
+  }
 }

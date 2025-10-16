@@ -10,7 +10,7 @@ export default function History() {
       <div className="history-title-box">
         <h2 className="history-title">History</h2>
 
-        
+        zz
 
         
         <div className="jobs-header-logo">
