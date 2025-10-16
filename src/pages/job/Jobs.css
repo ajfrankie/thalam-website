@@ -62,28 +62,9 @@
   flex-direction: row-reverse;
 }
 
-.job-image {
-  width: 531px;
-  height: 657px;
-  object-fit: cover;
-  border-radius: 50px;
-  left: 667px;
-  top: 42px;
-  mix-blend-mode: luminosity;
-}
 
 .job-content {
   flex: 1;
-}
-
-.job-desc {
-  color: #ffffff;
-  line-height: 30px;
-  margin-bottom: 30px;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: justify;
-  margin-top: 10px;
 }
 
 .job-title {
@@ -113,7 +94,13 @@
 }
 
 .job-image-1 {
+  width: 531px;
   height: 657px;
+  object-fit: cover;
+  border-radius: 50px;
+  left: 667px;
+  top: 42px;
+  mix-blend-mode: luminosity;
 }
 
 .job-title-2 {
@@ -136,8 +123,13 @@
 }
 
 .job-image-2 {
+width: 531px;
   height: 657px;
-}
+  object-fit: cover;
+  border-radius: 50px;
+  left: 667px;
+  top: 42px;
+  mix-blend-mode: luminosity;}
 
 .job-desc-3 {
   color: #ffffff;
@@ -168,14 +160,6 @@
   mix-blend-mode: luminosity;
 }
 
-.job-footer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 15px;
-  padding-bottom: 1px;
-}
-
 .jobs-footer-dots {
   display: flex;
   justify-content: center;
@@ -200,16 +184,6 @@
   background-color: #fff;
 }
 
-.third-layer {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  background: #1A1A1A;
-  border-radius: 50px;
-  padding: 30px;
-  padding-bottom: 1px;
-}
-
 /* ---------------- Responsive for Jobs Section ---------------- */
 
 @media (max-width: 1024px) {
@@ -221,8 +195,8 @@
 
   .job-image {
     width: 100%;
-    height: auto;
-    border-radius: 25px;
+    height: adjust;
+    border-radius: 50px;
   }
 
   .job-content {
@@ -232,11 +206,12 @@
 
   .job-title {
     font-size: 60px;
+    height: adjust;
   }
 
   .job-desc {
     font-size: 18px;
-    line-height: 28px;
+    line-height: adjust;
   }
 
   .jobs-footer-dots {
@@ -255,11 +230,12 @@
   .jobs-header-logo {
     margin-top: -200px;
     margin-left: -100px;
+    height: auto;
   }
 
   .logo-image {
     width: 400px;
-    height: auto;
+    height: adjust;
     margin-left: 40px;
     margin-top: -50px;
   }
@@ -287,7 +263,13 @@
 
   .jobs-header-logo,
   .logo-image {
-    display: none;
+    display: flex;
+    height: adjust;
+    margin-left: 40px;
+    margin-top: -50px;
+
+
+
   }
 }
 
@@ -295,19 +277,23 @@
   .jobs-section {
     padding: 20px 10px;
     padding-bottom: 60px;
+    height: adjust;
   }
 
   .jobs-card {
     padding: 10px;
     gap: 15px;
+    flex-direction: column;
   }
 
   .job-title {
-    font-size: 24px;
+    font-size: 28px;
+    height: adjust;
   }
 
   .job-desc {
     font-size: 14px;
+    height: adjust;
   }
 
   .jobs-footer-dots {
@@ -321,5 +307,6 @@
 
   .jobs-header {
     font-size: 28px;
+    max-height: adjust;
   }
 }
