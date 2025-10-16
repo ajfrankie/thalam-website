@@ -1,6 +1,6 @@
-// WHYAttend.jsx (அல்லது OurServices.jsx)
+
 import React from "react";
-import "./WhyAttend.css";  // CSS filename மாற்றலாம்
+import "./WhyAttend.css";  
 
 const WhyAttend = () => {
   const items = [
