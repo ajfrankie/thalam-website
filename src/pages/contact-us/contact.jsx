@@ -3,12 +3,15 @@ import "./contact.css";
 import logoimage from "../../assets/images/logo.png";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+
+
 const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Your message has been sent!");
   };
 
+ 
   return (
     <div className="contact-container">
       
