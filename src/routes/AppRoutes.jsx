@@ -7,6 +7,7 @@ import Register from "../pages/auth";
 import Contact from "../pages/contact-us/contact";
 import Job from "../pages/Job";
 import Footer from "../components/Footer/Footer";
+import History from "../pages/History";
 
 
 function AppRoutes() {
@@ -19,6 +20,7 @@ function AppRoutes() {
         <Route path="/contact" element={<Contact />} />
          <Route path="/Job" element={<Job />} />
          <Route path= "/Footer" element={<Footer/>}/>
+         <Route path="/History" element={<History/>}/>
         
       </Routes>
     </Router>
