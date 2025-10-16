@@ -11,7 +11,7 @@
   margin: 0 0 60px 180px;  
   text-align: left;
 }
-/*css*/
+
 .why-attend-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

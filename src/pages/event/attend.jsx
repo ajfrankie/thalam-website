@@ -1,4 +1,4 @@
-
+// why attend section
 import React from "react";
 import "./WhyAttend.css";  
 
