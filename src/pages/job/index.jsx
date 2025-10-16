@@ -1,10 +1,10 @@
-// src/pages/home/index.jsx
+
 import React from "react";
 
-// Correct imports (check filenames are exact)
 import Navbar from "../../components/navbar";
-import JobSection from "../../pages/job/JobSection";
-
+import Contact from "./contactUs/contact";
+import Footer from "../../components/Footer/Footer";
+const Contact = () => {
 import Footer from "../../components/Footer/Footer"; // Footer.jsx
 
 
@@ -12,15 +12,16 @@ import Footer from "../../components/Footer/Footer"; // Footer.jsx
 
 const Job  = () => {
   return (
-    <>
-      {/* Render all components in one page */}
-      <Navbar/>
-      <JobSection/>
+    <div className="contact-us">
+      <Navbar />
+      <Contact /> 
       <Footer />
-
-
-    </>
+    </div>
   );
 };
 
+
+export default Contact; 
+
 export default Job;
+

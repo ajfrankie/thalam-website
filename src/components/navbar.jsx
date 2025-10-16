@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";   
 import navbar1 from "../assets/images/thalam-logo.png";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark  px-4">
-      {/* Logo */}
+      
       <Link className="navbar-brand d-flex align-items-center" to="/Home">
         <div className="logo-img">
           <img src={navbar1} alt="logo" />

@@ -1,16 +1,16 @@
 import React from "react";
 import Navbar from "../../components/navbar";
-import Contact from "../../pages/contact-us";
-import Footer from "../../components/Footer/Footer";
+import Contact from "./contact";
+import Footer from "../../components/Footer/Footer"; 
 
-const ContactUs = () => {
+const ContactUs = () => { 
   return (
-    <>
+    <div className="home-page">
       <Navbar />
       <Contact />
-      <Footer /> 
-    </>
+      <Footer />
+    </div>
   );
 };
 
-export default ContactUs;
+export default ContactUs; 
