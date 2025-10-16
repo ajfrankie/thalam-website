@@ -1,26 +1,32 @@
 .jobs-section {
   background: #000;
   color: #fff;
-  padding: 40px;
+  padding: 130px;
   padding-top: 60px;
   padding-bottom: 120px;
 }
 
-.body {
-  font-family: syne;
-}
+
 
 .jobs-header {
   text-align: left;
   font-size: 100px;
   font-weight: 700;
   line-height: 300%;
-  height: 300px;
+  height: 446px;
   margin-bottom: 60px;
   border-radius: 50px;
   background: #1A1A1A;
   color: #ffffff;
-  padding-left: 40px;
+  padding-left: 92px;
+  width: 1240px;
+}
+
+.jobs-header-text {
+  width: 1126px;
+  height: 300px;
+  margin-top: -10px;
+  left: 134px;
 }
 
 .jobs-header-logo {
@@ -31,13 +37,13 @@
 
 .logo-image {
   position: absolute;
-  margin-top: -200px;
-  width: 20%;
-  max-width: 500px;
-  height: 10px;
+  margin-top: -38px;
+  width: 711px;
+  height: 881px;
   object-fit: contain;
   opacity: 31%;
-  margin-left: -20px;
+  margin-left: -350px;
+  border-radius: 355.5px;
 }
 
 .jobs-list {
@@ -67,13 +73,7 @@
   flex: 1;
 }
 
-.job-title {
-  font-size: 100px;
-  font-weight: 700;
-  color: #fff;
-  font-style: bold;
-  line-height: 0%;
-}
+
 
 .job-title-1 {
   font-size: 100px;
@@ -81,6 +81,8 @@
   color: #fff;
   font-style: bold;
   line-height: 0%;
+  margin-top: 80px;
+  margin-left: 60px;
 }
 
 .job-desc-1 {
@@ -91,6 +93,7 @@
   font-weight: 400;
   text-align: justify;
   margin-top: 70px;
+  margin-left: 60px;
 }
 
 .job-image-1 {
@@ -110,6 +113,7 @@
   font-style: bold;
   line-height: 0%;
   margin-top: -100px;
+  margin-left: 10px;
 }
 
 .job-desc-2 {
@@ -120,6 +124,7 @@
   font-weight: 400;
   text-align: justify;
   margin-top: 70px;
+  margin-left: 10px;
 }
 
 .job-image-2 {
@@ -139,6 +144,7 @@ width: 531px;
   font-weight: 400;
   text-align: justify;
   margin-top: 70px;
+  margin-left: 60px;
 }
 
 .job-title-3 {
@@ -147,7 +153,8 @@ width: 531px;
   color: #fff;
   font-style: bold;
   line-height: 0%;
-  margin-top: -230px;
+  margin-top: -130px;
+  margin-left: 60px;
 }
 
 .job-image-3 {
@@ -164,7 +171,7 @@ width: 531px;
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 320px;
+  margin-top: 270px;
   margin-left: 550px;
   position: absolute;
 }

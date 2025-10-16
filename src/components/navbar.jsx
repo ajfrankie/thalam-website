@@ -43,7 +43,7 @@ function Navbar() {
             <Link to="/event" className="nav-link">Events</Link>
           </li>
           <li className="nav-item">
-            <Link to="/job" className="nav-link">Job</Link>
+            <Link to="/job" className="nav-link">Jobs</Link>
           </li>
           <li className="nav-item">
             <Link to="/Education" className="nav-link">Education</Link>
