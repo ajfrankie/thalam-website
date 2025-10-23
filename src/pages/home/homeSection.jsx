@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './homeSection .css';
+import './homeSection.css';
 import logo from "../../assets/images/logo.png"; 
 
 const Homesection = () => {
