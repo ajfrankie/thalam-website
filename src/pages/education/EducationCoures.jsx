@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import "./EducationCoures.css"; // CSS file name changed
+import "./EducationCoures.css";
 
-// Logo
-import logo from "../../assets/images/logo.png";
-
-
+// logo image
+import logoimage from "../../assets/images/logo.png";
 import image1 from "../../assets/images/education1.jpg";
 import image2 from "../../assets/images/education2.jpg";
-import image3 from "../../assets/images/education3.jpg"; 
-import logoimage from "../../assets/images/logo.png"; 
+import image3 from "../../assets/images/education3.jpg";
 
 const educationData = [
   {
@@ -27,7 +24,8 @@ const educationData = [
     title: "Course 02",
     description: [
       "We look for motivated individuals who want to contribute to social projects and community development. The role includes planning, coordination, and close teamwork to deliver measurable impact.",
-      "We look for motivated individuals who want to contribute to social projects and community development. The role includes planning, coordination, and close teamwork to deliver measurable impact."
+      "We look for motivated individuals who want to contribute to social projects and community development. The role includes planning, coordination, and close teamwork to deliver measurable impact.",
+      "Founded in 2018, Thalam Organization has been creating opportunities for youth in Trincomalee to learn, lead, and contribute to their communities. Through projects, volunteer programs, and partnerships, we aim to inspire the next generation of leaders."
     ],
     image: image2,
     reverse: false,
@@ -36,8 +34,8 @@ const educationData = [
     id: 3,
     title: "Course 03",
     description: [
-      "Join our friendly team. You will work on outreach, training sessions, and creating resources that help youth gain leadership skills and practical experience.",
-      "Join our friendly team. You will work on outreach, training sessions, and creating resources that help youth gain leadership skills and practical experience."
+     "Foundation and Vision Organization has been creating opportunities for youth. This enables them to learn, lead, and contribute to their communities. Through projects, volunteer programs, and mentorship, we aim to inspire the next generation of leaders.",
+      "We look for motivated individuals who want to contribute to social projects and community development. The role includes planning, coordination, and close teamwork to deliver measurable impact."
     ],
     image: image3,
     reverse: true,
@@ -89,7 +87,9 @@ export default function EducationSection() {
             </div>
 
             <div className="education-content">
-              <h3 className={`education-title education-title-${edu.id}`}>{edu.title}</h3>
+              <h3 className={`education-title education-title-${edu.id}`}>
+                {edu.title}
+              </h3>
               <div className="education-desc-wrapper">
                 {edu.description.map((para, idx) => (
                   <p
