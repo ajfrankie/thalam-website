@@ -10,10 +10,10 @@ export default function History() {
       <div className="history-title-box">
         <h2 className="history-title">History</h2>
 
-        zz
+      
 
         
-        <div className="jobs-header-logo">
+        <div className="history-header-logo">
           <img src={logo} alt="Thalam Logo" className="logo-image" />
         </div>
       </div>

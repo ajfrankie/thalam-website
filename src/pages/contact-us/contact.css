@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; 
-  padding: 42px 0;
+  padding-left: 4002px;
   background-color: #000;
   box-sizing: border-box;
   position: relative;
@@ -28,9 +28,8 @@ body {
   color: white;
   border-radius: 50px;
   position: relative;
-  width: 1240px;
   height: 446px;
-  padding: 60px 80px;
+  padding-left: 60px ;
   box-sizing: border-box;
   margin-top: 165px; 
   overflow: hidden; 

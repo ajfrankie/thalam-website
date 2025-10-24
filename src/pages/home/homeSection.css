@@ -1,17 +1,18 @@
 .home-section {
-  min-height: 90vh;
+  min-height: 400px;
+  width: 80%;
   background-color: #080000;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  width: 1240px;
-  height: 804px;
-  margin: 60px auto 0;
+  margin: 60px auto;
   position: relative;
   overflow: hidden;
 }
+
+
 
 /* 🔹 Logo/Image styling - UNCHANGED */
 .thalam-logo-box img {
