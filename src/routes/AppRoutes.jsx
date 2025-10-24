@@ -7,6 +7,7 @@ import Register from "../pages/auth";
 import Contact from "../pages/contact-us/contact";
 import Job from "../pages/Job";
 import Footer from "../components/Footer/Footer";
+import Event from "../pages/event";
 
 
 function AppRoutes() {
@@ -14,11 +15,11 @@ function AppRoutes() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* ✅ இந்த line சேர்க்கணும் */}
         <Route path="/register" element={<Register />} />
         <Route path="/contact" element={<Contact />} />
          <Route path="/Job" element={<Job />} />
          <Route path= "/Footer" element={<Footer/>}/>
+         <Route path="/Event" element={<Event/>}/>
         
       </Routes>
     </Router>

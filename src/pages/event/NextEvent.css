@@ -1,12 +1,33 @@
 /* Heading left side */
 .next-event-heading {
   font-family: 'Syne', sans-serif;
-  font-weight: 700;
+   text-align: left;
   font-size: 100px;
-  line-height: 1;
+  font-weight: 700;
+  line-height: 300%;
+  height: 300px;
+  margin-bottom: 60px;
+  border-radius: 50px;
+  background: #1A1A1A;
   color: #ffffff;
-  margin-bottom: 30px;
-  text-align: left;
+  padding-left: 40px;
+}
+
+.next-header-logo {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.logo-image {
+  position: absolute;
+  margin-top: -200px;
+  width: 20%;
+  max-width: 500px;
+  height: 10px;
+  object-fit: contain;
+  opacity: 31%;
+  margin-left: -20px;
 }
 
 /* Countdown box layout */
