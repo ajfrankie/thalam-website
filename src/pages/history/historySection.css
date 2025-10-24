@@ -1,34 +1,5 @@
-/* 🔹 History Section */
-.history-main-container {
-  font-family: "Syne", sans-serif;
-  color: #fff;
-  background-color: #000;
-  width: 100%;
-  padding: 20px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px; /* 🔹 increased gap between boxes */
-  position: relative;
-}
 
-/* 🔹 Title box */
-.history-title-box {
-  background-color: #1a1a1a;
-  width: 1240px;
-  height: 500px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: flex-start;   
-  align-items: center;           
-  padding: 20px;               
-  box-sizing: border-box;
-  position: relative; /* 👉 இதை இங்கே சேர்க்கணும் */
-  overflow: hidden;
-  margin: 0 50px;
-  padding-left: 10px;
-  padding-right: 100px;
-}
+
 
 
 .history-title {
@@ -73,9 +44,13 @@
 
 .history-image-box {
   width: 531px;
-  height: auto;
+  height: 657px;
+  object-fit: cover;
   border-radius: 50px;
-  overflow: hidden;
+  left: 667px;
+  top: 42px;
+  mix-blend-mode: luminosity;
+  
 }
 
 .history-image {
@@ -83,24 +58,27 @@
   height: 100%;
   object-fit: cover;
   filter: grayscale(100%);
+  border-radius: 50px;
+
 }
 
 /* 🔹 Background logo shape */
-.jobs-header-logo {
+.history-header-logo {
   position: absolute;
-  bottom: -200px;       
-  left: 85%;
+  bottom: -300px;       
+  left: 75%;
   transform: translateX(-50%);
   z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.9;
+  opacity: 31%;
   width: 811px;
   height: 981px;
   border-radius: 355.5px;
   overflow: hidden;
-  margin-top: -80px;
+  margin-top: 250px;
+  
   
 
 }
@@ -142,32 +120,13 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  margin-bottom: -40px;
 }
 
-.history-title {
-  font-size: clamp(48px, 8vw, 110px);
-  margin: 0;
-  font-weight: 700;
-  color: #fff;
-  z-index: 1;
-}
+
 
 /* 🔹 Logo */
-.jobs-header-logo {
-  position: absolute;
-  bottom: -150px;
-  right: 5%;
-  transform: translateX(-50%);
-  z-index: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.8;
-  width: 600px;
-  height: 700px;
-  border-radius: 50%;
-  overflow: hidden;
-}
+
 
 .logo-image {
   width: 100%;
@@ -188,37 +147,12 @@
   gap: 40px;
   padding: 60px;
   box-sizing: border-box;
+  margin-bottom: -30px;
 }
 
-.first-box {
-  margin-top: 40px;
-}
 
-.history-text-section {
-  flex: 1;
-}
 
-.history-text-section p {
-  font-size: clamp(16px, 2vw, 22px);
-  line-height: 1.6;
-  margin-bottom: 18px;
-}
 
-.history-image-box {
-  flex: 0 0 480px;
-  max-width: 480px;
-  border-radius: 40px;
-  overflow: hidden;
-}
-
-.history-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(100%);
-  border-radius: 40px;
-}
-/* ✅ Tablet (1024px and below) */
 @media (max-width: 1024px) {
   .history-title-box {
     flex-direction: column;

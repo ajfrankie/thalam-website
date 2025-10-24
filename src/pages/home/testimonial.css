@@ -12,7 +12,7 @@ body {
             overflow: hidden;
             text-align: center;
             position: relative;
-            max-width: 1400px;
+            
         }
 
         /* Header */
@@ -30,7 +30,7 @@ body {
             margin: 0;
             color: #DEDEED;
             text-align: right;
-            margin-left: 60px;
+            margin-left: 200px;
             line-height: 1.2;
         }
 
@@ -217,7 +217,7 @@ body {
             margin:0; 
         }
 
-        /* ---------------- Optimized Responsive ---------------- */
+       
 
         /* Large screens */
         @media (max-width: 1200px) {

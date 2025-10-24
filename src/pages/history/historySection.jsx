@@ -13,7 +13,7 @@ export default function History() {
       
 
         
-        <div className="jobs-header-logo">
+        <div className="history-header-logo">
           <img src={logo} alt="Thalam Logo" className="logo-image" />
         </div>
       </div>

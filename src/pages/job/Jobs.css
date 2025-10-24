@@ -1,7 +1,7 @@
 .jobs-section {
   background: #000;
   color: #fff;
-  padding: 130px;
+  padding: 190px;
   padding-top: 60px;
   padding-bottom: 120px;
 }
@@ -19,7 +19,6 @@
   background: #1A1A1A;
   color: #ffffff;
   padding-left: 92px;
-  width: 1240px;
 }
 
 .jobs-header-text {
@@ -30,20 +29,31 @@
 }
 
 .jobs-header-logo {
+  position: absolute;
+  bottom: -80px;       
+  left: 75%;
+  transform: translateX(-50%);
+  z-index: 0;
   display: flex;
-  justify-content: right;
-  align-items: right;
+  justify-content: center;
+  align-items: center;
+  opacity: 31%;
+  width: 811px;
+  height: 981px;
+  border-radius: 355.5px;
+  overflow: hidden;
+  margin-top: 250px;
+  
+
 }
 
+
 .logo-image {
-  position: absolute;
-  margin-top: -38px;
   width: 711px;
   height: 881px;
   object-fit: contain;
   opacity: 31%;
-  margin-left: -350px;
-  border-radius: 355.5px;
+  
 }
 
 .jobs-list {
@@ -60,7 +70,8 @@
   gap: 30px;
   background: #1A1A1A;
   border-radius: 50px;
-  padding: 30px;
+  padding: -50px;
+  
   padding-bottom: 1px;
 }
 

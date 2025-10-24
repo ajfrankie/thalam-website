@@ -1,27 +1,23 @@
-
 import React from "react";
 
 import Navbar from "../../components/navbar";
-import Contact from "./contactUs/contact";
-import Footer from "../../components/Footer/Footer";
-const Contact = () => {
-import Footer from "../../components/Footer/Footer"; // Footer.jsx
+import JobSection from "../../pages/job/JobSection";
+
+import Footer from "../../components/Footer/Footer"; 
 
 
 
 
 const Job  = () => {
   return (
-    <div className="contact-us">
-      <Navbar />
-      <Contact /> 
+    <>
+      <Navbar/>
+      <JobSection/>
       <Footer />
-    </div>
+
+
+    </>
   );
 };
 
-
-export default Contact; 
-
 export default Job;
-
