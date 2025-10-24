@@ -10,7 +10,7 @@ import Footer from "../components/Footer/Footer";
 import History from "../pages/History";
 import Education from "../pages/education";
 import ContactUs from "../pages/contact-us";
-import Job from "../pages/Job";
+import Job from "../pages/job";
 
 
 function AppRoutes() {
@@ -25,7 +25,7 @@ function AppRoutes() {
          <Route path= "/Footer" element={<Footer/>}/>
          <Route path="/History" element={<History/>}/>
           <Route path="/contact-us" element={<ContactUs/>}/>
-          <Route path="/Job" element={<Job />} />
+          <Route path="/job" element={<Job />} />
           <Route path="/education" element={<Education />} />
 
         
