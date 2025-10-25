@@ -1,5 +1,5 @@
 .home-section {
-  min-height: 400px;
+  min-height: 200px;
   width: 80%;
   background-color: #080000;
   color: white;
@@ -10,6 +10,7 @@
   margin: 60px auto;
   position: relative;
   overflow: hidden;
+
 }
 
 
@@ -24,6 +25,7 @@
   object-fit: cover;
   margin-left: 90px;
   transition: opacity 0.3s ease;
+  padding: -40px;
 }
 
 .thalam-logo-box img:hover {
