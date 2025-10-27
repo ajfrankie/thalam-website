@@ -1,7 +1,3 @@
-
-
-
-
 .history-title {
   font-size: 110px; /* 🔹 slightly larger title */
   margin: 0;
@@ -10,12 +6,13 @@
   position: relative;
   z-index: 1; 
   transform: translateY(-10px); 
+  height: 350px;
 }
 
 /* 🔹 Content box */
 .history-content-box {
   width: 1240px;
-  height: 780px;             /* 🔹 slightly larger */
+  height: 750px;             /* 🔹 slightly larger */
   background-color: #1a1a1a;
   border-radius: 50px;
   display: flex;

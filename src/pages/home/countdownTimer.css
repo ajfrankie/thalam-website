@@ -61,7 +61,7 @@ body {
 /* Decoration image */
 .countdown-decoration {
   position: absolute;
-  top: 50%;
+  margin-top: 260px;
   right: 40px;
   transform: translateY(-50%);
   width: 300px;
@@ -92,6 +92,7 @@ body {
   align-items: center;
   white-space: nowrap;
   transition: all 0.3s ease;
+  margin-left: -50px;
 }
 
 .countdown-labels {
@@ -103,6 +104,8 @@ body {
   gap: 120px;
   z-index: 2;
   transition: all 0.3s ease;
+  margin-left: -10px;
+  gap: clamp(20px, 5vw, 120px); 
 }
 
 .countdown-labels span {
@@ -110,8 +113,9 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+  margin: 0 40px;
+  
 }
-
 /* Button */
 .countdown-btn {
   position: absolute;
@@ -207,8 +211,10 @@ body {
     font-size: 90px;
   }
   .countdown-labels {
-    gap: 40px;
-    top: calc(50% + 50px);
+   gap: clamp(5px, 2vw, 30px);
+  }
+  .countdown-labels span {
+    font-size: 14px;
   }
   .countdown-btn {
     font-size: 22px;
@@ -238,8 +244,10 @@ body {
     font-size: 60px;
   }
   .countdown-labels {
-    gap: 25px;
-    top: calc(50% + 40px);
+    gap: clamp(8px, 5vw, 40px);
+  }
+  .countdown-labels span {
+    font-size: 12px;
   }
   .countdown-btn {
     font-size: 18px;

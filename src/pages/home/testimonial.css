@@ -104,7 +104,16 @@ body {
             border:1px solid #DEDEED; 
             z-index:2; 
             margin-right:-80px; 
+            pointer-events: auto;
         }
+
+        .testimonial-card-black:hover {
+    transform: scale(1.05);
+    z-index: 5; /* overlay மேலே கொண்டு வைக்க */
+    opacity: 1; /* fully visible */
+    transition: all 0.3s ease;
+}
+
         .testimonial-card-red { 
             background-color: #8B030C; 
             color:#DEDEED; 
