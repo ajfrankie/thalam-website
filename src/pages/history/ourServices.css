@@ -83,7 +83,7 @@
   margin-left: auto;
   text-align: justify;
   align-self: flex-start;
-  margin-left: 280px;
+  margin-left: 310px;
   margin-top: 70px;
   
 }
@@ -101,7 +101,7 @@
 
 .service-card:nth-child(3) .service-number,
 .service-card:nth-child(4) .service-number {
-  right: 80px;
+  right: 5px;
 
 }
 
@@ -110,17 +110,19 @@
   margin-right: auto;
   text-align: justify;
   align-self: flex-start;
+   margin-right: 310px;
+  margin-top: 80px;
 }
 
 .service-card:nth-child(3) .service-title,
 .service-card:nth-child(4) .service-title {
   text-align: right;
-  margin-left: 350px;
-  margin-right: -100px;
-  margin-top: 40px;
+  margin-right: 20px;
+  margin-right: -280px;
+  margin-top: -70px;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: -60px;
+  margin-bottom: 30px;
 }
 
 .service-content {
