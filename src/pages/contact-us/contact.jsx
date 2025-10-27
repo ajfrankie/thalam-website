@@ -8,6 +8,7 @@ const Contact = () => {
     e.preventDefault();
     alert("Your message has been sent!");
   };
+  
 
   return (
     <div className="contact-container">
