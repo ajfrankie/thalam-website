@@ -34,7 +34,7 @@ const CountdownTimer = () => {
 
     return () => clearInterval(timer);
   }, []);
-
+/* Countdown box layout */
   return (
     <div className="container next-event-section">
       <div className="countdown-frame position-relative overflow-hidden">

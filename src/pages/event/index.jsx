@@ -20,3 +20,5 @@ const Event = () => {
 };
 
 export default Event;
+
+/* Countdown box layout */

@@ -14,7 +14,7 @@ const NextEvent = () => {
           <p className="event-subtext">Next Event</p>
         </div>
 
-        {/* Right decoration image */}
+    
         <div className="countdown-decoration">
           <img src={logo} alt="Decoration" className="decoration-img" />
         </div>

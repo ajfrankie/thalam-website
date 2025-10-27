@@ -49,3 +49,5 @@ const WhyAttend = () => {
 };
 
 export default WhyAttend;
+
+/* Countdown box layout */

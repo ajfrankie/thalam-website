@@ -21,20 +21,21 @@
 
 .logo-image {
   position: absolute;
-  margin-top: -200px;
+  margin-top: -100px;
   width: 20%;
   max-width: 500px;
-  height: 10px;
+  height: 20px;
   object-fit: contain;
   opacity: 31%;
   margin-left: -20px;
 }
 
-/* Countdown box layout */
+
 .countdown-frame {
   background: #1c1a1a;
   color: #fff;
-  width: 1240px;
+  width: 1300px;
+  margin-right: -100px;
   height: 446px;
   border-radius: 50px;
   position: relative;

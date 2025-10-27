@@ -74,7 +74,20 @@
   margin-right: auto;
   text-align: justify;
   align-self: flex-start;
+  margin-left: 310px;
+  margin-top: 70px;
 }
+.why-card:nth-child(1) .why-title,
+.why-card:nth-child(2) .why-title {
+  text-align: left;
+  margin-left: -250px;
+  margin-right: -100px;
+  margin-top: -70px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
 .why-card:nth-child(3) .why-number,
 .why-card:nth-child(4) .why-number {
   right: 80px
@@ -84,6 +97,18 @@
   margin-right: auto;
   text-align: justify;
   align-self: flex-start;
+  margin-right: 310px;
+  margin-top: 80px;
+}
+service-card:nth-child(3) .service-title,
+.service-card:nth-child(4) .service-title {
+  text-align: right;
+  margin-right: 20px;
+  margin-right: -280px;
+  margin-top: -60px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 
