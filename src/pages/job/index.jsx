@@ -2,15 +2,13 @@
 import React from "react";
 
 import Navbar from "../../components/navbar";
-import Contact from "./contactUs/contact";
 import Footer from "../../components/Footer/Footer";
-const Contact = () => {
-import Footer from "../../components/Footer/Footer"; // Footer.jsx
 
 
 
 
-const Job  = () => {
+
+const job  = () => {
   return (
     <div className="contact-us">
       <Navbar />
@@ -21,7 +19,7 @@ const Job  = () => {
 };
 
 
-export default Contact; 
 
-export default Job;
+
+export default job;
 
