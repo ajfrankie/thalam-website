@@ -6,6 +6,7 @@ import Home from "../pages/home";
 import Register from "../pages/auth"; 
 
 
+
 import Footer from "../components/Footer/Footer";
 import History from "../pages/History";
 import Education from "../pages/education";
@@ -13,11 +14,23 @@ import ContactUs from "../pages/contact-us";
 import Job from "../pages/Job";
 
 
+
+
+import Footer from "../components/Footer/Footer";
+import History from "../pages/History";
+import Education from "../pages/education";
+import ContactUs from "../pages/contact-us";
+import Job from "../pages/job";
+
+
+
 function AppRoutes() {
   return (
     <Router>
       <Routes>
         <Route path="/home" element={<Home />} />
+
+        <Route path="/" element={<Home />} />
       
         <Route path="/register" element={<Register />} />
         

@@ -1,9 +1,12 @@
-/* ---------------- Home Section ---------------- */
+/* 🔹 Hometab Section */
 .hometab {
-  padding: 40px 20px;
+  padding: clamp(20px, 5vw, 40px) clamp(15px, 3vw, 20px);
   background-color: #000;
   font-family: 'Syne', sans-serif;
   color: #fff;
+  box-sizing: border-box;
+  
+  overflow-x: hidden;
 }
 
 /* 🔹 Logo Strip */
@@ -12,23 +15,26 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 140px;
-  padding-bottom: 20px;
-  margin-bottom: 50px; /* 🔻 Logos move a bit lower */
-  margin-top: 30px;     /* 🔻 Move logos down from top */
+  gap: clamp(15px, 5vw, 140px);
+  padding-bottom: clamp(10px, 3vw, 20px);
+  margin: clamp(15px, 4vw, 30px) 0 clamp(25px, 6vw, 50px) 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* 🔹 Individual Logo */
 .logo {
-  height: 55px;
+  height: clamp(110px, 10vw, 140px);  /* Minimum 50px → Maximum 80px */
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease, filter 0.3s ease;
   border-radius: 10px;
   background-color: #fff;
-  padding: 6px 10px;
-  /* margin-bottom removed for natural flow */
+  padding: clamp(4px, 1vw, 6px) clamp(8px, 2vw, 10px);
+  flex-shrink: 0;
+  background:none;
 }
+
 
 .logo:hover {
   transform: scale(1.15);
@@ -39,176 +45,257 @@
 .two-column-layout {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: clamp(15px, 3vw, 25px);
   justify-content: center;
   align-items: flex-start;
-  margin-top: 60px; /* 🔻 Space between logos and boxes */
+  margin-top: clamp(30px, 6vw, 60px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* 🔹 Left Side - Our Objectives Box */
+/* 🔹 Left Side - Objectives Box */
+.left-card {
+  width: 100%;
+  max-width: 532px;
+  box-sizing: border-box;
+}
+
 .left-card .card {
-  width: 532px;
-  height: 569px;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
   background-color: #8B030C;
-  border-radius: 40px;
-  padding: 20px 20px 15px 20px;
+  border-radius: clamp(20px, 5vw, 40px);
+ padding: 45px;
+ margin-left: -10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   color: #fff;
-  margin-top: 20px; /* 🔻 move down a bit */
+  margin-top: clamp(10px, 3vw, 20px);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
 }
 
 .left-card .card h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: clamp(1.3rem, 4vw, 2.5rem);
+  margin-bottom: clamp(10px, 3vw, 20px);
   color: #fff;
+  line-height: 1.2;
+  overflow-wrap: break-word;
 }
 
 .left-card .card p {
-  font-size: 20px;
-  line-height: 1.7;
-  margin-bottom: 15px;
+  font-size: clamp(0.85rem, 2.5vw, 1.2rem);
+  line-height: 1.5;
+  margin-bottom: clamp(10px, 2vw, 15px);
   color: #f8f8f8;
+  overflow-wrap: break-word;
 }
 
 /* 🔹 Right Side - Mission + Scope */
 .right-stack {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 20px; /* 🔻 align with left box top */
+  gap: clamp(10px, 2vw, 15px);
+  margin-top: clamp(10px, 3vw, 20px);
+  width: 100%;
+  max-width: 673px;
+  box-sizing: border-box;
 }
 
-/* ✅ Right Side - Red Box (Mission) */
+/* ✅ Red Card (Mission) */
 .right-stack .card.red {
-  width: 673px;
-  height: 291px;
+  width: 115%;
+  height: auto;
+  min-height: 291px;
   background-color: #8B030C;
-  border-radius: 40px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: clamp(20px, 5vw, 40px);
+  padding-top: 100px;
   color: #fff;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  padding: 300px -280px;
+    margin-left: -20px;
+  
 }
 
 .right-stack .card.red h2 {
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: #fff;
+  font-size: clamp(1.3rem, 4vw, 2.5rem);
+  margin-top: -50px;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  margin-left: 60px;
 }
 
 .right-stack .card.red p {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: clamp(0.85rem, 2.5vw, 1.2rem);
+  line-height: 1.5;
   color: #f0f0f0;
+  overflow-wrap: break-word;
+  margin-top: 30px;
 }
 
-/* ✅ Right Side - White Box (Scope) */
+/* ✅ Gray Card (Scope) */
 .right-stack .card.gray {
-  width: 673px;
-  height: 258px;
+  width: 100%;
+  height: auto;
+  min-height: 150px;
   background-color: #C3C3C3;
   color: #222;
-  border-radius: 40px;
-  padding: 25px;
+  border-radius: clamp(20px, 5vw, 40px);
+  padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
+   margin-left: -20px;
 }
 
 .right-stack .card.gray h2 {
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: clamp(1.3rem, 4vw, 2.5rem);
+  margin-bottom: clamp(8px, 2vw, 10px);
   color: #111;
+  line-height: 1.2;
+  overflow-wrap: break-word;
 }
 
 .right-stack .card.gray p {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: clamp(0.85rem, 2.5vw, 1.2rem);
+  line-height: 1.5;
   color: #333;
+  overflow-wrap: break-word;
 }
 
-/* ---------------- Responsive Design ---------------- */
+/* 🔹 Objectives Section */
+.objectives-section {
+  background-color: #8B0F0F;
+  color: #fff;
+  padding: clamp(30px, 6vw, 60px) clamp(20px, 4vw, 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: clamp(20px, 5vw, 40px);
+  overflow-wrap: break-word;
+}
+
+.objectives-section h2 {
+  font-size: clamp(1.3rem, 4vw, 2.5rem);
+  margin-bottom: clamp(10px, 3vw, 20px);
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+.objectives-section p {
+  font-size: clamp(0.85rem, 2.5vw, 1.2rem);
+  line-height: 1.5;
+  margin-bottom: clamp(10px, 3vw, 20px);
+  overflow-wrap: break-word;
+}
+
+
+section, div, p {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+p {
+  padding: 0 clamp(10px, 4vw, 25px);
+  line-height: 1.6;
+  font-size: clamp(0.9rem, 2.5vw, 18px);
+}
+
+section {
+  box-sizing: border-box;
+}
+
+/* ---------------- Responsive Improvements ---------------- */
 @media (max-width: 1024px) {
-  .logo-strip {
-    gap: 100px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-  }
-
   .two-column-layout {
-    margin-top: 40px;
+    flex-direction: row;
+    align-items: stretch;
   }
-
-  .left-card .card,
-  .right-stack .card.red,
-  .right-stack .card.gray {
-    width: 90%;
+  
+  .left-card,
+  .right-stack {
+    max-width: 48%;
   }
 }
 
 @media (max-width: 768px) {
-  .logo {
-    height: 45px;
-  }
-
-  .logo-strip {
-    gap: 40px;
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-    margin-top: 15px;
-  }
-
   .two-column-layout {
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
   }
-
-  .left-card .card,
-  .right-stack .card.red,
-  .right-stack .card.gray {
-    width: 90%;
-    height: auto;
-    margin-top: 15px;
+  
+  .left-card,
+  .right-stack {
+    max-width: 100%;
+    width: 95%;
   }
-
-  .left-card .card h2,
-  .right-stack .card h2 {
-    font-size: 30px;
-  }
-
-  .left-card .card p,
-  .right-stack .card p {
-    font-size: 18px;
+  
+  .logo-strip {
+    gap: clamp(15px, 8vw, 90px);
   }
 }
 
 @media (max-width: 480px) {
+  .hometab {
+    padding: 15px 10px;
+  }
+  
   .logo-strip {
-    gap: 25px;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    gap: 20px;
   }
-
+  
   .logo {
-    height: 40px;
+    height: 35px;
   }
-
-  .two-column-layout {
-    margin-top: 20px;
-  }
-
+  
   .left-card .card,
   .right-stack .card.red,
   .right-stack .card.gray {
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 25px;
+  }
+  
+  .objectives-section {
+    padding: 30px 20px;
     width: 95%;
-    margin-top: 10px;
+    margin: 0 auto;
   }
-
+  
   .left-card .card h2,
-  .right-stack .card h2 {
-    font-size: 26px;
+  .right-stack .card h2,
+  .objectives-section h2 {
+    font-size: 1.4rem;
   }
-
+  
   .left-card .card p,
-  .right-stack .card p {
-    font-size: 16px;
+  .right-stack .card p,
+  .objectives-section p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+  .logo-strip {
+    gap: 15px;
+  }
+  
+  .logo {
+    height: 30px;
+  }
+  
+  .left-card .card,
+  .right-stack .card.red,
+  .right-stack .card.gray {
+    padding: 15px 10px;
+    border-radius: 20px;
   }
 }

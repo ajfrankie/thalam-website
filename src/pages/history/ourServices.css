@@ -26,7 +26,7 @@
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 610px);
-  column-gap: 80px;
+  column-gap: 30px;
   row-gap: 20px;
   justify-content: center;
   align-content: center;
@@ -83,12 +83,25 @@
   margin-left: auto;
   text-align: justify;
   align-self: flex-start;
+  margin-left: 310px;
+  margin-top: 70px;
   
 }
+.service-card:nth-child(1) .service-title,
+.service-card:nth-child(2) .service-title {
+  text-align: left;
+  margin-left: -250px;
+  margin-right: -100px;
+  margin-top: -70px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
 
 .service-card:nth-child(3) .service-number,
 .service-card:nth-child(4) .service-number {
-  right: 80px;
+  right: 5px;
 
 }
 
@@ -97,6 +110,19 @@
   margin-right: auto;
   text-align: justify;
   align-self: flex-start;
+   margin-right: 310px;
+  margin-top: 80px;
+}
+
+.service-card:nth-child(3) .service-title,
+.service-card:nth-child(4) .service-title {
+  text-align: right;
+  margin-right: 20px;
+  margin-right: -280px;
+  margin-top: -70px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .service-content {
@@ -105,11 +131,6 @@
   max-width: 70%;
 }
 
-.service-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
 
 .service-description {
   font-size: 18px;

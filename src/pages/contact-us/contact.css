@@ -21,14 +21,18 @@ body {
 }
 
 
+
 .contact-header {
   background: #1a1a1a;
   color: white;
   border-radius: 50px;
   position: relative;
+
   width: 1340px;
   height: 446px;
   padding: 60px;
+  height: 446px;
+  padding-left: -10px -10px ;
   box-sizing: border-box;
   margin-top: 165px;
   overflow: hidden;
@@ -62,6 +66,8 @@ body {
   border-radius: 50px;
   width: 1340px;
   height: auto;
+  
+  height: 1495px;
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
@@ -257,7 +263,7 @@ body {
   border-radius: 50px;
 }
 
-/* Links */
+
 .info-section div p a {
   color: #bbb !important;
   text-decoration: none;

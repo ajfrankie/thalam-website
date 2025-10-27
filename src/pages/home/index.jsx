@@ -1,4 +1,4 @@
-
+// src/pages/home/index.jsx
 import React from "react";
 
 import HomeTab from "./HomeTab";

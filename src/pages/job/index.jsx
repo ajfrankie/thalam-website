@@ -1,8 +1,13 @@
-
 import React from "react";
 
 import Navbar from "../../components/navbar";
+
 import Footer from "../../components/Footer/Footer";
+
+import JobSection from "../../pages/job/JobSection";
+
+import Footer from "../../components/Footer/Footer"; 
+
 
 
 
@@ -10,16 +15,16 @@ import Footer from "../../components/Footer/Footer";
 
 const job  = () => {
   return (
-    <div className="contact-us">
-      <Navbar />
-      <Contact /> 
+    <>
+      <Navbar/>
+      <JobSection/>
       <Footer />
-    </div>
+
+
+export default job;
+    </>
   );
 };
 
 
-
-
-export default job;
-
+export default Job;
