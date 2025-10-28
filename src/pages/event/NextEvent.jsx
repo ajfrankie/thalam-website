@@ -7,12 +7,11 @@ const NextEvent = () => {
   return (
     <div className="next-event-section">
       {/* Heading on the left */}
-      <h1 className="next-event-heading">Next Event</h1>
-
+      
       <div className="countdown-frame">
         {/* Left content area */}
         <div className="countdown-left">
-          <p className="event-subtext">Next Event</p>
+          <h1 className="event-subtext">Next Event</h1>
         </div>
 
         {/* Right decoration image */}

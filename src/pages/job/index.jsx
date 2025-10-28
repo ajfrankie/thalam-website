@@ -6,18 +6,9 @@ import Footer from "../../components/Footer/Footer";
 
 import JobSection from "../../pages/job/JobSection";
 
-import Footer from "../components/Footer/Footer"; // Footer.jsx
+import Footer from "../../components/Footer/Footer"; // Footer.jsx
 
-
-import Footer from "../../components/Footer/Footer"; 
-
-
-
-
-
-
-
-const job  = () => {
+const Job = () => {
   return (
     <>
       <Navbar/>
@@ -29,6 +20,5 @@ export default job;
     </>
   );
 };
-
 
 export default Job;
