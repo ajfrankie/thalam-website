@@ -305,3 +305,159 @@ width: 531px;
     max-height: adjust;
   }
 }
+
+
+            /*  */
+
+.our-services {
+  background-color: #000;
+  color: #fff;
+  width: 1590px;
+  height: 881.85px;
+  margin: 0 auto 80px auto; 
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -120px;
+  gap: 0px;
+
+}
+
+
+.section-title {
+  font-size: 100px;
+  font-weight: 100;
+  margin-bottom: 40px;
+  text-align: left;
+  margin-left: 180px; /* Shift right by 100px */
+  font-family: 'Syne', sans-serif; /* 🔹 Added Syne font */
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 610px);
+  column-gap: 30px;
+  row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  padding-top:0px;
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  border-radius: 50px;
+  width: 610px;
+  height: 289px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding : 30px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1);
+}
+.service-number {
+  font-family: "Syne", sans-serif;
+  font-weight: 500; /* bold */
+  font-size: 300px;
+  letter-spacing: -10px;
+  background: linear-gradient(
+    180deg, 
+    rgba(139, 3, 12, 0.6) 35%,      /* 🔹 reduced opacity red */
+    rgba(26, 26, 26, 0.1) 80%       /* 🔹 very light bottom fade */
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 0.8;
+  position: absolute;
+  bottom: -50px;
+  z-index: 0;
+  opacity: 100%; /* 🔹 overall text opacity (optional) */
+}
+
+
+.service-card:nth-child(1) .service-number,
+.service-card:nth-child(2) .service-number {
+  left: 0px;
+ 
+}
+
+.service-card:nth-child(1) .service-content,
+.service-card:nth-child(2) .service-content {
+  margin-left: auto;
+  text-align: justify;
+  align-self: flex-start;
+  margin-left: 310px;
+  margin-top: 120px;
+  word-spacing: -7px;
+  
+}
+.service-card:nth-child(1) .service-title,
+.service-card:nth-child(2) .service-title {
+  text-align: left;
+  margin-left: -250px;
+  margin-right: -100px;
+  margin-top: -100px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+
+.service-card:nth-child(3) .service-number,
+.service-card:nth-child(4) .service-number {
+  right: 5px;
+
+}
+
+.service-card:nth-child(3) .service-content,
+.service-card:nth-child(4) .service-content {
+  margin-right: auto;
+  text-align: justify;
+  align-self: flex-start;
+   margin-right: 290px;
+  margin-top: 100px;
+  word-spacing: -7px;
+}
+
+.service-card:nth-child(3) .service-title,
+.service-card:nth-child(4) .service-title {
+  text-align: right;
+  margin-right: 20px;
+  margin-right: -280px;
+  margin-top: -100px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.service-content {
+  position: relative;
+  z-index: 1;
+  max-width: 70%;
+}
+
+.why-card-title{
+  font-size: 18px;
+  font-weight: 700px;
+  margin-bottom: 20px;
+}
+
+.service-description {
+  font-size: 17px;
+  color: #cfcfcf;
+  line-height: 1.3;
+  text-align: justify;
+  
+}
