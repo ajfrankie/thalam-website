@@ -1,36 +1,46 @@
-/* 🔹 Navbar base */
+/* 🔹 Navbar Base */
 .navbar {
   background-color: #000;
-  padding: 14px 40px;
+  padding: clamp(10px, 2vw, 20px) clamp(15px, 4vw, 40px);
   font-family: "Syne", sans-serif;
   position: relative;
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-/* 🔹 Logo */
+/* 🔹 Logo Image */
 .logo-img img {
-  width: 60px;
-  height: 60px;
+  width: clamp(40px, 5vw, 60px);
+  height: clamp(40px, 5vw, 60px);
   border-radius: 50%;
+  object-fit: cover;
 }
 
+/* 🔹 Logo Text */
 .logo-text {
   font-family: "Times New Roman", serif;
-  font-size: 50px;
+  font-size: clamp(24px, 5vw, 50px);
   color: #fff;
   font-weight: bold;
+  margin-left: 10px;
+  white-space: nowrap;
 }
 
-/* 🔹 Nav links */
+/* 🔹 Nav Links */
 .nav-link {
   color: #fff;
   font-family: "Syne", sans-serif;
-  font-size: 25px;
-  padding: 8px 18px;
-  margin: 0 8px;
+  font-size: clamp(14px, 2vw, 25px);
+  padding: clamp(4px, 1vw, 8px) clamp(8px, 2vw, 18px);
+  margin: 0 clamp(4px, 1vw, 8px);
   border-radius: 50px;
   position: relative;
   transition: all 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /* 🔹 Add animated circle border */
@@ -47,7 +57,7 @@
   transition: all 0.3s ease;
 }
 
-/* 🔹 Active link - show white circle */
+/* 🔹 Active link */
 .nav-link.active::after {
   width: 110%;
   height: 160%;
@@ -59,15 +69,84 @@
   color: #fff;
 }
 
-/* 🔹 Register button (red outline) */
+/* 🔹 Register Button */
 .btn-outline {
   border: 2px solid red !important;
   color: red !important;
   border-radius: 80px !important;
+  padding: clamp(6px, 1.5vw, 12px) clamp(12px, 2vw, 24px);
   transition: all 0.3s ease-in-out;
 }
 
 .btn-outline:hover {
   background-color: red !important;
   color: #fff !important;
+}
+
+/* ---------------- Responsive Media Queries ---------------- */
+
+/* Medium devices - tablets */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: clamp(8px, 2vw, 16px) clamp(12px, 4vw, 30px);
+  }
+
+  .logo-text {
+    font-size: clamp(20px, 4vw, 36px);
+  }
+
+  .nav-link {
+    font-size: clamp(12px, 1.8vw, 20px);
+    padding: clamp(4px, 1vw, 6px) clamp(6px, 1.5vw, 12px);
+    margin: 0 clamp(3px, 1vw, 6px);
+  }
+
+  .btn-outline {
+    padding: clamp(4px, 1vw, 10px) clamp(8px, 1.5vw, 16px);
+  }
+}
+
+/* Small devices - phones */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-text {
+    font-size: clamp(18px, 5vw, 28px);
+    margin: 10px 0 5px 0;
+  }
+
+  .nav-link {
+    font-size: clamp(12px, 3vw, 18px);
+    margin: clamp(3px, 1vw, 5px) 0;
+  }
+
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+    padding: clamp(6px, 1.5vw, 10px);
+  }
+}
+
+/* Extra small devices - very small phones */
+@media (max-width: 480px) {
+  .logo-img img {
+    width: clamp(30px, 8vw, 50px);
+    height: clamp(30px, 8vw, 50px);
+  }
+
+  .logo-text {
+    font-size: clamp(16px, 6vw, 24px);
+  }
+
+  .nav-link {
+    font-size: clamp(10px, 3vw, 16px);
+    padding: clamp(3px, 1vw, 6px) clamp(6px, 2vw, 12px);
+  }
+
+  .btn-outline {
+    padding: clamp(4px, 1vw, 8px);
+  }
 }
