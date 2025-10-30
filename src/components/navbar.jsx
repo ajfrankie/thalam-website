@@ -1,21 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.png";   
+import { NavLink } from "react-router-dom";
 import navbar1 from "../assets/images/thalam-logo.png";
 import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark  px-4">
-      
-      <Link className="navbar-brand d-flex align-items-center" to="/Home">
+    <nav className="navbar navbar-expand-lg navbar-dark px-4">
+      {/* Logo */}
+      <NavLink className="navbar-brand d-flex align-items-center" to="/">
         <div className="logo-img">
           <img src={navbar1} alt="logo" />
         </div>
         <span className="logo-text ms-2">THALAM</span>
-      </Link>
+      </NavLink>
 
-      
+      {/* Toggle button (for mobile) */}
       <button
         className="navbar-toggler"
         type="button"
@@ -28,31 +27,33 @@ function Navbar() {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      
+      {/* Navbar links */}
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-            <Link className="nav-link btn-outline-home" to="/">Home</Link>
+            <NavLink to="/" end className="nav-link">Home</NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-link">Contact Us</Link>
+            <NavLink to="/contact-us" className="nav-link">Contact Us</NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/history" className="nav-link">History</Link>
+            <NavLink to="/history" className="nav-link">History</NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/event" className="nav-link">Events</Link>
+            <NavLink to="/event" className="nav-link">Events</NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/job" className="nav-link">Job</Link>
+            <NavLink to="/job" className="nav-link">Jobs</NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/Education" className="nav-link">Education</Link>
+            <NavLink to="/education" className="nav-link">Education</NavLink>
           </li>
           <li className="nav-item">
-           <Link className="nav-link btn-danger btn-outline" to="/register">Register</Link>
+            <NavLink to="/register" className="nav-link btn-danger btn-outline">Register</NavLink>
           </li>
         </ul>
+        {/* Moving background indicator */}
+        <span className="nav-indicator"></span>
       </div>
     </nav>
   );

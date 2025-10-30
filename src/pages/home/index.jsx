@@ -1,4 +1,4 @@
-
+// src/pages/home/index.jsx
 import React from "react";
 
 import HomeTab from "./HomeTab";
@@ -12,7 +12,7 @@ import Testimonial from "./Testimonial";
 import Navbar from "../../components/navbar";
 import HomeSection from "./homeSection";
 import ImpactCards from "../../components/impact/impactCards";
-import Footer from "../../components/Footer/Footer"; // Footer.jsx
+import Footer from "../../components/Footer/Footer"; 
 
 
 const Home = () => {

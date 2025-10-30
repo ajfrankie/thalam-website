@@ -1,9 +1,8 @@
 import React from "react";
-//import "./OurServices.css";
-import "./index.css";//update css path
+import "./attend.css"; 
 
-const OurServices = () => {
-  const services = [
+const WhyAttend = () => {
+  const items = [
     {
       id: "01",
       title: "CUTTING-EDGE INSIGHTS",
@@ -29,17 +28,17 @@ const OurServices = () => {
         "Explore groundbreaking AI solutions, from emerging startups to tech giants redefining the future.",
     },
   ];
-/*  */
+
   return (
-    <section className="our-services">
-      <h2 className="section-title">Our Services</h2>
-      <div className="services-grid">
-        {services.map((service) => (
-          <div key={service.id} className="service-card">
-            <span className="service-number">{service.id}</span>
-            <div className="service-content">
-              <h3 className="service-title">{service.title}</h3>
-              <p className="service-description">{service.description}</p>
+    <section className="why-attend-section">
+      <h2 className="why-attend-title">WHY ATTEND?</h2>
+      <div className="why-attend-grid">
+        {items.map((item) => (
+          <div key={item.id} className="why-card">
+            <span className="why-number">{item.id}</span>
+            <div className="why-content">
+              <h3 className="why-card-title">{item.title}</h3>
+              <p className="why-card-desc">{item.description}</p>
             </div>
           </div>
         ))}
@@ -48,4 +47,4 @@ const OurServices = () => {
   );
 };
 
-export default OurServices;
+export default WhyAttend;

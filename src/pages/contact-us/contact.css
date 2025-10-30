@@ -28,6 +28,12 @@ body {
   width: 1126px;
   height: 446px;
   padding: 92px;
+
+  width: 1340px;
+  height: 446px;
+  padding: 60px;
+  height: 446px;
+  padding-left: -10px -10px 
   box-sizing: border-box;
   margin-top: 60px;
   overflow: hidden;
@@ -68,6 +74,8 @@ body {
   border-radius: 50px;
   width: 1126px;
   height: auto;
+  
+  height: 1495px;
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
@@ -243,7 +251,6 @@ body {
   background-color: #ff3b3b;
 }
 
-/* Map */
 .contact-map {
   width: 1050px;
   height: 570px;
@@ -261,7 +268,7 @@ body {
   border-radius: 50px;
 }
 
-/* Links */
+
 .info-section div p a {
   color: #bbb !important;
   text-decoration: none;
@@ -272,7 +279,7 @@ body {
   color: #ff3b3b !important;
 }
 
-/* ---------------- Responsive ---------------- */
+
 @media (max-width: 1024px) {
   .contact-header,
   .contact-content {

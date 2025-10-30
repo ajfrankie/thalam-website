@@ -1,9 +1,8 @@
 import React from 'react';
-import '../home/Hometab.css';
+import './Hometab.css';
 
-// ✅ Importing your local logo files
 import eluna from '../../assets/images/eluna.png';
-import thamilari from '../../assets/images/tamillari.png'; // ✅ check spelling
+import thamilari from '../../assets/images/tamillari.png';
 import maatram from '../../assets/images/maatram.png';
 import naita from '../../assets/images/naita.png';
 import noolaham from '../../assets/images/noolaham.png';
