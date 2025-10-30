@@ -10,9 +10,7 @@ const Contact = () => {
   };
 
   
-
-
-  return (
+ return (
     <div className="contact-container">
       
       <header className="contact-header">
@@ -112,5 +110,6 @@ const Contact = () => {
     </div>
   );
 };
+
 
 export default Contact;
