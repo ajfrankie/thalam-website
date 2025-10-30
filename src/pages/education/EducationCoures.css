@@ -228,148 +228,143 @@
   background-color: #fff;
 }
 
-/* ---------------- Responsive ---------------- */
+/* ---------------- Enhanced Responsive Fix ---------------- */
+
+/* Tablets and Laptops */
 @media (max-width: 1024px) {
-  .education-card {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+  .education-section {
+    padding: 80px 40px;
   }
 
-  .education-image {
-    width: 100%;
+  .education-header {
+    font-size: 60px;
     height: auto;
-    border-radius: 40px;
+    line-height: 120%;
+    padding-left: 30px;
+    text-align: center;
   }
 
-  .education-content {
-    flex: unset;
-    width: 100%;
+  .education-header-logo {
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0.8;
   }
 
-  .education-title,
+  .logo-image {
+    height: auto;
+    opacity: 0.3;
+    margin-top: 40px;
+  }
+
+  .education-card,
+  .education-card.reverse {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
   .education-title-1,
   .education-title-2,
   .education-title-3 {
-    font-size: 60px;
+    font-size: 50px;
+    margin: 40px 0 20px 0;
     text-align: center;
-    margin-left: 0;
   }
 
-  .education-desc,
   .education-desc-1,
   .education-desc-2,
   .education-desc-3 {
     font-size: 18px;
-    line-height: 28px;
+    margin: 0 20px;
     text-align: justify;
-    margin-left: 0;
-    padding: 0 10px;
-    
   }
 
-  .education-header {
-    font-size: 60px;
-    line-height: 120%;
+  .education-image-1,
+  .education-image-2,
+  .education-image-3 {
+    width: 100%;
+    max-width: 500px;
     height: auto;
-    padding-left: 20px;
-  }
-
-  .education-header-logo {
-    margin-top: -200px;
-    margin-left: -100px;
-    height: auto;
-  }
-
-  .logo-image {
-    width: 400px;
-    height: auto;
-    margin-left: 40px;
-    margin-top: -50px;
+    border-radius: 30px;
   }
 
   .education-footer-dots {
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
+    margin: 40px auto 0;
+    justify-content: center;
+  }
+
+  .dot {
+    width: 25px;
+    height: 25px;
   }
 }
 
-@media (max-width: 768px) {
-  .education-card {
-    padding: 15px;
-  }
-
-  .education-title,
-  .education-title-1,
-  .education-title-2,
-  .education-title-3 {
-    font-size: 36px;
-  }
-
-  .education-desc,
-  .education-desc-1,
-  .education-desc-2,
-  .education-desc-3 {
-    font-size: 16px;
-    
+/* Mobile */
+@media (max-width: 600px) {
+  .education-section {
+    padding: 40px 20px;
   }
 
   .education-header {
-    font-size: 40px;
-    text-align: center;
-    padding-left: 0;
-  }
-
-  .education-header-logo,
-  .logo-image {
-    display: flex;
+    font-size: 38px;
     height: auto;
-    margin-left: 40px;
-    margin-top: -50px;
-  }
-}
-
-@media (max-width: 480px) {
-  .education-section {
-    padding: 20px 10px;
+    line-height: 130%;
+    padding-left: 0;
+    text-align: center;
   }
 
-  .education-card {
-    padding: 10px;
-    gap: 15px;
+  .education-header-logo {
+    height: auto;
+    margin: 10px auto 0;
+    opacity: 0.9;
+  }
+
+  .logo-image {
+    height: auto;
+    margin-top: -100px;
+  }
+
+  .education-card,
+  .education-card.reverse {
     flex-direction: column;
+    text-align: center;
+    gap: 25px;
   }
 
-  .education-title,
   .education-title-1,
   .education-title-2,
   .education-title-3 {
     font-size: 28px;
+    margin: 20px 0 10px 0;
   }
 
-  .education-desc,
   .education-desc-1,
   .education-desc-2,
   .education-desc-3 {
     font-size: 14px;
-    line-height: 24px;
-    
+    text-align: justify;
+    margin: 0 10px;
   }
 
-  .logo-image {
-    width: 80%;
-    margin: 10px auto;
-    display: block;
+  .education-image-1,
+  .education-image-2,
+  .education-image-3 {
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
   }
 
   .education-footer-dots {
-    gap: 8px;
-    margin-top: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    position: relative;
   }
 
   .dot {
-    width: 35px;
-    height: 35px;
+    width: 16px;
+    height: 16px;
   }
 }

@@ -32,7 +32,7 @@
   opacity: 0.5;
 }
 
-/* 🔹 Text styling (Title + Paragraph) - RESPONSIVE */
+
 .home-section h1 {
   font-size: clamp(48px, 6vw, 80px) !important; /* Responsive font size */
   font-family: 'Syne', sans-serif;
