@@ -25,8 +25,8 @@ body {
         }
 
         .testimonial-header h2 {
-            font-size: 50px;
-            font-weight: 700;
+            font-size: 80px;
+            font-weight: 600;
             margin: 0;
             color: #DEDEED;
             text-align: right;
@@ -102,14 +102,12 @@ body {
             background-color: rgb(35,33,33); 
             color:#DEDEED; 
             border:1px solid #DEDEED; 
-            z-index:2; 
             margin-right:-80px; 
             pointer-events: auto;
         }
 
         .testimonial-card-black:hover {
     transform: scale(1.05);
-    z-index: 5; /* overlay மேலே கொண்டு வைக்க */
     opacity: 1; /* fully visible */
     transition: all 0.3s ease;
 }
