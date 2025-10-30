@@ -147,7 +147,7 @@ body {
   box-sizing: border-box;
 }
 
-/* ---------------- Responsive Improvements ---------------- */
+/* ---------------- Responsive Only ---------------- */
 
 /* 🔸 Large Screens (Laptop) */
 @media (max-width: 1200px) {

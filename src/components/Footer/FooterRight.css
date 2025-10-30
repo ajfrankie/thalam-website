@@ -136,3 +136,58 @@ body {
 .social-icons a:hover {
   color: #ddd;
 }
+
+/* Responsive-only, desktop untouched */
+@media (max-width: 1200px) {
+  .footer-right {
+    margin-left: -30px; 
+    padding: 20px;
+    height: auto;      
+    top: auto;
+    
+  }
+
+  .footer-title,
+  .follow-title,
+  .footer-subtitle {
+    margin-left: 0;
+    width: 100%;
+    text-align: left; 
+    font-size: clamp(16px, 2vw, 26px);
+  }
+
+  .subscribe-form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .subscribe-input,
+  .subscribe-button {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .social-icons {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-right {
+    border-radius: 30px;
+    padding: 15px;
+  }
+  .footer-title,
+  .follow-title,
+  .footer-subtitle {
+    text-align: center;
+  }
+  .subscribe-input,
+  .subscribe-button {
+    width: 100%;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
