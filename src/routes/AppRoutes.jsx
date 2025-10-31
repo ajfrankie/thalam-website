@@ -15,9 +15,8 @@ import Register from "../pages/auth";
 import Footer from "../components/Footer/Footer";
 import History from "../pages/History";
 import Education from "../pages/education";
-import ContactUs from "../pages/contact-us";
 import Job from "../pages/job";
-
+import Event from "../pages/event";
 
 
 function AppRoutes() {
@@ -32,9 +31,9 @@ function AppRoutes() {
         
          <Route path= "/Footer" element={<Footer/>}/>
          <Route path="/History" element={<History/>}/>
-          <Route path="/contact-us" element={<ContactUs/>}/>
           <Route path="/job" element={<Job />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/event" element={<Event/>} />
 
         
       </Routes>

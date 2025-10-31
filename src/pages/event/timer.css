@@ -7,9 +7,25 @@
   text-align: center;
   overflow: hidden;
   padding: 190px;
-  padding-top: 40px;
+  padding-top: 5px;
   padding-bottom: 40px;
 }
+
+.timer-small-label {
+  position: absolute;
+  top:-px;         /* 🔼 move close to top edge */
+  left: 40px;        /* 🔼 move close to left edge */
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  opacity: 0.8;
+  margin: 0;
+  letter-spacing: 0.5px; /* optional – neat look */
+}
+
+
+
+
 
 .timer-heading {
   font-weight: 700;

@@ -48,6 +48,7 @@ const Timer = () => {
         </div>
 
         {/* Labels */}
+        
         <div className="timer-labels">
           <span>DAYS</span>
           <span>HOURS</span>
