@@ -9,7 +9,7 @@ const NextEvent = () => {
         {/* Left side: heading */}
         <h1 className="next-event-title">Next Event</h1>
 
-        {/* Right side: logo image */}
+        
         <div className="next-event-header-logo">
           <img src={logo} alt="Thalam Logo" className="next-event-logo-image" />
         </div>

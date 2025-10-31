@@ -58,7 +58,7 @@
   letter-spacing: -10px;
   background: linear-gradient(
     180deg, 
-    rgba(139, 3, 12, 0.6) 35%,      /* 🔹 reduced opacity red */
+    rgba(139, 3, 12, 0.6) 35%,      
     rgba(26, 26, 26, 0.1) 80%     
   );
   background-clip: text;

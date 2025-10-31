@@ -61,8 +61,6 @@
 }
 
 
-
-/* 🔹 Responsive Design */
 @media (max-width: 1024px) {
   .next-event-title-box {
     flex-direction: column;

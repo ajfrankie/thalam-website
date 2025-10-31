@@ -40,7 +40,7 @@ const Timer = () => {
 
 
       <div className="timer-frame">
-        {/* Timer display */}
+        
         <div className="timer-time">
           <span>{String(time.days).padStart(2, "0")}</span>:
           <span>{String(time.hours).padStart(2, "0")}</span>:

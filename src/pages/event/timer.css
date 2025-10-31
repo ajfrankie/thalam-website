@@ -14,7 +14,7 @@
 .timer-small-label {
   position: absolute;
   top:-px;         /* 🔼 move close to top edge */
-  left: 40px;        /* 🔼 move close to left edge */
+  left: 40px;        
   font-size: 14px;
   color: #ffffff;
   font-weight: 400;

@@ -1,6 +1,7 @@
 import React from "react";
 import "./attend.css";  
 
+
 const WhyAttend = () => {
   const items = [
     {
