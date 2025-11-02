@@ -43,7 +43,7 @@
   white-space: nowrap;
 }
 
-/* 🔹 Add animated circle border */
+/*  Add animated circle border */
 .nav-link::after {
   content: "";
   position: absolute;
