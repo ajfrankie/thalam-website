@@ -11,7 +11,7 @@ body {
   width: 100%;
   padding: clamp(20px, 4vw, 40px) clamp(15px, 3vw, 35px);
   box-sizing: border-box;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Syne';
   background: #000000;
   color: #ffffff;
   gap: clamp(20px, 4vw, 40px);

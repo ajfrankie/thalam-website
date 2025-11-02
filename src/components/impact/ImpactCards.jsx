@@ -29,6 +29,10 @@ const cardsData = [
     src: impactcards2,
   },
   {
+    type: 'image',
+    src: impactcards3,
+  },
+  {
     type: 'text',
     heading: 'Resource Persons',
     number: '15+',
@@ -36,7 +40,7 @@ const cardsData = [
   },
   {
     type: 'image',
-    src: impactcards3,
+    src: impactcards4,
   },
   {
     type: 'text',
@@ -44,10 +48,7 @@ const cardsData = [
     number: '750+',
     desc: 'Young people empowered through workshops and training.'
   },
-  {
-    type: 'image',
-    src: impactcards4,
-  },
+ 
 ];
 
 const ImpactCards = () => {
