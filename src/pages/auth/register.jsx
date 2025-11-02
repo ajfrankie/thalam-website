@@ -2,7 +2,7 @@ import React from "react";
 import "./register.css";
 import ThalamLogo from "../../assets/thalamlogo.png";
 
-function Register() {
+function Register()  {
   return (
     <div className="register-section">
       {/* Header */}

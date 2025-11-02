@@ -52,7 +52,7 @@ function Navbar() {
             <NavLink to="/register" className="nav-link btn-danger btn-outline">Register</NavLink>
           </li>
         </ul>
-        {/* Moving background indicator */}
+        {/* Moving  */}
         <span className="nav-indicator"></span>
       </div>
     </nav>
