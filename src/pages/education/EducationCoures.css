@@ -27,7 +27,7 @@
 
 .education-header-logo {
   position: absolute;
-  bottom: -290px;       
+  bottom: -350px;       
   left: 82%;
   transform: translateX(-50%);
   z-index: 0;
@@ -39,7 +39,6 @@
   height: 981px;
   border-radius: 355.5px;
   overflow: hidden;
-  margin-top: 120px;
   
 
 }
@@ -49,7 +48,8 @@
   width: 711px;
   height: 881px;
   object-fit: contain;
-  opacity: 0.41;
+  opacity: 31%;
+  margin-top: 30px;
   
 }
 .education-list {
@@ -253,8 +253,9 @@
 
   .logo-image {
     height: auto;
-    opacity: 0.3;
-    margin-top: 40px;
+    width: 15%;
+    margin-top: 0;
+    opacity: 0.6;
   }
 
   .education-card,
@@ -320,11 +321,15 @@
     height: auto;
     margin: 10px auto 0;
     opacity: 0.9;
+    margin-top: -280px;
   }
 
   .logo-image {
     height: auto;
-    margin-top: -100px;
+    width: 100%;
+    margin-top: 200;  /*  */
+    opacity: 0.7;
+    margin-right: 150px;
   }
 
   .education-card,
@@ -366,5 +371,50 @@
   .dot {
     width: 16px;
     height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-header {
+    font-size: 30px;
+  }
+
+  .logo-image {
+    width: 8%;
+    padding-top: 10px;
+    padding-right: 20px;
+    opacity: 0.8;
+  }
+
+  .education-desc-1,
+  .education-desc-2,
+  .education-desc-3 {
+    font-size: 13px;
+  }
+}
+
+/* */
+@media (max-width: 360px) {
+  .education-header {
+    font-size: 26px;
+  }
+
+  .logo-image {
+    width: 7%;
+    top: 80px;
+    margin-right: 250px;
+    opacity: 0.9;
+  }
+
+  .education-title-1,
+  .education-title-2,
+  .education-title-3 {
+    font-size: 24px;
+  }
+
+  .education-desc-1,
+  .education-desc-2,
+  .education-desc-3 {
+    font-size: 12px;
   }
 }
