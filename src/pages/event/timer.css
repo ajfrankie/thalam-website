@@ -1,0 +1,178 @@
+/* Isolated timer styles */
+.timer-section {
+  font-family: "Syne", sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0 50px;
+  text-align: center;
+  overflow: hidden;
+  padding: 190px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-top: -130px;
+}
+
+.timer-small-label {
+  position: absolute;
+  top:-px;         /* 🔼 move close to top edge */
+  left: 40px;        
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  opacity: 0.8;
+  margin: 0;
+  letter-spacing: 0.5px; /* optional – neat look */
+}
+
+
+
+
+
+.timer-heading {
+  font-weight: 700;
+  font-size: 100px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+
+  .timer-frame {
+  position: relative;
+  background: #1c1a1a;
+  height: 446px;          
+  border-radius: 50px;
+  width: 100%;       /* full width */
+  max-width: none;   /* remove max-width */
+  margin: 0 auto;
+  padding: 40px 60px;
+  box-sizing: border-box;
+}
+
+
+
+.timer-time {
+  font-size: 200px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-start; 
+  padding-left: 50px;     
+  
+
+  
+}
+
+
+ .timer-labels {
+  display: flex;
+  justify-content: flex-start; /* left side-ku move */
+  gap: 240px;
+  margin-top: -50px;           /* digits-ku keela */
+  padding-left: 100px;          /* left side space */
+}
+
+
+.timer-labels span {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+
+}
+
+.timer-decoration {
+  position: absolute;
+  margin-top: -1000px;
+  bottom: -150px;
+  right:-1px;
+  width: 300px;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  
+}
+
+.timer-decoration-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+   
+}
+
+.timer-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  background: #ffffff !important;
+  color: #000000 !important;
+  padding: 8px 25px;
+  border-radius: 30px;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+
+.timer-btn:hover,
+.timer-btn:focus,
+.timer-btn:active {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .timer-heading {
+    font-size: 70px;
+  }
+  .timer-time {
+    font-size: 130px;
+  }
+  .timer-decoration {
+    width: 200px;
+  }
+  .timer-btn {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timer-heading {
+    font-size: 50px;
+  }
+  .timer-time {
+    font-size: 90px;
+  }
+  .timer-frame {
+    border-radius: 30px;
+    padding: 25px;
+  }
+  .timer-decoration {
+    position: static;
+    margin: 20px auto 0;
+  }
+  .timer-btn {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer-heading {
+    font-size: 35px;
+  }
+  .timer-time {
+    font-size: 60px;
+  }
+  .timer-labels {
+    gap: 40px;
+  }
+}

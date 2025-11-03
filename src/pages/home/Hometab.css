@@ -17,7 +17,6 @@
   flex-wrap: wrap;
   gap: clamp(15px, 5vw, 140px);
   padding-bottom: clamp(10px, 3vw, 20px);
-  margin: clamp(15px, 4vw, 30px) 0 clamp(25px, 6vw, 50px) 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -30,8 +29,9 @@
   transition: transform 0.3s ease, filter 0.3s ease;
   border-radius: 10px;
   background-color: #fff;
-  padding: clamp(4px, 1vw, 6px) clamp(8px, 2vw, 10px);
+  padding: clamp(4px, 1vw, 6px) clamp(-30px, 2vw, -100px);
   flex-shrink: 0;
+ 
 }
 
 

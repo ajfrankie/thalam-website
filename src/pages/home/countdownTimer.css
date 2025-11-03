@@ -43,6 +43,24 @@ body {
   max-width: 1240px;
 }
 
+
+.countdown-small-heading {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .countdown-small-heading h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f6f5f3;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 0;
+  }
 /* Background image container */
 .background-image-container {
   position: absolute;
@@ -92,7 +110,7 @@ body {
   align-items: center;
   white-space: nowrap;
   transition: all 0.3s ease;
-  margin-left: -50px;
+  margin-left: -200px;
 }
 
 .countdown-labels {
@@ -104,7 +122,7 @@ body {
   gap: 120px;
   z-index: 2;
   transition: all 0.3s ease;
-  margin-left: -10px;
+  margin-left: -200px;
   gap: clamp(20px, 5vw, 120px); 
 }
 
@@ -232,30 +250,95 @@ body {
 
 /* Small Mobile */
 @media (max-width: 480px) {
+  /* --- Section Heading --- */
   .next-event-heading {
-    font-size: 32px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
   }
+
+  /* --- Countdown Frame --- */
   .countdown-frame {
-    min-height: 280px;
-    border-radius: 25px;
-    padding: 20px;
+    position: relative;
+    width: 100%;
+    min-height: 240px;
+    border-radius: 20px;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
+
+  /* --- Small Heading ("Early Bird Pricing Ends In") --- */
+  .countdown-small-heading {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .countdown-small-heading h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f6f5f3;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* --- Countdown Timer --- */
   .countdown-time {
     font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    margin: 40px 0 10px 0;
   }
+
+  /* --- Countdown Labels --- */
   .countdown-labels {
-    gap: clamp(8px, 5vw, 40px);
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    font-size: 12px;
+    color: #ccc;
+    text-transform: uppercase;
   }
+
   .countdown-labels span {
     font-size: 12px;
+    letter-spacing: 0.5px;
   }
+
+  /* --- Button --- */
   .countdown-btn {
-    font-size: 18px;
+    position: absolute;
     bottom: 10px;
     right: 15px;
-    padding: 6px 20px;
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 8px;
   }
+
+ 
   .countdown-decoration {
-    width: 140px;
+    width: 100px;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    opacity: 0.3;
+  }
+
+  .decoration-img {
+    width: 100%;
+    height: auto;
   }
 }

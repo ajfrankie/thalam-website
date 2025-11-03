@@ -5,7 +5,7 @@ import ThalamLogo from "../../assets/thalamlogo.png";
 function Register()  {
   return (
     <div className="register-section">
-      {/* Header */}
+     
       <div className="register-header">
         <h1>
           <span>Register</span>
