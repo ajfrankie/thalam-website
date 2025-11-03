@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "./CountdownTimer.css";
-import countdowntimer1image from "../../assets/images/countdownTimer1.png";
+import "./timer.css";
+import timerDecorationImage from "../../assets/images/timer1.png";
 
-const CountdownTimer = () => {
+const Timer = () => {
   const [time, setTime] = useState({
     days: 12,
     hours: 5,
@@ -36,34 +36,39 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="container next-event-section">
-      <h2 className="next-event-heading">Next Event</h2>
-      <div className="countdown-frame position-relative overflow-hidden">
-       
-       <h3>Early Bird Pricing Ends In</h3>       
-        
-        <div className="background-image-container"></div>
+    <div className="timer-section">
 
-        <div className="countdown-time d-flex justify-content-center align-items-center">
+
+      <div className="timer-frame">
+        
+        <div className="timer-time">
           <span>{String(time.days).padStart(2, "0")}</span>:
           <span>{String(time.hours).padStart(2, "0")}</span>:
           <span>{String(time.minutes).padStart(2, "0")}</span>
         </div>
 
-        <div className="countdown-labels d-flex justify-content-center gap-5">
+        {/* Labels */}
+        
+        <div className="timer-labels">
           <span>DAYS</span>
           <span>HOURS</span>
           <span>MINUTES</span>
         </div>
 
-        <div className="countdown-decoration">
-          <img src={countdowntimer1image} alt="decoration" className="decoration-img img-fluid" />
+        {/* Decoration image */}
+        <div className="timer-decoration">
+          <img
+            src={timerDecorationImage}
+            alt="decoration"
+            className="timer-decoration-img"
+          />
         </div>
 
-        <button className="countdown-btn btn">More info.....</button>
+        {/* Button */}
+        <button className="timer-btn">More info.....</button>
       </div>
     </div>
   );
 };
 
-export default CountdownTimer;
+export default Timer;

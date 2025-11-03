@@ -1,54 +1,116 @@
-/* Heading left side */
-.next-event-heading {
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 1;
-  color: #ffffff;
-  margin-bottom: 30px;
-  text-align: left;
-}
-
-/* Countdown box layout */
-.countdown-frame {
-  background: #1c1a1a;
+/* 🔹 Main Container */
+.next-event-main-container {
+  font-family: "Syne", sans-serif;
   color: #fff;
-  width: 1240px;
-  height: 446px;
-  border-radius: 50px;
-  position: relative;
-  overflow: hidden;
+  background-color: #000;
+  padding: 190px;
+  padding-top: 50px;
+  padding-bottom: 120px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;  /* space between left + right */
-  padding: 40px;
-  font-size: 100px;
-}
-
-/* Left content area (for countdown text if needed) */
-.countdown-left {
-  z-index: 1;
-}
-
-/* Right side image bigger */
-/* Right side image bigger */
-.countdown-decoration {
-  position: relative;
-  width: 711px;        /* ✅ correct */
-  height: 881px;
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -100px;  /* move upwards */
-  opacity: 0.9;
-  right: -100px;
-  margin-bottom: -150px;
 }
 
-/* Decoration image */
-.decoration-img {
-  width: 100%;          /* fill parent (811px) */
-  height: auto;
+/* 🔹 Title Box */
+  .next-event-title-box {
+  background-color: #1a1a1a;
+  height: 446px;          
+  border-radius: 50px;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 60px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 300%;
+  height: 446px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  padding-left: 92px;
+  width: 100%;
+
+  
+}
+
+
+
+/* 🔹 Heading */
+.next-event-title {
+  font-size: 110px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+  transform: translateY(-10px); 
+  height: 350px;
+  margin-bottom: -100px;
+
+}
+
+
+.next-event-header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.3;
+  width: 450px;
+  height: 450px;
+}
+
+.next-event-logo-image {
+  width: 711px;           
+  height: 881px;          
   object-fit: contain;
+  opacity: 0.31;  
+  margin-left: 110px;    
+  margin-top: 30px;    
 }
 
+
+@media (max-width: 1024px) {
+  .next-event-title-box {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .next-event-title {
+    font-size: 80px;
+  }
+
+  .next-event-header-logo {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .next-event-title {
+    font-size: 55px;
+  }
+
+  .next-event-header-logo {
+    width: 200px;
+    height: 200px;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .next-event-title {
+    font-size: 40px;
+  }
+
+  .next-event-header-logo {
+    width: 150px;
+    height: 150px;
+  }
+}

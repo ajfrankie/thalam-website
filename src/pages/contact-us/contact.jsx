@@ -82,7 +82,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
+        
           <div className="contact-form">
             <h3>Get In Touch</h3>
             <form onSubmit={handleSubmit}>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./attend.css"; 
+import "./attend.css";  
 
 const WhyAttend = () => {
   const items = [
@@ -31,7 +31,7 @@ const WhyAttend = () => {
 
   return (
     <section className="why-attend-section">
-      <h2 className="why-attend-title">WHY ATTEND?</h2>
+      <h2 className="why-attend-title">Why Attend?</h2>
       <div className="why-attend-grid">
         {items.map((item) => (
           <div key={item.id} className="why-card">
